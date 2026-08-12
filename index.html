@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>66-Planet · Recipe Archive</title>
+  <meta name="description" content="66-Planet — 一場跨越星球的旅人餐桌，116 則料理與節氣的記事。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1 class="brand-name">66-Planet</h1>
+      <div class="brand-divider"></div>
+      <p class="brand-sub">Where Mercury met Mars — and Planet 66 was born.<br>A shared table across the stars, where every dish carries love.</p>
+    </div>
+  </header>
+  <div class="filter-bar">
+    <span class="filter-label">Planet</span>
+    <div class="filter-group">
+      <button class="filter-btn active" data-type="planet" data-val="all">All</button>
+      <button class="filter-btn" data-type="planet" data-val="Venus">週一 金星 Venus</button>
+      <button class="filter-btn" data-type="planet" data-val="Jupiter">週二 木星 Jupiter</button>
+      <button class="filter-btn" data-type="planet" data-val="Mercury">週三 水星 Mercury</button>
+      <button class="filter-btn" data-type="planet" data-val="Saturn">週四 土星 Saturn</button>
+      <button class="filter-btn" data-type="planet" data-val="Mars">週五 火星 Mars</button>
+      <button class="filter-btn" data-type="planet" data-val="Wandering">漫遊</button>
+      <button class="filter-btn" data-type="planet" data-val="Knowledge">新知</button>
+    </div>
+    <button class="filter-reset-btn" onclick="resetAll()" title="Reset all filters &amp; sorting">↺ Reset</button>
+  </div>
+
+  <!-- ▸ 節氣帶 -->
+  <div class="solar-bar" id="solarBar">
+    <div class="solar-track" id="solarTrack"></div>
+  </div>
+  <div class="stats-bar">
+    <div class="manifesto-block">
+      <p class="manifesto-en">In the vast galaxy, Mercury met Mars — and Planet 66 was born. Since December 22, 2023, we've sat at this quiet table, where food becomes memory, and silence holds warmth. Each dish is an offering of love, sent to a distant Mars — still unfamiliar, yet already part of us. No matter how far the future feels, this moment is already forever.</p>
+      <p class="manifesto-zh">遼闊的銀河中，水星與火星的相遇，孕育出66星球。在66星球的旅人餐桌上，我們不只享受美食，更編織著美好片段。每道料理、每個共享的瞬間，都是真實的生活傑作——滋味與記憶交織，刻畫出真實美好。在66星球餐桌上，把愛轉化為一道道料理，傳遞給這顆來自遠方、仍帶著陌生氣息的火星。無論未來會多麼遙遠，現在即未來。</p>
+    </div>
+    <div class="stats-meta">
+      <p class="stats-count">Showing <strong id="count">116</strong> of 116 entries</p>
+      <div class="stats-sort">
+        <span class="sort-label">Sort</span>
+        <button class="sort-btn active" id="sort-newest" onclick="sortCards('newest')">Newest</button>
+        <button class="sort-btn" id="sort-oldest" onclick="sortCards('oldest')">Oldest</button>
+        <button class="sort-btn" id="sort-rating" onclick="sortCards('rating')">Rating</button>
+        <button class="reset-btn" onclick="resetAll()" title="Reset all filters &amp; sorting">↺</button>
+      </div>
+    </div>
+  </div>
+  <!-- ═══════════════════════════════════════════════════════════
+       RECIPE CARDS — 116 則
+       · 插圖統一收在 illus.svg（symbol id = i001…i116，對應卡片 No.）
+       · 色彩全數由 style.css 的星球色板驅動，本檔不再出現任何色碼
+       · 要找第 42 則：搜尋「No.042」
+  ═══════════════════════════════════════════════════════════ -->
+  <main class="card-grid" id="grid">
+
+  <!-- No.001 · / 前導 / 未知 / 預視 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="5" data-date="2023-11-06" data-term="霜降" data-no="1">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i001"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Nov 6</span><span class="dy">2023</span></div><span class="card-no">No.&thinsp;001</span></div>
+      <div class="title-block"><h2 class="card-zh">/ 前導 / 未知 / 預視</h2><p class="card-en">Prelude / Unknown / Prevision</p></div>
+      <p class="card-desc">一切開始之前，先有一個呼吸的空間。</p>
+    </div>
+  </article>
+
+  <!-- No.002 · 焗烤蕃茄牛肉咖哩(冬至) -->
+  <article class="recipe-card" data-planet="Mars" data-stars="3" data-date="2023-12-22" data-term="冬至" data-no="2">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i002"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Dec 22</span><span class="dy">2023</span></div><span class="card-no">No.&thinsp;002</span></div>
+      <div class="title-block"><h2 class="card-zh">焗烤蕃茄牛肉咖哩(冬至)</h2><p class="card-en">Baked Tomato Beef Curry — Winter Solstice</p></div>
+      <p class="card-desc">冬至的焗烤，起司融化成金黃，像給這個節氣蓋了一床被子。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">牛肉</span><span class="ing-tag">蕃茄</span><span class="ing-tag">咖哩</span><span class="ing-tag">馬芝拉起司</span><span class="ing-tag">洋蔥</span></div></div></div>
+  </article>
+
+  <!-- No.003 · 義式烤蔬菜雞腿 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="4" data-date="2024-01-31" data-term="大寒" data-no="3">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i003"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jan 31</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;003</span></div>
+      <div class="title-block"><h2 class="card-zh">義式烤蔬菜雞腿</h2><p class="card-en">Italian-Style Roasted Chicken Leg with Vegetables</p></div>
+      <p class="card-desc">雞腿和烤蔬菜一起進爐，出來的時候都有了對方的味道。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">雞腿</span><span class="ing-tag">迷迭香</span><span class="ing-tag">大蒜</span><span class="ing-tag">蕃茄</span><span class="ing-tag">橄欖油</span></div></div></div>
+  </article>
+
+  <!-- No.004 · 老黃麵店+漁光島 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="4" data-date="2024-03-16" data-term="驚蟄" data-no="4">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i004"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 16</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;004</span></div>
+      <div class="title-block"><h2 class="card-zh">老黃麵店+漁光島</h2><p class="card-en">Old Huang Noodles & Yùguāng Island</p></div>
+      <p class="card-desc">麵吃完了去漁光島，這樣的行程不需要理由。</p>
+    </div>
+  </article>
+
+  <!-- No.005 · 觀世音菩薩生日素食 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="5" data-date="2024-03-28" data-term="春分" data-no="5">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i005"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 28</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;005</span></div>
+      <div class="title-block"><h2 class="card-zh">觀世音菩薩生日素食</h2><p class="card-en">Vegetarian Feast — Guanyin's Birthday</p></div>
+      <p class="card-desc">菩薩生日的餐桌，素食也能讓人感到飽足與安心。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">豆腐</span><span class="ing-tag">香菇</span><span class="ing-tag">木耳</span><span class="ing-tag">青菜</span><span class="ing-tag">薑</span></div></div></div>
+  </article>
+
+  <!-- No.006 · 烤蔬菜筆管麵 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="2" data-date="2024-03-29" data-term="春分" data-no="6">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i006"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 29</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;006</span></div>
+      <div class="title-block"><h2 class="card-zh">烤蔬菜筆管麵</h2><p class="card-en">Roasted Vegetable Penne</p></div>
+      <p class="card-desc">烤過的蔬菜有一種焦糖化的甜，裹進筆管麵的褶皺裡。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">筆管麵</span><span class="ing-tag">茄子</span><span class="ing-tag">甜椒</span><span class="ing-tag">橄欖油</span><span class="ing-tag">帕瑪森</span></div></div></div>
+  </article>
+
+  <!-- No.007 · 安平16觀夕平台 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="5" data-date="2024-04-02" data-term="春分" data-no="7">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i007"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 2</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;007</span></div>
+      <div class="title-block"><h2 class="card-zh">安平16觀夕平台</h2><p class="card-en">Anping No.16 Sunset Platform</p></div>
+      <p class="card-desc">夕陽把安平的海面燒成橙紅，站在那裡不想走。</p>
+    </div>
+  </article>
+
+  <!-- No.008 · 地震中的法式早餐 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="4" data-date="2024-04-03" data-term="春分" data-no="8">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i008"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 3</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;008</span></div>
+      <div class="title-block"><h2 class="card-zh">地震中的法式早餐</h2><p class="card-en">French Breakfast During the Earthquake</p></div>
+      <p class="card-desc">地震那天，法式早餐的奶油香氣讓人覺得世界還是好的。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">法棍</span><span class="ing-tag">奶油</span><span class="ing-tag">果醬</span><span class="ing-tag">煮蛋</span><span class="ing-tag">咖啡</span></div></div></div>
+  </article>
+
+  <!-- No.009 · 無題午餐+台南王記好吃雞肉 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="1" data-date="2024-04-10" data-term="清明" data-no="9">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i009"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 10</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;009</span></div>
+      <div class="title-block"><h2 class="card-zh">無題午餐+台南王記好吃雞肉</h2><p class="card-en">Untitled Lunch + Tainan Wang's Good Chicken</p></div>
+      <p class="card-desc">無題的午餐，有時候是一天裡最自由的一餐。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">雞肉</span><span class="ing-tag">米飯</span><span class="ing-tag">滷蛋</span><span class="ing-tag">豆腐</span><span class="ing-tag">蔥</span></div></div></div>
+  </article>
+
+  <!-- No.010 · 義大利筆管麵 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="3" data-date="2024-04-15" data-term="清明" data-no="10">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i010"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 15</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;010</span></div>
+      <div class="title-block"><h2 class="card-zh">義大利筆管麵</h2><p class="card-en">Italian Penne al Pomodoro</p></div>
+      <p class="card-desc">筆管麵的中空讓醬汁有了藏身之處，每一口都有驚喜。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">筆管麵</span><span class="ing-tag">蕃茄醬</span><span class="ing-tag">洋蔥</span><span class="ing-tag">大蒜</span><span class="ing-tag">羅勒</span></div></div></div>
+  </article>
+
+  <!-- No.011 · 壽喜燒便當 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="4" data-date="2024-04-16" data-term="清明" data-no="11">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i011"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 16</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;011</span></div>
+      <div class="title-block"><h2 class="card-zh">壽喜燒便當</h2><p class="card-en">Sukiyaki Bento</p></div>
+      <p class="card-desc">壽喜燒裝進便當，甜鹹的醬汁滲進米飯，攜帶著出門。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">牛肉</span><span class="ing-tag">醬油</span><span class="ing-tag">味醂</span><span class="ing-tag">砂糖</span><span class="ing-tag">豆腐</span></div></div></div>
+  </article>
+
+  <!-- No.012 · 酸麵團麵包佐燻鮭魚蛋沙拉 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="3" data-date="2024-04-26" data-term="穀雨" data-no="12">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i012"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 26</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;012</span></div>
+      <div class="title-block"><h2 class="card-zh">酸麵團麵包佐燻鮭魚蛋沙拉</h2><p class="card-en">Sourdough with Smoked Salmon Egg Salad</p></div>
+      <p class="card-desc">酸種麵包的氣孔裡藏著三天的等待，蛋沙拉是最好的回報。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">酸麵團麵包</span><span class="ing-tag">燻鮭魚</span><span class="ing-tag">水煮蛋</span><span class="ing-tag">美乃滋</span><span class="ing-tag">蒔蘿</span></div></div></div>
+  </article>
+
+  <!-- No.013 · 發現四鯤鯓 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="5" data-date="2024-05-01" data-term="穀雨" data-no="13">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i013"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">May 1</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;013</span></div>
+      <div class="title-block"><h2 class="card-zh">發現四鯤鯓</h2><p class="card-en">Discovering Sìkünshēn</p></div>
+      <p class="card-desc">四鯤鯓的風很大，大到讓人忘了帶著什麼來。</p>
+    </div>
+  </article>
+
+  <!-- No.014 · 佛誕日素麵 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="3" data-date="2024-05-15" data-term="立夏" data-no="14">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i014"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">May 15</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;014</span></div>
+      <div class="title-block"><h2 class="card-zh">佛誕日素麵</h2><p class="card-en">Vegetarian Noodles — Buddha's Birthday</p></div>
+      <p class="card-desc">佛誕日的素麵，清淡得讓人心靜。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">素麵</span><span class="ing-tag">香菇</span><span class="ing-tag">木耳</span><span class="ing-tag">薑</span><span class="ing-tag">醬油</span></div></div></div>
+  </article>
+
+  <!-- No.015 · 家常炒麵 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="1" data-date="2024-05-21" data-term="小滿" data-no="15">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i015"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">May 21</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;015</span></div>
+      <div class="title-block"><h2 class="card-zh">家常炒麵</h2><p class="card-en">Everyday Stir-Fried Noodles</p></div>
+      <p class="card-desc">家常兩個字，是這道麵最深的底氣。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">油麵</span><span class="ing-tag">豬肉絲</span><span class="ing-tag">高麗菜</span><span class="ing-tag">醬油</span><span class="ing-tag">蒜頭</span></div></div></div>
+  </article>
+
+  <!-- No.016 · 雨天鰻魚飯 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="5" data-date="2024-05-28" data-term="小滿" data-no="16">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i016"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">May 28</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;016</span></div>
+      <div class="title-block"><h2 class="card-zh">雨天鰻魚飯</h2><p class="card-en">Rainy Day Unaju</p></div>
+      <p class="card-desc">雨天，鰻魚飯是最好的回答。窗外的聲音和米飯的香氣剛好一樣重。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">鰻魚</span><span class="ing-tag">白米</span><span class="ing-tag">醬油</span><span class="ing-tag">味醂</span><span class="ing-tag">山椒</span></div></div></div>
+  </article>
+
+  <!-- No.017 · 美味三明治 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="4" data-date="2024-05-30" data-term="小滿" data-no="17">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i017"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">May 30</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;017</span></div>
+      <div class="title-block"><h2 class="card-zh">美味三明治</h2><p class="card-en">The Simply Delicious Sandwich</p></div>
+      <p class="card-desc">有時候取名「美味」反而是一種誠實的驕傲。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">吐司</span><span class="ing-tag">雞蛋</span><span class="ing-tag">起司</span><span class="ing-tag">生菜</span><span class="ing-tag">蕃茄</span></div></div></div>
+  </article>
+
+  <!-- No.018 · 干貝烏龍湯麵 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="2" data-date="2024-06-03" data-term="小滿" data-no="18">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i018"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jun 3</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;018</span></div>
+      <div class="title-block"><h2 class="card-zh">干貝烏龍湯麵</h2><p class="card-en">Scallop Udon in Broth</p></div>
+      <p class="card-desc">干貝讓湯底有了深度，烏龍麵在裡頭滑得心安理得。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">干貝</span><span class="ing-tag">烏龍麵</span><span class="ing-tag">昆布</span><span class="ing-tag">薄鹽醬油</span><span class="ing-tag">蔥</span></div></div></div>
+  </article>
+
+  <!-- No.019 · 土星日的蚵仔與夕陽 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="4" data-date="2024-06-06" data-term="芒種" data-no="19">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i019"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jun 6</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;019</span></div>
+      <div class="title-block"><h2 class="card-zh">土星日的蚵仔與夕陽</h2><p class="card-en">Saturn Day Oysters at Sunset</p></div>
+      <p class="card-desc">土星日在海邊吃蚵仔，夕陽剛好是最好的配菜。</p>
+    </div>
+  </article>
+
+  <!-- No.020 · 蕎麥麵初登場 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="4" data-date="2024-06-18" data-term="芒種" data-no="20">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i020"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jun 18</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;020</span></div>
+      <div class="title-block"><h2 class="card-zh">蕎麥麵初登場</h2><p class="card-en">Soba's First Appearance</p></div>
+      <p class="card-desc">蕎麥麵第一次登上這個廚房，帶著一股清涼的正式感。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">蕎麥麵</span><span class="ing-tag">醬油</span><span class="ing-tag">味醂</span><span class="ing-tag">柴魚</span><span class="ing-tag">蔥花</span></div></div></div>
+  </article>
+
+  <!-- No.021 · 海陸蕎麥麵  (夏至後) -->
+  <article class="recipe-card" data-planet="Venus" data-stars="3" data-date="2024-06-24" data-term="夏至" data-no="21">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i021"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jun 24</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;021</span></div>
+      <div class="title-block"><h2 class="card-zh">海陸蕎麥麵  (夏至後)</h2><p class="card-en">Land & Sea Soba — After Summer Solstice</p></div>
+      <p class="card-desc">夏至後的第一碗蕎麥麵，海鮮和肉同時出現，算是一種奢侈。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">蕎麥麵</span><span class="ing-tag">海鮮</span><span class="ing-tag">豬肉</span><span class="ing-tag">醬油</span><span class="ing-tag">柴魚</span></div></div></div>
+  </article>
+
+  <!-- No.022 · BOSSDAY蚵仔三明治 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="3" data-date="2024-06-28" data-term="夏至" data-no="22">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i022"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jun 28</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;022</span></div>
+      <div class="title-block"><h2 class="card-zh">BOSSDAY蚵仔三明治</h2><p class="card-en">Boss Day Oyster Sandwich</p></div>
+      <p class="card-desc">BOSS 日的犒賞，蚵仔鮮到讓人忘記這是工作日。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">蚵仔</span><span class="ing-tag">吐司</span><span class="ing-tag">美乃滋</span><span class="ing-tag">蕃茄</span><span class="ing-tag">生菜</span></div></div></div>
+  </article>
+
+  <!-- No.023 · 新化林場滑一🍌 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="3" data-date="2024-06-30" data-term="夏至" data-no="23">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i023"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jun 30</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;023</span></div>
+      <div class="title-block"><h2 class="card-zh">新化林場滑一🍌</h2><p class="card-en">Sliding at Xinhua Forest — A Banana</p></div>
+      <p class="card-desc">林場裡的那根香蕉，是那天最好的結尾。</p>
+    </div>
+  </article>
+
+  <!-- No.024 · 酪梨燻鮭魚三明治 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="3" data-date="2024-07-03" data-term="夏至" data-no="24">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i024"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+      <button class="lore-btn" onclick="toggleLore(this)" aria-expanded="false" aria-label="星球誌"><svg class="planet-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.1"/><circle cx="6" cy="7" r="2" stroke="currentColor" stroke-width="0.8" opacity="0.6"/><circle cx="14" cy="5" r="1.5" stroke="currentColor" stroke-width="0.8" opacity="0.55"/><circle cx="9" cy="12" r="2.5" stroke="currentColor" stroke-width="0.8" opacity="0.65"/><circle cx="17" cy="13" r="1.8" stroke="currentColor" stroke-width="0.8" opacity="0.55"/><circle cx="7" cy="17" r="1.5" stroke="currentColor" stroke-width="0.75" opacity="0.5"/><circle cx="15" cy="18" r="2" stroke="currentColor" stroke-width="0.8" opacity="0.58"/></svg></button>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jul 3</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;024</span></div>
+      <div class="title-block"><h2 class="card-zh">酪梨燻鮭魚三明治</h2><p class="card-en">Avocado & Smoked Salmon Sandwich</p></div>
+      <p class="card-desc">酪梨的奶油感接住了燻鮭魚的鹹，這對組合太穩了。</p>
+    </div>
+    <div class="lore-panel lore-panel--wide" hidden>
+      <p class="lore-text">三明治是出現最頻繁的料理形式。兩片麵包包覆著無限可能——兩個獨立的個體，中間可以放進任何味道。</p>
+      <div class="lore-img-wrap">
+        <img class="lore-img" src="images/20240703.jpg" alt="酪梨燻鮭魚三明治" loading="lazy"/>
+        <p class="lore-img-caption">Jul 3, 2024 · 酪梨燻鮭魚三明治</p>
+      </div>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">酪梨</span><span class="ing-tag">燻鮭魚</span><span class="ing-tag">吐司</span><span class="ing-tag">檸檬</span><span class="ing-tag">蒔蘿</span></div></div></div>
+  </article>
+
+  <!-- No.025 · 酪梨雞胸肉哇沙米海苔手捲(小暑前) -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="3" data-date="2024-07-04" data-term="夏至" data-no="25">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i025"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jul 4</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;025</span></div>
+      <div class="title-block"><h2 class="card-zh">酪梨雞胸肉哇沙米海苔手捲(小暑前)</h2><p class="card-en">Avocado Chicken Wasabi Temaki — Before Minor Heat</p></div>
+      <p class="card-desc">手捲裡有酪梨的奶香和哇沙米的衝勁，兩者和平共處。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">酪梨</span><span class="ing-tag">雞胸肉</span><span class="ing-tag">哇沙米</span><span class="ing-tag">海苔</span><span class="ing-tag">壽司飯</span></div></div></div>
+  </article>
+
+  <!-- No.026 · 爪哇牛肉咖哩烏龍麵(小暑後) -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="3" data-date="2024-07-09" data-term="小暑" data-no="26">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i026"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jul 9</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;026</span></div>
+      <div class="title-block"><h2 class="card-zh">爪哇牛肉咖哩烏龍麵(小暑後)</h2><p class="card-en">Javanese Beef Curry Udon — After Minor Heat</p></div>
+      <p class="card-desc">小暑後的熱，只有咖哩烏龍能對抗。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">烏龍麵</span><span class="ing-tag">牛肉</span><span class="ing-tag">爪哇咖哩</span><span class="ing-tag">椰奶</span><span class="ing-tag">薑黃</span></div></div></div>
+  </article>
+
+  <!-- No.027 · 西班牙蒜蝦墨魚麵 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="4" data-date="2024-07-17" data-term="小暑" data-no="27">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i027"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jul 17</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;027</span></div>
+      <div class="title-block"><h2 class="card-zh">西班牙蒜蝦墨魚麵</h2><p class="card-en">Squid Ink Pasta with Garlic Prawns</p></div>
+      <p class="card-desc">墨魚汁把麵條染黑，蒜蝦在黑色裡顯得格外鮮明。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">墨魚麵</span><span class="ing-tag">蒜蝦</span><span class="ing-tag">墨魚汁</span><span class="ing-tag">白酒</span><span class="ing-tag">橄欖油</span></div></div></div>
+  </article>
+
+  <!-- No.028 · 鰻魚麻油飯 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="5" data-date="2024-07-29" data-term="大暑" data-no="28">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i028"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jul 29</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;028</span></div>
+      <div class="title-block"><h2 class="card-zh">鰻魚麻油飯</h2><p class="card-en">Eel Rice with Sesame Oil</p></div>
+      <p class="card-desc">麻油把鰻魚的油香再推高一層，米飯安靜地接住了一切。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">鰻魚</span><span class="ing-tag">麻油</span><span class="ing-tag">白米</span><span class="ing-tag">薑片</span><span class="ing-tag">米酒</span></div></div></div>
+  </article>
+
+  <!-- No.029 · 奧林匹亞龍蝦沙拉三明治 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="4" data-date="2024-08-02" data-term="大暑" data-no="29">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i029"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 2</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;029</span></div>
+      <div class="title-block"><h2 class="card-zh">奧林匹亞龍蝦沙拉三明治</h2><p class="card-en">Olympian Lobster Salad Sandwich</p></div>
+      <p class="card-desc">龍蝦沙拉三明治，名字比內容還要盛大，但好吃就夠了。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">龍蝦</span><span class="ing-tag">美乃滋</span><span class="ing-tag">吐司</span><span class="ing-tag">西洋芹</span><span class="ing-tag">檸檬</span></div></div></div>
+  </article>
+
+  <!-- No.030 · 16號泰式黃咖哩(中元節前) -->
+  <article class="recipe-card" data-planet="Mars" data-stars="3" data-date="2024-08-16" data-term="立秋" data-no="30">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i030"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 16</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;030</span></div>
+      <div class="title-block"><h2 class="card-zh">16號泰式黃咖哩(中元節前)</h2><p class="card-en">No.16 Thai Yellow Curry — Ghost Festival Eve</p></div>
+      <p class="card-desc">黃咖哩的香氣先到，人後到，這順序剛好。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">黃咖哩醬</span><span class="ing-tag">椰奶</span><span class="ing-tag">雞肉</span><span class="ing-tag">馬鈴薯</span><span class="ing-tag">魚露</span></div></div></div>
+  </article>
+
+  <!-- No.031 · 五心肝牛腱三明治(中元節後) -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="5" data-date="2024-08-20" data-term="立秋" data-no="31">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i031"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 20</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;031</span></div>
+      <div class="title-block"><h2 class="card-zh">五心肝牛腱三明治(中元節後)</h2><p class="card-en">Five-Spice Beef Shank Sandwich — After Ghost Festival</p></div>
+      <p class="card-desc">牛腱切薄片，夾進麵包裡，是一種很務實的豐盛。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">牛腱</span><span class="ing-tag">五心醬</span><span class="ing-tag">吐司</span><span class="ing-tag">芥末</span><span class="ing-tag">洋蔥</span></div></div></div>
+  </article>
+
+  <!-- No.032 · 打拋豬千層麵(處暑) -->
+  <article class="recipe-card" data-planet="Mars" data-stars="3" data-date="2024-08-23" data-term="處暑" data-no="32">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i032"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 23</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;032</span></div>
+      <div class="title-block"><h2 class="card-zh">打拋豬千層麵(處暑)</h2><p class="card-en">Thai Basil Pork Lasagna — End of Heat</p></div>
+      <p class="card-desc">打拋葉的氣味闖進千層麵，東南亞與義大利的短暫同居。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">千層麵</span><span class="ing-tag">打拋豬</span><span class="ing-tag">打拋葉</span><span class="ing-tag">魚露</span><span class="ing-tag">辣椒</span></div></div></div>
+  </article>
+
+  <!-- No.033 · 燻鮭魚三明治 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="4" data-date="2024-08-26" data-term="處暑" data-no="33">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i033"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 26</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;033</span></div>
+      <div class="title-block"><h2 class="card-zh">燻鮭魚三明治</h2><p class="card-en">Smoked Salmon Sandwich</p></div>
+      <p class="card-desc">燻鮭魚三明治，最簡單的那種好吃。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">燻鮭魚</span><span class="ing-tag">吐司</span><span class="ing-tag">奶油起司</span><span class="ing-tag">酸豆</span><span class="ing-tag">洋蔥</span></div></div></div>
+  </article>
+
+  <!-- No.034 · 西班牙海鮮燉飯 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="3" data-date="2024-08-29" data-term="處暑" data-no="34">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i034"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 29</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;034</span></div>
+      <div class="title-block"><h2 class="card-zh">西班牙海鮮燉飯</h2><p class="card-en">Spanish Seafood Paella</p></div>
+      <p class="card-desc">藏紅花把米飯染成太陽的顏色，鍋底的鍋巴最搶手。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">藏紅花</span><span class="ing-tag">短米</span><span class="ing-tag">蝦</span><span class="ing-tag">淡菜</span><span class="ing-tag">橄欖油</span></div></div></div>
+  </article>
+
+  <!-- No.035 · 紐約風烤牛肉三明治 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="3" data-date="2024-09-03" data-term="處暑" data-no="35">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i035"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 3</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;035</span></div>
+      <div class="title-block"><h2 class="card-zh">紐約風烤牛肉三明治</h2><p class="card-en">New York-Style Roast Beef Sandwich</p></div>
+      <p class="card-desc">烤牛肉切厚片，紐約式地不客氣，夾進麵包裡。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">烤牛肉</span><span class="ing-tag">裸麥麵包</span><span class="ing-tag">芥末</span><span class="ing-tag">醃黃瓜</span><span class="ing-tag">洋蔥</span></div></div></div>
+  </article>
+
+  <!-- No.036 · 搬入Marhaus(白露甚好) -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="0" data-date="2024-09-07" data-term="處暑" data-no="36">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i036"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 7</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;036</span></div>
+      <div class="title-block"><h2 class="card-zh">搬入Marhaus(白露甚好)</h2><p class="card-en">Moving into Marhaus — White Dew</p></div>
+      <p class="card-desc">白露那天搬進新家，空氣裡有一股說不清的乾淨。</p>
+    </div>
+  </article>
+
+  <!-- No.037 · 油豆腐鑲肉花枝蝦仁漿(白露後) -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="5" data-date="2024-09-10" data-term="白露" data-no="37">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i037"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 10</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;037</span></div>
+      <div class="title-block"><h2 class="card-zh">油豆腐鑲肉花枝蝦仁漿(白露後)</h2><p class="card-en">Stuffed Tofu with Squid & Prawn Paste — After White Dew</p></div>
+      <p class="card-desc">白露之後，這道費工的料理才顯得值得。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">油豆腐</span><span class="ing-tag">花枝漿</span><span class="ing-tag">蝦仁</span><span class="ing-tag">豬絞肉</span><span class="ing-tag">蔥薑</span></div></div></div>
+  </article>
+
+  <!-- No.038 · 毛豆金星海味堡(中秋前一日) -->
+  <article class="recipe-card" data-planet="Venus" data-stars="2" data-date="2024-09-16" data-term="白露" data-no="38">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i038"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 16</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;038</span></div>
+      <div class="title-block"><h2 class="card-zh">毛豆金星海味堡(中秋前一日)</h2><p class="card-en">Edamame & Seafood Burger — Mid-Autumn Eve</p></div>
+      <p class="card-desc">中秋前夕，海味和毛豆的組合意外地剛好。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">毛豆</span><span class="ing-tag">花枝</span><span class="ing-tag">漢堡包</span><span class="ing-tag">美乃滋</span><span class="ing-tag">生菜</span></div></div></div>
+  </article>
+
+  <!-- No.039 · 超級月亮公路 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="0" data-date="2024-09-18" data-term="白露" data-no="39">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i039"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 18</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;039</span></div>
+      <div class="title-block"><h2 class="card-zh">超級月亮公路</h2><p class="card-en">Supermoon Highway</p></div>
+      <p class="card-desc">超級月亮掛著，公路在它底下顯得渺小又剛好。</p>
+    </div>
+  </article>
+
+  <!-- No.040 · 颱風天的港點包場 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="0" data-date="2024-10-02" data-term="秋分" data-no="40">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i040"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 2</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;040</span></div>
+      <div class="title-block"><h2 class="card-zh">颱風天的港點包場</h2><p class="card-en">Private Dim Sum During the Typhoon</p></div>
+      <p class="card-desc">颱風天的港點，把整間店包下來，外面的風聲變成背景音樂。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">燒賣</span><span class="ing-tag">腸粉</span><span class="ing-tag">叉燒包</span><span class="ing-tag">蘿蔔糕</span><span class="ing-tag">鳳爪</span></div></div></div>
+  </article>
+
+  <!-- No.041 · 蕃茄蔬菜湯油豆腐丸子 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="1" data-date="2024-10-04" data-term="秋分" data-no="41">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i041"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 4</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;041</span></div>
+      <div class="title-block"><h2 class="card-zh">蕃茄蔬菜湯油豆腐丸子</h2><p class="card-en">Tomato Vegetable Soup with Tofu Dumplings</p></div>
+      <p class="card-desc">清湯裡浮著豆腐丸子，像一鍋沉靜的星系。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">油豆腐</span><span class="ing-tag">蕃茄</span><span class="ing-tag">高麗菜</span><span class="ing-tag">紅蘿蔔</span><span class="ing-tag">昆布</span></div></div></div>
+  </article>
+
+  <!-- No.042 · 六甲落羽松 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="2" data-date="2024-10-05" data-term="秋分" data-no="42">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i042"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 5</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;042</span></div>
+      <div class="title-block"><h2 class="card-zh">六甲落羽松</h2><p class="card-en">Liujia Bald Cypress Forest</p></div>
+      <p class="card-desc">落羽松的紅，是秋天最用力的一次表達。</p>
+    </div>
+  </article>
+
+  <!-- No.043 · 寒露餐桌上有著秋天顏色 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="4" data-date="2024-10-09" data-term="寒露" data-no="43">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i043"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 9</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;043</span></div>
+      <div class="title-block"><h2 class="card-zh">寒露餐桌上有著秋天顏色</h2><p class="card-en">Autumn Colours on the Cold Dew Table</p></div>
+      <p class="card-desc">秋天的顏色：橙、赭、深綠，全在這一盤裡了。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">南瓜</span><span class="ing-tag">地瓜</span><span class="ing-tag">青花菜</span><span class="ing-tag">紅椒</span><span class="ing-tag">橄欖油</span></div></div></div>
+  </article>
+
+  <!-- No.044 · 鹽麴雞肉墨西哥捲餅(超級月亮前一天) -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="3" data-date="2024-10-16" data-term="寒露" data-no="44">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i044"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 16</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;044</span></div>
+      <div class="title-block"><h2 class="card-zh">鹽麴雞肉墨西哥捲餅(超級月亮前一天)</h2><p class="card-en">Shio-Koji Chicken Burrito — Eve of Supermoon</p></div>
+      <p class="card-desc">超級月亮前夕，捲餅的份量也跟著大了一號。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">鹽麴雞肉</span><span class="ing-tag">墨西哥餅皮</span><span class="ing-tag">酸奶</span><span class="ing-tag">酪梨</span><span class="ing-tag">辣椒</span></div></div></div>
+  </article>
+
+  <!-- No.045 · 鹽麴里肌金星捲餅 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="2" data-date="2024-10-21" data-term="寒露" data-no="45">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i045"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 21</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;045</span></div>
+      <div class="title-block"><h2 class="card-zh">鹽麴里肌金星捲餅</h2><p class="card-en">Shio-Koji Pork Loin Wrap — Venus Day</p></div>
+      <p class="card-desc">金星日的捲餅，鹽麴把肉的甜味逼了出來。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">里肌肉</span><span class="ing-tag">鹽麴</span><span class="ing-tag">捲餅皮</span><span class="ing-tag">生菜</span><span class="ing-tag">蕃茄</span></div></div></div>
+  </article>
+
+  <!-- No.046 · 起司咖哩霜降牛肉(霜降次日) -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="1" data-date="2024-10-22" data-term="寒露" data-no="46">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i046"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 22</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;046</span></div>
+      <div class="title-block"><h2 class="card-zh">起司咖哩霜降牛肉(霜降次日)</h2><p class="card-en">Cheese Curry Beef — Day After Frost's Descent</p></div>
+      <p class="card-desc">霜降隔天，咖哩的熱氣蒸上窗玻璃，橘黃一片。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">霜降牛肉</span><span class="ing-tag">起司</span><span class="ing-tag">咖哩塊</span><span class="ing-tag">洋蔥</span><span class="ing-tag">馬鈴薯</span></div></div></div>
+  </article>
+
+  <!-- No.047 · Aussie Brekky 澳式大早餐 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="4" data-date="2024-10-27" data-term="霜降" data-no="47">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i047"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 27</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;047</span></div>
+      <div class="title-block"><h2 class="card-zh">Aussie Brekky 澳式大早餐</h2><p class="card-en">Aussie Big Breakfast</p></div>
+      <p class="card-desc">煎蛋、培根、烤豆，一盤裝下整個早晨的重量。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">雞蛋</span><span class="ing-tag">培根</span><span class="ing-tag">烤豆</span><span class="ing-tag">吐司</span><span class="ing-tag">蕃茄</span></div></div></div>
+  </article>
+
+  <!-- No.048 · 煙燻鮭魚烤蔬菜溫沙拉搭配煎餅 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="5" data-date="2024-10-29" data-term="霜降" data-no="48">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i048"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 29</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;048</span></div>
+      <div class="title-block"><h2 class="card-zh">煙燻鮭魚烤蔬菜溫沙拉搭配煎餅</h2><p class="card-en">Smoked Salmon Warm Salad with Rösti</p></div>
+      <p class="card-desc">溫熱的沙拉，鮭魚的煙燻氣還掛在空氣裡。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">煙燻鮭魚</span><span class="ing-tag">烤蔬菜</span><span class="ing-tag">煎餅</span><span class="ing-tag">橄欖油</span><span class="ing-tag">檸檬</span></div></div></div>
+  </article>
+
+  <!-- No.049 · 屬於我們的生日蛋糕(66生日) -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="3" data-date="2024-11-06" data-term="霜降" data-no="49">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i049"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Nov 6</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;049</span></div>
+      <div class="title-block"><h2 class="card-zh">屬於我們的生日蛋糕(66生日)</h2><p class="card-en">Our Birthday Cake — No. 66</p></div>
+      <p class="card-desc">生日這天，蛋糕比烘焙食譜寫的還要甜一點。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">奶油</span><span class="ing-tag">麵粉</span><span class="ing-tag">雞蛋</span><span class="ing-tag">砂糖</span><span class="ing-tag">香草</span></div></div></div>
+  </article>
+
+  <!-- No.050 · 蝦仁毛豆鹹湯圓(立冬) -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="2" data-date="2024-11-07" data-term="立冬" data-no="50">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i050"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Nov 7</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;050</span></div>
+      <div class="title-block"><h2 class="card-zh">蝦仁毛豆鹹湯圓(立冬)</h2><p class="card-en">Shrimp & Edamame Rice Balls — First Frost</p></div>
+      <p class="card-desc">立冬的第一碗，湯圓滑入喉嚨，冬天就算正式開始了。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">湯圓</span><span class="ing-tag">蝦仁</span><span class="ing-tag">毛豆</span><span class="ing-tag">高湯</span><span class="ing-tag">薑</span></div></div></div>
+  </article>
+
+  <!-- No.051 · 66星球漫遊-生日遊 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="5" data-date="2024-11-16" data-term="立冬" data-no="51">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i051"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Nov 16</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;051</span></div>
+      <div class="title-block"><h2 class="card-zh">66星球漫遊-生日遊</h2><p class="card-en">66-Planet Wandering — Birthday Journey</p></div>
+      <p class="card-desc">生日的星球漫遊，每一個轉角都是禮物。</p>
+    </div>
+  </article>
+
+  <!-- No.052 · 佛光山米煎牛排蘑菇南瓜 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="3" data-date="2024-11-18" data-term="立冬" data-no="52">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i052"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Nov 18</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;052</span></div>
+      <div class="title-block"><h2 class="card-zh">佛光山米煎牛排蘑菇南瓜</h2><p class="card-en">Fo Guang Shan Rice Steak with Mushroom & Pumpkin</p></div>
+      <p class="card-desc">煎牛排旁邊是南瓜和蘑菇，一盤裡有秋天全部的顏色。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">牛排</span><span class="ing-tag">南瓜</span><span class="ing-tag">蘑菇</span><span class="ing-tag">奶油</span><span class="ing-tag">迷迭香</span></div></div></div>
+  </article>
+
+  <!-- No.053 · 佛光山米蝦仁蛋包飯 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="4" data-date="2024-11-20" data-term="立冬" data-no="53">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i053"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Nov 20</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;053</span></div>
+      <div class="title-block"><h2 class="card-zh">佛光山米蝦仁蛋包飯</h2><p class="card-en">Fo Guang Shan Rice Omurice with Prawns</p></div>
+      <p class="card-desc">佛光山的米包進蛋皮，蝦仁是裡面最小的驚喜。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">佛光山米</span><span class="ing-tag">蝦仁</span><span class="ing-tag">雞蛋</span><span class="ing-tag">蕃茄醬</span><span class="ing-tag">奶油</span></div></div></div>
+  </article>
+
+  <!-- No.054 · 金星世界冠軍麻油蚵仔燉飯 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="3" data-date="2024-11-25" data-term="小雪" data-no="54">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i054"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Nov 25</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;054</span></div>
+      <div class="title-block"><h2 class="card-zh">金星世界冠軍麻油蚵仔燉飯</h2><p class="card-en">World Champion Sesame Oil Oyster Risotto — Venus</p></div>
+      <p class="card-desc">麻油和蚵仔，這道燉飯自封冠軍，不需要評審。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">蚵仔</span><span class="ing-tag">麻油</span><span class="ing-tag">米飯</span><span class="ing-tag">薑片</span><span class="ing-tag">米酒</span></div></div></div>
+  </article>
+
+  <!-- No.055 · 66星球漫遊-Kakacawan -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="5" data-date="2024-12-08" data-term="大雪" data-no="55">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i055"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Dec 8</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;055</span></div>
+      <div class="title-block"><h2 class="card-zh">66星球漫遊-Kakacawan</h2><p class="card-en">66-Planet Wandering — Kakacawan</p></div>
+      <p class="card-desc">Kakacawan 的山，和記憶裡的一樣陡，一樣值得。</p>
+    </div>
+  </article>
+
+  <!-- No.056 · 鹹湯圓(冬至前) -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="3" data-date="2024-12-17" data-term="大雪" data-no="56">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i056"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Dec 17</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;056</span></div>
+      <div class="title-block"><h2 class="card-zh">鹹湯圓(冬至前)</h2><p class="card-en">Savoury Rice Balls — Before Winter Solstice</p></div>
+      <p class="card-desc">冬至前的熱身，鹹湯圓先讓身體暖起來。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">湯圓</span><span class="ing-tag">豬肉</span><span class="ing-tag">蝦米</span><span class="ing-tag">蔥</span><span class="ing-tag">高湯</span></div></div></div>
+  </article>
+
+  <!-- No.057 · 仲冬麻油腰子燉飯 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="4" data-date="2024-12-18" data-term="大雪" data-no="57">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i057"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Dec 18</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;057</span></div>
+      <div class="title-block"><h2 class="card-zh">仲冬麻油腰子燉飯</h2><p class="card-en">Midwinter Sesame Oil Kidney Rice</p></div>
+      <p class="card-desc">仲冬的藥膳燉飯，麻油香滲進每一粒米，是一種溫柔的補。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">豬腰子</span><span class="ing-tag">麻油</span><span class="ing-tag">薑</span><span class="ing-tag">米酒</span><span class="ing-tag">白米</span></div></div></div>
+  </article>
+
+  <!-- No.058 · 耶誕大餐烤南瓜 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="5" data-date="2024-12-25" data-term="冬至" data-no="58">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i058"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Dec 25</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;058</span></div>
+      <div class="title-block"><h2 class="card-zh">耶誕大餐烤南瓜</h2><p class="card-en">Roasted Pumpkin — Christmas Feast</p></div>
+      <p class="card-desc">耶誕的餐桌上，烤南瓜的橙色是最好的裝飾。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">南瓜</span><span class="ing-tag">橄欖油</span><span class="ing-tag">迷迭香</span><span class="ing-tag">大蒜</span><span class="ing-tag">鹽</span></div></div></div>
+  </article>
+
+  <!-- No.059 · Laksa油豆腐蝦仁燴飯金剛米 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="3" data-date="2024-12-31" data-term="冬至" data-no="59">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i059"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Dec 31</span><span class="dy">2024</span></div><span class="card-no">No.&thinsp;059</span></div>
+      <div class="title-block"><h2 class="card-zh">Laksa油豆腐蝦仁燴飯金剛米</h2><p class="card-en">Laksa Tofu & Prawn Rice — Vajra Rice</p></div>
+      <p class="card-desc">Laksa 的香料湯底遇上金剛米，東南亞的溼氣都來了。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">金剛米</span><span class="ing-tag">蝦仁</span><span class="ing-tag">油豆腐</span><span class="ing-tag">Laksa醬</span><span class="ing-tag">椰奶</span></div></div></div>
+  </article>
+
+  <!-- No.060 · 乾煎小卷松阪豬金剛米 (大寒前) -->
+  <article class="recipe-card" data-planet="Mars" data-stars="4" data-date="2025-01-17" data-term="小寒" data-no="60">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i060"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jan 17</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;060</span></div>
+      <div class="title-block"><h2 class="card-zh">乾煎小卷松阪豬金剛米 (大寒前)</h2><p class="card-en">Pan-Fried Squid & Pork Cheek with Vajra Rice — Before Major Cold</p></div>
+      <p class="card-desc">大寒前的最後衝刺，小卷和松阪豬一起上桌，不分主副。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">小卷</span><span class="ing-tag">松阪豬</span><span class="ing-tag">金剛米</span><span class="ing-tag">醬油</span><span class="ing-tag">薑</span></div></div></div>
+  </article>
+
+  <!-- No.061 · BOSSDAY+蛋沙拉三明治(大寒) -->
+  <article class="recipe-card" data-planet="Venus" data-stars="4" data-date="2025-01-20" data-term="大寒" data-no="61">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i061"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jan 20</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;061</span></div>
+      <div class="title-block"><h2 class="card-zh">BOSSDAY+蛋沙拉三明治(大寒)</h2><p class="card-en">Boss Day Egg Salad Sandwich — Major Cold</p></div>
+      <p class="card-desc">大寒日的 BOSS 三明治，蛋沙拉是最不需要理由的填充物。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">水煮蛋</span><span class="ing-tag">美乃滋</span><span class="ing-tag">吐司</span><span class="ing-tag">芥末</span><span class="ing-tag">生菜</span></div></div></div>
+  </article>
+
+  <!-- No.062 · 浮玉三彩春織恩惠(立春) -->
+  <article class="recipe-card" data-planet="Venus" data-stars="5" data-date="2025-02-03" data-term="大寒" data-no="62">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i062"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Feb 3</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;062</span></div>
+      <div class="title-block"><h2 class="card-zh">浮玉三彩春織恩惠(立春)</h2><p class="card-en">Three-Colour Spring Blessing — Start of Spring</p></div>
+      <p class="card-desc">立春的第一盤，三種顏色，像是春天寄來的問候。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">豆腐</span><span class="ing-tag">菠菜</span><span class="ing-tag">紅蘿蔔</span><span class="ing-tag">柴魚</span><span class="ing-tag">醬油</span></div></div></div>
+  </article>
+
+  <!-- No.063 · 蕃茄濃湯蒜香雞肉墨魚麵 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="2" data-date="2025-02-07" data-term="立春" data-no="63">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i063"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Feb 7</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;063</span></div>
+      <div class="title-block"><h2 class="card-zh">蕃茄濃湯蒜香雞肉墨魚麵</h2><p class="card-en">Tomato Bisque with Garlic Chicken & Squid Ink Pasta</p></div>
+      <p class="card-desc">蕃茄濃湯和墨魚麵，紅與黑的組合，比想像中和諧。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">墨魚麵</span><span class="ing-tag">蕃茄</span><span class="ing-tag">蒜香雞肉</span><span class="ing-tag">羅勒</span><span class="ing-tag">橄欖油</span></div></div></div>
+  </article>
+
+  <!-- No.064 · 鹹湯圓＋波菜馬鈴薯蔬菜湯(元宵) -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="1" data-date="2025-02-12" data-term="立春" data-no="64">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i064"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Feb 12</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;064</span></div>
+      <div class="title-block"><h2 class="card-zh">鹹湯圓＋波菜馬鈴薯蔬菜湯(元宵)</h2><p class="card-en">Savoury Rice Balls & Spinach Potato Soup — Lantern Festival</p></div>
+      <p class="card-desc">元宵的湯圓和蔬菜湯，一甜一鹹，一圓一方。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">湯圓</span><span class="ing-tag">菠菜</span><span class="ing-tag">馬鈴薯</span><span class="ing-tag">紅蘿蔔</span><span class="ing-tag">高湯</span></div></div></div>
+  </article>
+
+  <!-- No.065 · 月津港燈節 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="4" data-date="2025-02-12" data-term="立春" data-no="65">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i065"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Feb 12</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;065</span></div>
+      <div class="title-block"><h2 class="card-zh">月津港燈節</h2><p class="card-en">Yuejin Harbour Lantern Festival</p></div>
+      <p class="card-desc">月津港的燈，倒映在水面上又亮了一次。</p>
+    </div>
+  </article>
+
+  <!-- No.066 · 茄汁蝦仁燴飯(雨水) -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="2" data-date="2025-02-18" data-term="立春" data-no="66">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i066"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Feb 18</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;066</span></div>
+      <div class="title-block"><h2 class="card-zh">茄汁蝦仁燴飯(雨水)</h2><p class="card-en">Tomato Prawn Rice — Rain Water</p></div>
+      <p class="card-desc">雨水節氣，蝦仁在茄汁裡游得很自在。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">蝦仁</span><span class="ing-tag">蕃茄</span><span class="ing-tag">白米</span><span class="ing-tag">太白粉</span><span class="ing-tag">蔥</span></div></div></div>
+  </article>
+
+  <!-- No.067 · 鹽麴雞肉佐金剛米(驚蟄) -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="4" data-date="2025-03-05" data-term="雨水" data-no="67">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i067"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 5</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;067</span></div>
+      <div class="title-block"><h2 class="card-zh">鹽麴雞肉佐金剛米(驚蟄)</h2><p class="card-en">Shio-Koji Chicken with Vajra Rice — Awakening of Insects</p></div>
+      <p class="card-desc">驚蟄的雞肉飯，鹽麴醃了一夜，今天才說話。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">雞腿</span><span class="ing-tag">鹽麴</span><span class="ing-tag">金剛米</span><span class="ing-tag">檸檬</span><span class="ing-tag">迷迭香</span></div></div></div>
+  </article>
+
+  <!-- No.068 · 初春午後公路速寫 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="0" data-date="2025-03-07" data-term="驚蟄" data-no="68">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i068"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 7</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;068</span></div>
+      <div class="title-block"><h2 class="card-zh">初春午後公路速寫</h2><p class="card-en">Early Spring Road Sketch — An Afternoon</p></div>
+      <p class="card-desc">初春的公路，速寫這兩個字也是一種速度。</p>
+    </div>
+  </article>
+
+  <!-- No.069 · 野菜素咖哩佐長濱黑糙米 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="3" data-date="2025-03-10" data-term="驚蟄" data-no="69">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i069"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 10</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;069</span></div>
+      <div class="title-block"><h2 class="card-zh">野菜素咖哩佐長濱黑糙米</h2><p class="card-en">Wild Vegetable Curry with Changbin Black Rice</p></div>
+      <p class="card-desc">長濱的黑糙米嚼起來有一種堅定，素咖哩剛好安撫了它。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">黑糙米</span><span class="ing-tag">野菜</span><span class="ing-tag">素咖哩</span><span class="ing-tag">椰奶</span><span class="ing-tag">薑黃</span></div></div></div>
+  </article>
+
+  <!-- No.070 · 青豆仁蝦煎蛋三明治 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="4" data-date="2025-03-14" data-term="驚蟄" data-no="70">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i070"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 14</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;070</span></div>
+      <div class="title-block"><h2 class="card-zh">青豆仁蝦煎蛋三明治</h2><p class="card-en">Green Pea & Prawn Egg Sandwich</p></div>
+      <p class="card-desc">煎蛋夾進去，青豆和蝦的鮮甜讓三明治變成一件值得的事。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">雞蛋</span><span class="ing-tag">青豆仁</span><span class="ing-tag">蝦仁</span><span class="ing-tag">吐司</span><span class="ing-tag">美乃滋</span></div></div></div>
+  </article>
+
+  <!-- No.071 · 南門花市+孔廟鄉賢祠 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="0" data-date="2025-03-16" data-term="驚蟄" data-no="71">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i071"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 16</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;071</span></div>
+      <div class="title-block"><h2 class="card-zh">南門花市+孔廟鄉賢祠</h2><p class="card-en">South Gate Flower Market & Confucius Temple</p></div>
+      <p class="card-desc">花市和孔廟，同一個午後的兩種時間感。</p>
+    </div>
+  </article>
+
+  <!-- No.072 · 天公廟薑黃麵(觀世音菩薩生日) -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="3" data-date="2025-03-19" data-term="驚蟄" data-no="72">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i072"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 19</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;072</span></div>
+      <div class="title-block"><h2 class="card-zh">天公廟薑黃麵(觀世音菩薩生日)</h2><p class="card-en">Turmeric Noodles from the Heavenly Temple — Guanyin's Birthday</p></div>
+      <p class="card-desc">菩薩生日吃薑黃麵，金黃色的麵條像是一種祈福。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">薑黃麵</span><span class="ing-tag">香菇</span><span class="ing-tag">豆腐</span><span class="ing-tag">蔥</span><span class="ing-tag">醬油</span></div></div></div>
+  </article>
+
+  <!-- No.073 · 紙包春雨春菊石狗公魚(春分) -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="2" data-date="2025-03-20" data-term="驚蟄" data-no="73">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i073"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 20</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;073</span></div>
+      <div class="title-block"><h2 class="card-zh">紙包春雨春菊石狗公魚(春分)</h2><p class="card-en">Paper-Wrapped Fish with Glass Noodles — Spring Equinox</p></div>
+      <p class="card-desc">春分的紙包料理，打開的那一刻，香氣先跑出來。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">石狗公魚</span><span class="ing-tag">春雨</span><span class="ing-tag">春菊</span><span class="ing-tag">薑絲</span><span class="ing-tag">醬油</span></div></div></div>
+  </article>
+
+  <!-- No.074 · 鹹蛋黃義大利麵 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="2" data-date="2025-03-31" data-term="春分" data-no="74">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i074"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Mar 31</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;074</span></div>
+      <div class="title-block"><h2 class="card-zh">鹹蛋黃義大利麵</h2><p class="card-en">Salted Egg Yolk Pasta</p></div>
+      <p class="card-desc">鹹蛋黃裹住義大利麵，沙沙的口感讓人不由自主多夾一口。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">義大利麵</span><span class="ing-tag">鹹蛋黃</span><span class="ing-tag">奶油</span><span class="ing-tag">大蒜</span><span class="ing-tag">蔥花</span></div></div></div>
+  </article>
+
+  <!-- No.075 · 兒童節的水彩畫@大內 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="0" data-date="2025-04-04" data-term="春分" data-no="75">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i075"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 4</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;075</span></div>
+      <div class="title-block"><h2 class="card-zh">兒童節的水彩畫@大內</h2><p class="card-en">Children's Day Watercolour at Danei</p></div>
+      <p class="card-desc">兒童節的水彩，顏色跑出格線也沒關係。</p>
+    </div>
+  </article>
+
+  <!-- No.076 · 西班牙烘蛋佐燻鮭魚 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="4" data-date="2025-04-07" data-term="清明" data-no="76">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i076"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 7</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;076</span></div>
+      <div class="title-block"><h2 class="card-zh">西班牙烘蛋佐燻鮭魚</h2><p class="card-en">Spanish Tortilla with Smoked Salmon</p></div>
+      <p class="card-desc">烘蛋切開是金黃的截面，燻鮭魚鋪在上面像一幅畫。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">雞蛋</span><span class="ing-tag">馬鈴薯</span><span class="ing-tag">燻鮭魚</span><span class="ing-tag">橄欖油</span><span class="ing-tag">蒔蘿</span></div></div></div>
+  </article>
+
+  <!-- No.077 · 鰻魚蕎麥麵 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="5" data-date="2025-04-18" data-term="清明" data-no="77">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i077"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 18</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;077</span></div>
+      <div class="title-block"><h2 class="card-zh">鰻魚蕎麥麵</h2><p class="card-en">Eel Soba</p></div>
+      <p class="card-desc">鰻魚的焦香和蕎麥的土氣，兩者都不讓步，卻意外合拍。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">蕎麥麵</span><span class="ing-tag">鰻魚</span><span class="ing-tag">醬油</span><span class="ing-tag">味醂</span><span class="ing-tag">山椒</span></div></div></div>
+  </article>
+
+  <!-- No.078 · 鰻魚三明治(穀雨後) -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="5" data-date="2025-04-22" data-term="穀雨" data-no="78">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i078"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 22</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;078</span></div>
+      <div class="title-block"><h2 class="card-zh">鰻魚三明治(穀雨後)</h2><p class="card-en">Eel Sandwich — After Grain Rain</p></div>
+      <p class="card-desc">穀雨後，鰻魚三明治是對這個季節最好的總結。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">鰻魚</span><span class="ing-tag">吐司</span><span class="ing-tag">美乃滋</span><span class="ing-tag">小黃瓜</span><span class="ing-tag">山椒</span></div></div></div>
+  </article>
+
+  <!-- No.079 · 蛋沙拉+洋蔥鮪魚三明治 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="4" data-date="2025-04-28" data-term="穀雨" data-no="79">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i079"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Apr 28</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;079</span></div>
+      <div class="title-block"><h2 class="card-zh">蛋沙拉+洋蔥鮪魚三明治</h2><p class="card-en">Egg Salad & Tuna Onion Sandwich</p></div>
+      <p class="card-desc">兩種三明治，兩種心情，一個午餐解決。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">水煮蛋</span><span class="ing-tag">鮪魚</span><span class="ing-tag">洋蔥</span><span class="ing-tag">美乃滋</span><span class="ing-tag">吐司</span></div></div></div>
+  </article>
+
+  <!-- No.080 · 北非小米沙拉 +土耳其Kebab -->
+  <article class="recipe-card" data-planet="Mars" data-stars="5" data-date="2025-05-09" data-term="立夏" data-no="80">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i080"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">May 9</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;080</span></div>
+      <div class="title-block"><h2 class="card-zh">北非小米沙拉 +土耳其Kebab</h2><p class="card-en">North African Couscous Salad with Turkish Kebab</p></div>
+      <p class="card-desc">小米沙拉和烤肉，北非和土耳其在盤子裡握了手。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">小米</span><span class="ing-tag">Kebab</span><span class="ing-tag">番茄</span><span class="ing-tag">黃瓜</span><span class="ing-tag">薄荷</span></div></div></div>
+  </article>
+
+  <!-- No.081 · 煙花女義大利麵_清炒海鮮筆管麵 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="3" data-date="2025-05-16" data-term="立夏" data-no="81">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i081"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">May 16</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;081</span></div>
+      <div class="title-block"><h2 class="card-zh">煙花女義大利麵_清炒海鮮筆管麵</h2><p class="card-en">Puttanesca with Seafood Penne</p></div>
+      <p class="card-desc">煙花女的辣勁和海鮮的鮮甜，吵架吵出了好味道。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">筆管麵</span><span class="ing-tag">海鮮</span><span class="ing-tag">辣椒</span><span class="ing-tag">橄欖</span><span class="ing-tag">蒜頭</span></div></div></div>
+  </article>
+
+  <!-- No.082 · 越南春捲(小滿) -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="5" data-date="2025-05-21" data-term="小滿" data-no="82">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i082"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">May 21</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;082</span></div>
+      <div class="title-block"><h2 class="card-zh">越南春捲(小滿)</h2><p class="card-en">Vietnamese Spring Rolls — Grain Buds</p></div>
+      <p class="card-desc">小滿的春捲，蔬菜和米紙都還帶著清晨的水氣。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">米紙</span><span class="ing-tag">蝦仁</span><span class="ing-tag">薄荷</span><span class="ing-tag">米粉</span><span class="ing-tag">生菜</span></div></div></div>
+  </article>
+
+  <!-- No.083 · 香煎鮭魚鴨胸佐冰湖野米甜波菜 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="4" data-date="2025-05-29" data-term="小滿" data-no="83">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i083"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">May 29</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;083</span></div>
+      <div class="title-block"><h2 class="card-zh">香煎鮭魚鴨胸佐冰湖野米甜波菜</h2><p class="card-en">Pan-Seared Salmon & Duck Breast with Wild Rice</p></div>
+      <p class="card-desc">鮭魚和鴨胸同時上桌，是一種很北歐的奢侈。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">鮭魚</span><span class="ing-tag">鴨胸</span><span class="ing-tag">野米</span><span class="ing-tag">菠菜</span><span class="ing-tag">奶油</span></div></div></div>
+  </article>
+
+  <!-- No.084 · 法式臺味鹹派(芒種後) -->
+  <article class="recipe-card" data-planet="Mars" data-stars="5" data-date="2025-06-06" data-term="芒種" data-no="84">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i084"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jun 6</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;084</span></div>
+      <div class="title-block"><h2 class="card-zh">法式臺味鹹派(芒種後)</h2><p class="card-en">Franco-Taiwanese Savoury Quiche — After Grain in Ear</p></div>
+      <p class="card-desc">芒種後的鹹派，法式外殼裡藏著台灣的食材，說不清也不必說清。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">派皮</span><span class="ing-tag">雞蛋</span><span class="ing-tag">鮮奶油</span><span class="ing-tag">起司</span><span class="ing-tag">台式食材</span></div></div></div>
+  </article>
+
+  <!-- No.085 · 紅燒牛肉燉飯 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="3" data-date="2025-06-13" data-term="芒種" data-no="85">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i085"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jun 13</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;085</span></div>
+      <div class="title-block"><h2 class="card-zh">紅燒牛肉燉飯</h2><p class="card-en">Braised Beef Rice</p></div>
+      <p class="card-desc">紅燒的醬色滲進米飯，牛肉用筷子一撥就散。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">牛腩</span><span class="ing-tag">醬油</span><span class="ing-tag">八角</span><span class="ing-tag">白米</span><span class="ing-tag">蔥</span></div></div></div>
+  </article>
+
+  <!-- No.086 · 逐鹿部落開箱66小書 -->
+  <article class="recipe-card" data-planet="Wandering" data-stars="0" data-date="2025-06-15" data-term="芒種" data-no="86">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i086"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">星球漫遊</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jun 15</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;086</span></div>
+      <div class="title-block"><h2 class="card-zh">逐鹿部落開箱66小書</h2><p class="card-en">Unboxing the 66 Booklet at Zhùlù Village</p></div>
+      <p class="card-desc">66 小書在部落被打開，像是一個秘密找到了歸處。</p>
+    </div>
+  </article>
+
+  <!-- No.087 · BOSS三明治 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="3" data-date="2025-06-18" data-term="芒種" data-no="87">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i087"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jun 18</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;087</span></div>
+      <div class="title-block"><h2 class="card-zh">BOSS三明治</h2><p class="card-en">The Boss Sandwich</p></div>
+      <p class="card-desc">BOSS 三明治，每次出現都有一種隆重感。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">豬排</span><span class="ing-tag">吐司</span><span class="ing-tag">高麗菜</span><span class="ing-tag">美乃滋</span><span class="ing-tag">芥末</span></div></div></div>
+  </article>
+
+  <!-- No.088 · 挪威烤鴨?(小暑後) -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="5" data-date="2025-07-08" data-term="小暑" data-no="88">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i088"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jul 8</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;088</span></div>
+      <div class="title-block"><h2 class="card-zh">挪威烤鴨?(小暑後)</h2><p class="card-en">Norwegian Roast Duck? — After Minor Heat</p></div>
+      <p class="card-desc">問號留在菜名裡，烤鴨的味道卻很確定。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">鴨</span><span class="ing-tag">橙汁</span><span class="ing-tag">迷迭香</span><span class="ing-tag">大蒜</span><span class="ing-tag">蜂蜜</span></div></div></div>
+  </article>
+
+  <!-- No.089 · 油雞麻醬天使冷麵Angel Hair -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="5" data-date="2025-07-16" data-term="小暑" data-no="89">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i089"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jul 16</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;089</span></div>
+      <div class="title-block"><h2 class="card-zh">油雞麻醬天使冷麵Angel Hair</h2><p class="card-en">Angel Hair with Sesame Oil Chicken</p></div>
+      <p class="card-desc">天使麵細如髮絲，裹上麻醬和油雞，是一道安靜的夏天。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">天使麵</span><span class="ing-tag">油雞</span><span class="ing-tag">芝麻醬</span><span class="ing-tag">小黃瓜</span><span class="ing-tag">醬油</span></div></div></div>
+  </article>
+
+  <!-- No.090 · 墨西哥捲burritos -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="3" data-date="2025-07-24" data-term="大暑" data-no="90">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i090"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Jul 24</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;090</span></div>
+      <div class="title-block"><h2 class="card-zh">墨西哥捲burritos</h2><p class="card-en">Burritos</p></div>
+      <p class="card-desc">Burrito 的份量每次都超過預期，折起來那一刻需要一點技術。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">墨西哥餅皮</span><span class="ing-tag">牛絞肉</span><span class="ing-tag">黑豆</span><span class="ing-tag">起司</span><span class="ing-tag">酸奶</span></div></div></div>
+  </article>
+
+  <!-- No.091 · 匈牙利燉牛肉Goulash Hungarian Beef Stew -->
+  <article class="recipe-card" data-planet="Mars" data-stars="4" data-date="2025-08-01" data-term="大暑" data-no="91">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i091"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 1</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;091</span></div>
+      <div class="title-block"><h2 class="card-zh">匈牙利燉牛肉Goulash Hungarian Beef Stew</h2><p class="card-en">Hungarian Goulash</p></div>
+      <p class="card-desc">Goulash 的紅椒粉把湯底燒成深紅，牛肉燉到向湯汁投降。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">牛肉</span><span class="ing-tag">紅椒粉</span><span class="ing-tag">洋蔥</span><span class="ing-tag">馬鈴薯</span><span class="ing-tag">酸奶</span></div></div></div>
+  </article>
+
+  <!-- No.092 · 威靈頓牛排Beef Wellington -->
+  <article class="recipe-card" data-planet="Mars" data-stars="5" data-date="2025-08-08" data-term="立秋" data-no="92">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i092"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 8</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;092</span></div>
+      <div class="title-block"><h2 class="card-zh">威靈頓牛排Beef Wellington</h2><p class="card-en">Beef Wellington</p></div>
+      <p class="card-desc">威靈頓牛排的酥皮層層疊疊，切開的那一刀很有儀式感。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">牛菲力</span><span class="ing-tag">酥皮</span><span class="ing-tag">蘑菇醬</span><span class="ing-tag">芥末</span><span class="ing-tag">火腿</span></div></div></div>
+  </article>
+
+  <!-- No.093 · 蒙特婁Montreal Bagel烤鴨貝果 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="4" data-date="2025-08-13" data-term="立秋" data-no="93">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i093"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 13</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;093</span></div>
+      <div class="title-block"><h2 class="card-zh">蒙特婁Montreal Bagel烤鴨貝果</h2><p class="card-en">Montreal Bagel with Roast Duck</p></div>
+      <p class="card-desc">蒙特婁貝果比紐約的小，比紐約的甜，配烤鴨是個意外的對話。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">蒙特婁貝果</span><span class="ing-tag">烤鴨</span><span class="ing-tag">奶油起司</span><span class="ing-tag">小黃瓜</span><span class="ing-tag">芝麻</span></div></div></div>
+  </article>
+
+  <!-- No.094 · 西班牙JamonSerrano火腿起司盤 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="4" data-date="2025-08-21" data-term="立秋" data-no="94">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i094"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 21</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;094</span></div>
+      <div class="title-block"><h2 class="card-zh">西班牙JamonSerrano火腿起司盤</h2><p class="card-en">Jamón Serrano & Cheese Board</p></div>
+      <p class="card-desc">Jamón 切薄片，和起司一起鋪盤，這種吃法本身就是一種生活態度。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">Jamón Serrano</span><span class="ing-tag">曼切格起司</span><span class="ing-tag">蜂蜜</span><span class="ing-tag">無花果</span><span class="ing-tag">麵包</span></div></div></div>
+  </article>
+
+  <!-- No.095 · 希臘風香煎鰈魚花枝佐中東鷹嘴豆泥 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="5" data-date="2025-08-29" data-term="處暑" data-no="95">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i095"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 29</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;095</span></div>
+      <div class="title-block"><h2 class="card-zh">希臘風香煎鰈魚花枝佐中東鷹嘴豆泥</h2><p class="card-en">Greek-Style Plaice & Squid with Hummus</p></div>
+      <p class="card-desc">鰈魚和花枝一起煎，地中海的香氣混著中東的豆泥，竟然說得通。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">鰈魚</span><span class="ing-tag">花枝</span><span class="ing-tag">鷹嘴豆泥</span><span class="ing-tag">橄欖油</span><span class="ing-tag">奧勒岡</span></div></div></div>
+  </article>
+
+  <!-- No.096 · 希臘風香煎鰈魚花枝佐中東鷹嘴豆泥 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="3" data-date="2025-08-29" data-term="處暑" data-no="96">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i096"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Aug 29</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;096</span></div>
+      <div class="title-block"><h2 class="card-zh">希臘風香煎鰈魚花枝佐中東鷹嘴豆泥</h2><p class="card-en">Greek-Style Plaice & Squid with Hummus</p></div>
+      <p class="card-desc">鰈魚和花枝一起煎，地中海的香氣混著中東的豆泥，竟然說得通。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">鰈魚</span><span class="ing-tag">花枝</span><span class="ing-tag">鷹嘴豆泥</span><span class="ing-tag">橄欖油</span><span class="ing-tag">奧勒岡</span></div></div></div>
+  </article>
+
+  <!-- No.097 · 福爾摩沙海森堡 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="4" data-date="2025-09-02" data-term="處暑" data-no="97">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i097"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 2</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;097</span></div>
+      <div class="title-block"><h2 class="card-zh">福爾摩沙海森堡</h2><p class="card-en">Formosa Sea Burger</p></div>
+      <p class="card-desc">台灣食材做的漢堡，名字帶著一點驕傲。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">在地牛肉</span><span class="ing-tag">台灣起司</span><span class="ing-tag">漢堡包</span><span class="ing-tag">蕃茄</span><span class="ing-tag">生菜</span></div></div></div>
+  </article>
+
+  <!-- No.098 · 藤原小日常-鮪魚小法國佐鷹嘴豆泥球 -->
+  <article class="recipe-card" data-planet="Venus" data-stars="2" data-date="2025-09-08" data-term="白露" data-no="98">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i098"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">金星 Venus</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 8</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;098</span></div>
+      <div class="title-block"><h2 class="card-zh">藤原小日常-鮪魚小法國佐鷹嘴豆泥球</h2><p class="card-en">Fujiwara Daily — Tuna Baguette with Hummus</p></div>
+      <p class="card-desc">小法國麵包配鷹嘴豆泥，是一個午後很安靜的選擇。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">小法國</span><span class="ing-tag">鮪魚</span><span class="ing-tag">鷹嘴豆泥</span><span class="ing-tag">橄欖油</span><span class="ing-tag">檸檬</span></div></div></div>
+  </article>
+
+  <!-- No.099 · 泰式涼拌豬肉LaabMoo_泰式蝦餅 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="5" data-date="2025-09-10" data-term="白露" data-no="99">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i099"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 10</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;099</span></div>
+      <div class="title-block"><h2 class="card-zh">泰式涼拌豬肉LaabMoo_泰式蝦餅</h2><p class="card-en">Thai Laab Moo with Prawn Cake</p></div>
+      <p class="card-desc">Laab Moo 的酸辣和蝦餅的香脆，泰式的熱帶節奏。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">豬絞肉</span><span class="ing-tag">蝦餅</span><span class="ing-tag">魚露</span><span class="ing-tag">檸檬</span><span class="ing-tag">辣椒</span></div></div></div>
+  </article>
+
+  <!-- No.100 · Perfect Indian Rice +Master Masala Recipe -->
+  <article class="recipe-card" data-planet="Knowledge" data-stars="0" data-date="2025-09-16" data-term="白露" data-no="100">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i100"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">Knowledge</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 16</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;100</span></div>
+      <div class="title-block"><h2 class="card-zh">Perfect Indian Rice +Master Masala Recipe</h2><p class="card-en">Perfect Indian Rice & Master Masala</p></div>
+      <p class="card-desc">完美印度米飯，香料的配比是一種代代相傳的語言。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">印度香米</span><span class="ing-tag">孜然</span><span class="ing-tag">薑黃</span><span class="ing-tag">芫荽</span><span class="ing-tag">Garam Masala</span></div></div></div>
+  </article>
+
+  <!-- No.101 · 印度香料蔬菜咖哩紅糟肉佐印度Basmati Rice -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="3" data-date="2025-09-16" data-term="白露" data-no="101">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i101"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 16</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;101</span></div>
+      <div class="title-block"><h2 class="card-zh">印度香料蔬菜咖哩紅糟肉佐印度Basmati Rice</h2><p class="card-en">Indian Spice Vegetable Curry with Red Yeast Pork & Basmati</p></div>
+      <p class="card-desc">Basmati 米粒修長，香料咖哩和紅糟肉一起蓋上去，很熱鬧。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">Basmati米</span><span class="ing-tag">紅糟肉</span><span class="ing-tag">蔬菜咖哩</span><span class="ing-tag">薑黃</span><span class="ing-tag">孜然</span></div></div></div>
+  </article>
+
+  <!-- No.102 · Voyage and Spices 航海與香料 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="4" data-date="2025-09-18" data-term="白露" data-no="102">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i102"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 18</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;102</span></div>
+      <div class="title-block"><h2 class="card-zh">Voyage and Spices 航海與香料</h2><p class="card-en">Voyage and Spices</p></div>
+      <p class="card-desc">香料是航海時代的貨幣，這道菜用香料說了一段歷史。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">丁香</span><span class="ing-tag">肉桂</span><span class="ing-tag">薑黃</span><span class="ing-tag">孜然</span><span class="ing-tag">芫荽</span></div></div></div>
+  </article>
+
+  <!-- No.103 · 泰式海陸Laab feat. 徐爸牛肉 -->
+  <article class="recipe-card" data-planet="Mars" data-stars="5" data-date="2025-09-19" data-term="白露" data-no="103">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i103"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">火星 Mars</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 19</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;103</span></div>
+      <div class="title-block"><h2 class="card-zh">泰式海陸Laab feat. 徐爸牛肉</h2><p class="card-en">Land & Sea Laab feat. Dad's Beef</p></div>
+      <p class="card-desc">海陸雙拼的 Laab，徐爸的牛肉是這道菜的靈魂。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">牛肉</span><span class="ing-tag">海鮮</span><span class="ing-tag">魚露</span><span class="ing-tag">檸檬汁</span><span class="ing-tag">辣椒</span></div></div></div>
+  </article>
+
+  <!-- No.104 · Cooking for whole grains 五穀雜糧煮法 -->
+  <article class="recipe-card" data-planet="Knowledge" data-stars="0" data-date="2025-09-23" data-term="秋分" data-no="104">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i104"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">Knowledge</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 23</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;104</span></div>
+      <div class="title-block"><h2 class="card-zh">Cooking for whole grains 五穀雜糧煮法</h2><p class="card-en">Cooking for Whole Grains</p></div>
+      <p class="card-desc">五穀雜糧的煮法，每一種穀物都有自己的時間表。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">糙米</span><span class="ing-tag">燕麥</span><span class="ing-tag">小米</span><span class="ing-tag">薏仁</span><span class="ing-tag">黑米</span></div></div></div>
+  </article>
+
+  <!-- No.105 · 乾煎松阪豬佐秋分雜米飯 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="3" data-date="2025-09-23" data-term="秋分" data-no="105">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i105"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 23</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;105</span></div>
+      <div class="title-block"><h2 class="card-zh">乾煎松阪豬佐秋分雜米飯</h2><p class="card-en">Pan-Seared Pork Cheek with Autumn Grain Rice</p></div>
+      <p class="card-desc">秋分的松阪豬，乾煎出油花，配上雜米飯的嚼勁。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">松阪豬</span><span class="ing-tag">雜米</span><span class="ing-tag">醬油</span><span class="ing-tag">味醂</span><span class="ing-tag">蔥</span></div></div></div>
+  </article>
+
+  <!-- No.106 · 藤原日常三明治-蛋沙拉+鮪魚 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="4" data-date="2025-09-25" data-term="秋分" data-no="106">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i106"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Sep 25</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;106</span></div>
+      <div class="title-block"><h2 class="card-zh">藤原日常三明治-蛋沙拉+鮪魚</h2><p class="card-en">Fujiwara Daily Sandwich — Egg Salad & Tuna</p></div>
+      <p class="card-desc">日常三明治，蛋沙拉和鮪魚是最熟悉的搭配。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">水煮蛋</span><span class="ing-tag">鮪魚</span><span class="ing-tag">美乃滋</span><span class="ing-tag">吐司</span><span class="ing-tag">芥末</span></div></div></div>
+  </article>
+
+  <!-- No.107 · 藤原壽司店 -->
+  <article class="recipe-card" data-planet="Mercury" data-stars="4" data-date="2025-10-01" data-term="秋分" data-no="107">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i107"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">水星 Mercury</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 1</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;107</span></div>
+      <div class="title-block"><h2 class="card-zh">藤原壽司店</h2><p class="card-en">Fujiwara Sushi House</p></div>
+      <p class="card-desc">家裡的壽司店開張，每個捏好的壽司都有一點不對稱的可愛。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">壽司飯</span><span class="ing-tag">生魚片</span><span class="ing-tag">海苔</span><span class="ing-tag">哇沙米</span><span class="ing-tag">醬油</span></div></div></div>
+  </article>
+
+  <!-- No.108 · 貝勒蘑菇三明治 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="5" data-date="2025-10-09" data-term="寒露" data-no="108">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i108"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 9</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;108</span></div>
+      <div class="title-block"><h2 class="card-zh">貝勒蘑菇三明治</h2><p class="card-en">Béller Mushroom Sandwich</p></div>
+      <p class="card-desc">蘑菇三明治，蘑菇多到有點任性，剛好。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">蘑菇</span><span class="ing-tag">吐司</span><span class="ing-tag">奶油</span><span class="ing-tag">百里香</span><span class="ing-tag">大蒜</span></div></div></div>
+  </article>
+
+  <!-- No.109 · 藤原貝果-焗烤蘑菇起司貝果 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="5" data-date="2025-10-14" data-term="寒露" data-no="109">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i109"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 14</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;109</span></div>
+      <div class="title-block"><h2 class="card-zh">藤原貝果-焗烤蘑菇起司貝果</h2><p class="card-en">Fujiwara Bagel — Baked Mushroom Cheese</p></div>
+      <p class="card-desc">自家烤的貝果，焗烤起司在上面鼓出了一個小泡。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">貝果</span><span class="ing-tag">蘑菇</span><span class="ing-tag">起司</span><span class="ing-tag">奶油</span><span class="ing-tag">百里香</span></div></div></div>
+  </article>
+
+  <!-- No.110 · 南洋沙嗲黃金豬-霜降風 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="5" data-date="2025-10-23" data-term="霜降" data-no="110">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i110"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 23</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;110</span></div>
+      <div class="title-block"><h2 class="card-zh">南洋沙嗲黃金豬-霜降風</h2><p class="card-en">Golden Satay Pork — Frost's Descent</p></div>
+      <p class="card-desc">霜降時節的沙嗲，薑黃和椰奶把豬肉染成金色。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">豬肉</span><span class="ing-tag">沙嗲醬</span><span class="ing-tag">椰奶</span><span class="ing-tag">薑黃</span><span class="ing-tag">花生</span></div></div></div>
+  </article>
+
+  <!-- No.111 · 鴨胸蕎麥麵 -->
+  <article class="recipe-card" data-planet="Jupiter" data-stars="3" data-date="2025-10-28" data-term="霜降" data-no="111">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i111"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">木星 Jupiter</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="s">☆</span><span class="s">☆</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Oct 28</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;111</span></div>
+      <div class="title-block"><h2 class="card-zh">鴨胸蕎麥麵</h2><p class="card-en">Duck Breast Soba</p></div>
+      <p class="card-desc">鴨胸切片鋪在蕎麥麵上，粉紅色的截面很好看。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">鴨胸</span><span class="ing-tag">蕎麥麵</span><span class="ing-tag">醬油</span><span class="ing-tag">味醂</span><span class="ing-tag">蔥</span></div></div></div>
+  </article>
+
+  <!-- No.112 · 鰻魚壽司蛋糕 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="5" data-date="2025-11-06" data-term="霜降" data-no="112">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i112"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Nov 6</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;112</span></div>
+      <div class="title-block"><h2 class="card-zh">鰻魚壽司蛋糕</h2><p class="card-en">Eel Sushi Cake</p></div>
+      <p class="card-desc">壽司做成蛋糕的形狀，切開的那一刀有雙重儀式感。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">壽司飯</span><span class="ing-tag">鰻魚</span><span class="ing-tag">小黃瓜</span><span class="ing-tag">海苔</span><span class="ing-tag">芝麻</span></div></div></div>
+  </article>
+
+  <!-- No.113 · 勃艮第紅酒燉牛肉 -->
+  <article class="recipe-card" data-planet="Saturn" data-stars="5" data-date="2025-11-13" data-term="立冬" data-no="113">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i113"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">土星 Saturn</span><span class="tag-stars"><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span><span class="sf">★</span></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">Nov 13</span><span class="dy">2025</span></div><span class="card-no">No.&thinsp;113</span></div>
+      <div class="title-block"><h2 class="card-zh">勃艮第紅酒燉牛肉</h2><p class="card-en">Bœuf Bourguignon</p></div>
+      <p class="card-desc">勃艮第的紅酒把牛肉煮成了另一種深沉，要慢慢吃。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">牛腩</span><span class="ing-tag">勃艮第紅酒</span><span class="ing-tag">洋蔥</span><span class="ing-tag">紅蘿蔔</span><span class="ing-tag">百里香</span></div></div></div>
+  </article>
+
+  <!-- No.114 · Atom Space -->
+  <article class="recipe-card" data-planet="Other" data-stars="0" data-date="9999-12-31" data-term="none" data-no="114">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i114"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag"></span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">—</span></div><span class="card-no">No.&thinsp;114</span></div>
+      <div class="title-block"><h2 class="card-zh">Atom Space</h2><p class="card-en">Atom Space</p></div>
+      <p class="card-desc">Atom Space，一個名字本身就是一種空間感的地方。</p>
+    </div>
+  </article>
+
+  <!-- No.115 · Bistronomy -->
+  <article class="recipe-card" data-planet="Knowledge" data-stars="0" data-date="9999-12-31" data-term="none" data-no="115">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i115"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">Knowledge</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">—</span></div><span class="card-no">No.&thinsp;115</span></div>
+      <div class="title-block"><h2 class="card-zh">Bistronomy</h2><p class="card-en">Bistronomy</p></div>
+      <p class="card-desc">Bistronomy，餐酒館哲學的精髓：不端著，但很好吃。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">主廚食材</span><span class="ing-tag">時令蔬菜</span><span class="ing-tag">醬汁</span><span class="ing-tag">香草</span><span class="ing-tag">紅酒</span></div></div></div>
+  </article>
+
+  <!-- No.116 · Fusion：無國界風格 -->
+  <article class="recipe-card" data-planet="Knowledge" data-stars="0" data-date="9999-12-31" data-term="none" data-no="116">
+    <div class="card-visual">
+      <div class="food-illus"><svg viewBox="0 0 120 90" aria-hidden="true"><use href="illus.svg#i116"></use></svg></div>
+      <div class="visual-overlay"><span class="season-tag">Knowledge</span></div>
+    </div>
+    <div class="card-body">
+      <div class="date-no-row"><div class="card-date"><span class="ds">—</span></div><span class="card-no">No.&thinsp;116</span></div>
+      <div class="title-block"><h2 class="card-zh">Fusion：無國界風格</h2><p class="card-en">Fusion: Borderless Cuisine</p></div>
+      <p class="card-desc">無國界，意思是所有食材都可以是老朋友。</p>
+    </div>
+    <button class="vr-btn" onclick="toggleExpand(this)" aria-expanded="false"><span class="vrl">View Recipe</span><svg class="vra" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 6l4 4 4-4"/></svg></button>
+    <div class="rec-exp" hidden><div class="rec-inner"><p class="exp-lbl">Ingredients</p><div class="exp-ings"><span class="ing-tag">跨國食材</span><span class="ing-tag">香料</span><span class="ing-tag">醬汁</span><span class="ing-tag">香草</span><span class="ing-tag">時令食材</span></div></div></div>
+  </article>
+    <div class="empty-state" id="empty"><p class="empty-text">No entries found.</p></div>
+  </main>
+
+  <div class="pagination" id="pagination">
+    <button class="page-btn" id="pagePrev" onclick="prevPage()">‹ Prev</button>
+    <div class="page-numbers" id="pageNumbers"></div>
+    <button class="page-btn" id="pageNext" onclick="nextPage()">Next ›</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-col footer-col--logo">
+      <span class="footer-brand">66-Planet</span>
+    </div>
+    <div class="footer-col footer-col--mid">
+      <p class="footer-tagline">「在星球間策劃一場無國界饗宴」不只是一顆星球，而是一場為味覺與靈魂策劃的宇宙饗宴。每一次料理，都是一次對未知星球的探索。</p>
+    </div>
+    <div class="footer-col footer-col--right">
+      <span class="footer-note">A Sibling Universe &nbsp;·&nbsp; 116 entries &nbsp;·&nbsp; 2023–2025</span>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

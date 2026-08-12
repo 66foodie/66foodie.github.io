@@ -1,0 +1,987 @@
+/* ──────────────────────────────────────────
+   66-Planet · style.css  v6.1
+   ── 字級全面上調一級（料理標題除外）
+   ── 新增 Type Scale 與 Planet Palette 兩組 token
+   ────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --white:#fafaf8;--off:#f2f1ed;--border:#e4e2dc;
+  --ink:#1c1c1a;--ink-2:#5a5a56;--ink-3:#9a9994;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Lato',system-ui,sans-serif;
+  --display:'Pacifico',cursive;
+  --spring-bg:#eef0e8;--spring-mid:#d4d9c8;
+  --spring-text:#3a4232;--spring-muted:#7a8a6a;
+  --en-color:#6b7a4a;
+
+
+  /* ══════════════════════════════════════════════
+     TYPE SCALE · 字級刻度（v6.1 — 全站上調一級）
+     ──────────────────────────────────────────────
+     全站字級唯一來源。要再放大/縮小，只改這裡。
+     括號內為 v6 原值，方便隨時對照或回退。
+     ══════════════════════════════════════════════ */
+  --fs-4xs:  0.65rem;   /* was .63 — 節氣英文 */
+  --fs-3xs:  0.74rem;   /* was .72 — 星球標籤、裝飾星點 */
+  --fs-2xs:  0.80rem;   /* was .78 — uppercase 微標籤、星等、Sort */
+  --fs-xs:   0.88rem;   /* was .87 — 年份、footer 註記、節氣中文 */
+  --fs-sm:   0.95rem;   /* was .94 — 篩選鈕、計數、Reset、lore 內文 */
+  --fs-base: 1rem;      /* was .99 — 食材標籤、tooltip 說明 */
+  --fs-md:   1.04rem;   /* was 1.04 — 宣言中文、footer 標語 */
+  --fs-lg:   1.09rem;   /* was 1.10 — 卡片描述、No.、宣言英文 */
+  --fs-xl:   1.13rem;   /* was 1.14 — 卡片英文標題 */
+  --fs-2xl:  1.19rem;   /* was 1.21 — 日期主體、header 副標 */
+  --fs-3xl:  1.26rem;   /* was 1.29 — 空狀態、星球誌標題 */
+  --fs-title:1.30rem;   /* was 1.35 — 料理標題（本次一併等比放大） */
+
+  /* ══════════════════════════════════════════════
+     PLANET PALETTE · 星球色板（v6.1 新增）
+     ──────────────────────────────────────────────
+     取代原本散落在 index.html 每張卡片上的行內色碼。
+     --p-rgb : 主色（rgb 三數值，供 rgba() 調透明度用）
+     --p-ink : 文字色
+     --p-bg  : 插圖底色
+     新增一顆星球 = 在下方多加一行，其餘全部自動繼承。
+     ══════════════════════════════════════════════ */
+
+  /* ★ 換成你的 Unsplash 圖片直連 URL
+     步驟：到 Unsplash 頁面 → 右鍵圖片 → Copy Image Address
+     格式：https://images.unsplash.com/photo-XXXX?w=1600&q=80 */
+  --hero-img: url('https://images.unsplash.com/photo-1502472584811-0a2f2feb8968?w=1600&q=80&auto=format&fit=crop');
+}
+
+html{font-size:16px}
+body{background:var(--white);color:var(--ink);font-family:var(--sans);font-weight:300;min-height:100vh;display:flex;flex-direction:column}
+
+/* ══════════════════════
+   HEADER — 加高，背景圖
+══════════════════════ */
+.site-header{
+  background: var(--hero-img) center 40%/cover no-repeat;
+  border-bottom: none;
+  padding: 4rem 3rem 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+}
+.site-header::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(10,20,8,0.38) 0%,rgba(10,20,8,0.58) 100%);
+  pointer-events:none;
+}
+.brand{display:flex;align-items:center;gap:1.75rem;position:relative;z-index:1}
+.brand-name{
+  font-family:var(--display);
+  font-size:3.6rem;
+  color:#ffffff;
+  line-height:1;
+  white-space:nowrap;
+  text-shadow:0 2px 16px rgba(0,0,0,0.35);
+}
+.brand-divider{width:1px;height:2rem;background:rgba(255,255,255,0.35);flex-shrink:0}
+.brand-sub{
+  font-size:var(--fs-2xl);
+  font-weight:300;
+  letter-spacing:0.03em;
+  color:rgba(255,255,255,0.9);
+  line-height:1.75;
+  text-shadow:0 1px 8px rgba(0,0,0,0.25);
+  white-space: nowrap;
+}
+
+/* ══════════════════════
+   FILTER BAR — 延續底圖
+══════════════════════ */
+.filter-bar{
+  background: var(--hero-img) center 70%/cover no-repeat;
+  position: relative;
+  padding: 1.1rem 3rem;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.filter-bar::before{
+  content:'';position:absolute;inset:0;
+  background:rgba(10,20,8,0.65);
+  pointer-events:none;
+}
+.filter-label{font-family:var(--serif);font-size:var(--fs-base);font-style:italic;color:rgba(255,255,255,0.65);margin-right:.5rem;position:relative;z-index:1}
+.filter-group{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;position:relative;z-index:1}
+.filter-group+.filter-group{padding-left:.75rem;border-left:1px solid rgba(255,255,255,0.18)}
+.filter-btn{
+  font-family:var(--serif);font-size:var(--fs-sm);font-style:italic;
+  color:rgba(255,255,255,0.88);
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.28);
+  border-radius:999px 980px 995px 985px/988px 992px 980px 996px;
+  padding:.35rem 1rem;cursor:pointer;white-space:nowrap;transition:all .2s;
+  backdrop-filter:blur(6px);
+  position:relative;z-index:1;
+}
+.filter-btn:hover{background:rgba(255,255,255,0.2);border-color:rgba(255,255,255,0.5);color:#fff}
+.filter-btn.active{background:rgba(255,255,255,0.94);border-color:transparent;color:var(--ink)}
+
+/* Reset 按鈕 — filter bar 右側，顏色與分類按鈕有所區格 */
+.filter-reset-btn {
+  position: relative;
+  z-index: 1;
+  font-family: var(--sans);
+  font-size:var(--fs-sm);
+  font-weight: 400;
+  letter-spacing: .08em;
+  color: #f0dba6;
+  background: rgba(201,169,98,0.16);
+  border: 1px solid rgba(201,169,98,0.55);
+  border-radius: 999px;
+  padding: .38rem 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all .2s;
+  margin-left: .75rem;
+  backdrop-filter: blur(6px);
+}
+.filter-reset-btn:hover {
+  background: #c9a962;
+  color: var(--ink);
+  border-color: transparent;
+}
+
+/* ══════════════════════
+   STATS / MANIFESTO
+══════════════════════ */
+.stats-bar{
+  padding: 2.5rem 3rem 2rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--off);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.manifesto-block{
+  max-width: 1300px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.manifesto-en{
+  font-family: var(--serif);
+  font-size:var(--fs-sm);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--ink-2);
+  letter-spacing: 0.01em;
+}
+.manifesto-zh{
+  font-size:var(--fs-xs);
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--ink-2);
+  letter-spacing: 0.05em;
+}
+.stats-meta{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.stats-count{font-family:var(--serif);font-size:var(--fs-sm);font-style:italic;color:var(--ink-3)}
+.stats-count strong{font-style:normal;color:var(--ink-2);font-weight:400}
+.stats-sort{display:flex;gap:.35rem;align-items:center}
+.sort-label{font-size:var(--fs-2xs);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-right:.25rem}
+.sort-btn{font-family:var(--sans);font-size:var(--fs-2xs);font-weight:300;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);background:none;border:none;cursor:pointer;padding:.2rem .4rem;transition:color .2s}
+.sort-btn:hover,.sort-btn.active{color:var(--ink)}
+.sort-btn.active{text-decoration:underline;text-underline-offset:3px}
+/* Reset 按鈕 */
+.reset-btn {
+  font-family: var(--sans);
+  font-size:var(--fs-sm);
+  font-weight: 300;
+  color: var(--ink-3);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.35rem;
+  transition: all 0.2s;
+  line-height: 1;
+}
+.reset-btn:hover {
+  color: var(--ink);
+  border-color: var(--ink-2);
+  transform: rotate(-90deg);
+}
+
+
+/* ══════════════════════
+   GRID
+══════════════════════ */
+.card-grid{padding:2rem 3rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.25rem;flex:1;align-content:start}
+
+/* ══════════════════════
+   CARD
+══════════════════════ */
+.recipe-card{background:var(--white);border:1px solid var(--border);border-radius:12px 10px 13px 11px/11px 13px 10px 12px;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s,transform .2s;overflow:visible;position:relative}
+.recipe-card:hover{border-color:var(--ink-2);transform:translateY(-2px);box-shadow:0 6px 24px rgba(28,28,26,.07)}
+.recipe-card.hidden{display:none}
+.recipe-card.page-hidden{display:none}
+
+/* 分頁列 — 只在手機（≤640px）顯示，桌機一次顯示全部卡片 */
+.pagination{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  padding:.5rem 1.5rem 1.5rem;
+}
+.page-btn{
+  font-family:var(--sans);
+  font-size:var(--fs-2xs);
+  font-weight:400;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-2);
+  background:none;
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:.4rem 1rem;
+  cursor:pointer;
+  transition:all .2s;
+}
+.page-btn:hover:not(:disabled){color:var(--ink);border-color:var(--ink-2)}
+.page-btn:disabled{opacity:.35;cursor:default}
+.page-numbers{display:flex;align-items:center;gap:.3rem}
+.page-num{
+  font-family:var(--sans);
+  font-size:var(--fs-2xs);
+  color:var(--ink-2);
+  background:none;
+  border:1px solid transparent;
+  border-radius:50%;
+  width:26px;
+  height:26px;
+  cursor:pointer;
+  transition:all .2s;
+}
+.page-num:hover{border-color:var(--border);color:var(--ink)}
+.page-num.active{background:var(--ink);color:var(--white)}
+
+/* 插圖 */
+.card-visual{aspect-ratio:4/3;position:relative;overflow:hidden;border-radius:12px 10px 0 0}
+.food-illus{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.food-illus svg{width:66%;height:66%}
+
+/* 星球標籤 */
+.season-tag{font-size:var(--fs-3xs);font-weight:400;letter-spacing:.14em;text-transform:uppercase;padding:.28rem .75rem;border-radius:999px 980px 995px 985px/988px 992px 980px 996px;white-space:nowrap}
+.visual-overlay{position:absolute;top:.85rem;left:.9rem;display:flex;align-items:center;gap:.45rem}
+.tag-stars{display:flex;gap:1px;align-items:center;background:rgba(250,250,248,0.82);backdrop-filter:blur(4px);padding:.22rem .55rem;border-radius:999px 980px 995px 985px/988px 992px 980px 996px;border:1px solid rgba(200,195,185,0.35)}
+.sf{font-size:var(--fs-2xs);color:#b8943a;line-height:1}
+.s{font-size:var(--fs-2xs);color:rgba(100,95,85,0.3);line-height:1}
+
+/* 內容 */
+.card-body{padding:1.1rem 1.4rem 1rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
+
+/* 日期 + No. — 現在在標題上方 */
+.date-no-row{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+
+/* 標題 */
+.title-block{display:flex;flex-direction:column;gap:.4rem}
+.card-zh{font-family:var(--serif);font-size:var(--fs-title);font-weight:400;line-height:1.35;color:var(--ink);letter-spacing:.01em}
+
+/* 英文標題 — 橄欖綠，加大 */
+.card-en{
+  font-family:var(--serif);
+  font-size:var(--fs-base);
+  font-style:italic;
+  color:var(--en-color);
+  line-height:1.45;
+  letter-spacing:.01em;
+}
+
+/* 描述文字 — 加大加深 */
+.card-desc{
+  font-size:var(--fs-base);
+  font-weight:300;
+  line-height:1.75;
+  color:var(--ink-2);
+  font-style:italic;
+}
+
+/* 日期膠囊 */
+.card-date{display:inline-flex;align-items:baseline;gap:.4rem;padding:.4rem .95rem;background:var(--off);border:1px solid var(--border);border-radius:999px 980px 995px 985px/988px 992px 980px 996px}
+.card-date{display:inline-flex;align-items:baseline;gap:.4rem;padding:.4rem .95rem;background:var(--off);border:1px solid var(--border);border-radius:999px 980px 995px 985px/988px 992px 980px 996px}
+.ds{font-family:var(--serif);font-size:var(--fs-base);font-weight:400;color:var(--ink);letter-spacing:.02em}
+.dy{font-size:var(--fs-xs);font-weight:300;color:var(--ink-3);letter-spacing:.1em}
+
+/* No. 加大加深 */
+.card-no{
+  font-family:var(--serif);
+  font-size:var(--fs-lg);
+  font-style:italic;
+  color:var(--ink-2);
+  white-space:nowrap;
+}
+
+
+/* ══════════════════════════════════════════════
+   星球色板套用 — 卡片色彩的唯一來源
+   （index.html 端已完全無色碼）
+══════════════════════════════════════════════ */
+.recipe-card                          { --p-rgb:136,136,136; --p-ink:#555555; --p-bg:#eeeeee; }  /* fallback / Other */
+.recipe-card[data-planet="Venus"]     { --p-rgb:138,122,170; --p-ink:#5a4880; --p-bg:#edeaf0; }  /* 週一 金星 */
+.recipe-card[data-planet="Jupiter"]   { --p-rgb:160,140,90;  --p-ink:#6a5c2a; --p-bg:#eeeae0; }  /* 週二 木星 */
+.recipe-card[data-planet="Mercury"]   { --p-rgb:106,138,138; --p-ink:#3a6060; --p-bg:#e8ecec; }  /* 週三 水星 */
+.recipe-card[data-planet="Saturn"]    { --p-rgb:138,128,112; --p-ink:#5a5040; --p-bg:#eae8e4; }  /* 週四 土星 */
+.recipe-card[data-planet="Mars"]      { --p-rgb:170,122,106; --p-ink:#7a4030; --p-bg:#ede8e6; }  /* 週五 火星 */
+.recipe-card[data-planet="Wandering"] { --p-rgb:106,138,106; --p-ink:#3a5a3a; --p-bg:#e8ece8; }  /* 星球漫遊 */
+.recipe-card[data-planet="Knowledge"] { --p-rgb:138,128,120; --p-ink:#5a5048; --p-bg:#eceae8; }  /* Knowledge */
+
+/* 三個消費端 — 顏色都從上面的 token 取得 */
+.card-visual { background: var(--p-bg); }
+.season-tag,
+.ing-tag     { color: var(--p-ink);
+               background: rgba(var(--p-rgb), 0.1);
+               border: 1px solid rgba(var(--p-rgb), 0.3); }
+.planet-icon { color: rgb(var(--p-rgb)); }   /* icon 內部 stroke 用 currentColor */
+
+/* ══════════════════════
+   VIEW RECIPE
+══════════════════════ */
+.vr-btn{width:100%;background:none;border:none;border-top:1px solid var(--border);padding:.82rem 1.4rem;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-family:var(--sans);font-size:var(--fs-2xs);font-weight:400;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);transition:color .2s,background .2s}
+.vr-btn:hover{color:var(--ink);background:var(--off)}
+.vra{width:14px;height:14px;transition:transform .3s ease}
+.vr-btn[aria-expanded="true"] .vra{transform:rotate(180deg)}
+.rec-exp{overflow:hidden}
+.rec-inner{padding:1rem 1.4rem 1.25rem;border-top:1px solid var(--border);background:var(--off);animation:expandIn .25s ease}
+.exp-lbl{font-size:var(--fs-2xs);font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.75rem}
+.exp-ings{display:flex;flex-wrap:wrap;gap:.45rem}
+.ing-tag{font-size:var(--fs-base);font-weight:300;letter-spacing:.04em;padding:.36rem .92rem;border-radius:999px 980px 995px 985px/988px 992px 980px 996px}
+@keyframes expandIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+
+/* ══════════════════════
+   FOOTER
+══════════════════════ */
+.empty-state{grid-column:1/-1;padding:5rem 2rem;text-align:center;display:none}
+.empty-state.visible{display:block}
+.empty-text{font-family:var(--serif);font-size:var(--fs-3xl);font-style:italic;color:var(--ink-3)}
+
+.site-footer{
+  padding: 1.75rem 3rem;
+  border-top: 1px solid var(--border);
+  background: var(--off);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* 左欄 — Logo 放大 */
+.footer-col { display: flex; align-items: center; }
+.footer-col--logo { flex-shrink: 0; }
+.footer-col--mid  { justify-content: center; }
+.footer-col--right{ flex-shrink: 0; justify-content: flex-end; }
+
+.footer-brand{
+  font-family: var(--display);
+  font-size: 1.5rem;
+  color: var(--spring-muted);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* 中欄 — 宣言文字一整排 */
+.footer-tagline{
+  font-family: var(--serif);
+  font-size:var(--fs-md);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ink-2);
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* 右欄 — 筆數 */
+.footer-note{
+  font-size:var(--fs-xs);
+  font-weight: 300;
+  letter-spacing: .08em;
+  color: var(--ink-3);
+  white-space: nowrap;
+  text-align: right;
+  line-height: 1.6;
+}
+
+/* ══════════════════════
+   RESPONSIVE
+══════════════════════ */
+@media(max-width:640px){
+  .site-header{padding:2.5rem 1.5rem;min-height:auto}
+  .brand{flex-direction:column;text-align:center;gap:.6rem}
+  .brand-name{font-size:2.4rem}
+  .brand-sub{font-size:var(--fs-md);white-space:normal;line-height:1.6}
+  .brand-divider{display:none}
+  .filter-bar{
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    padding:.9rem 1.25rem;
+    gap:.3rem;
+  }
+  .filter-label{width:100%;margin:0 0 .2rem}
+  .filter-group{
+    display:contents;
+  }
+  .filter-btn{
+    font-size:var(--fs-4xs);
+    padding:.3rem .7rem;
+  }
+  .filter-reset-btn{
+    font-size:var(--fs-4xs);
+    padding:.32rem .7rem;
+    margin-left:0;
+  }
+  .stats-bar{padding:1.75rem 1.5rem 1.5rem}
+  .manifesto-block{text-align:left}
+  .stats-meta{flex-direction:column;align-items:flex-start;gap:.75rem}
+  .card-grid{padding:1rem;grid-template-columns:1fr;gap:.75rem}
+  .card-visual{aspect-ratio:21/9}
+  .card-body{padding:1rem 1rem .8rem;gap:.75rem}
+  .pagination{display:flex}
+  .ds{font-size:var(--fs-md)}
+  .site-footer{padding:1.25rem 1.5rem;grid-template-columns:1fr;gap:.85rem}
+  .footer-col--mid{justify-content:flex-start}
+  .footer-col--right{justify-content:flex-start}
+  .footer-tagline{text-align:left}
+  .footer-brand{font-size:1.2rem}
+
+  /* 星球標籤與星等 — 手機兩欄寬度吃緊，此處不隨全站上調，維持 v6 尺寸 */
+  .season-tag{font-size:var(--fs-4xs)}
+  .sf,.s{font-size:var(--fs-3xs)}
+}
+
+
+/* ══════════════════════════════════════════════
+   節氣帶 · Solar Terms Bar
+══════════════════════════════════════════════ */
+.solar-bar {
+  background: var(--off);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  position: relative;
+  height: 3.6rem;
+}
+
+.solar-track {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+}
+
+.solar-term {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s, transform 0.15s;
+  border-right: 1px solid rgba(255,255,255,0.3);
+  gap: 1px;
+  padding: .3rem 3px 0;
+  min-width: 0;
+}
+
+.solar-term:last-child { border-right: none; }
+
+.solar-term:hover {
+  filter: brightness(0.92);
+  z-index: 2;
+}
+
+.solar-term.active {
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.25);
+  z-index: 3;
+}
+
+.solar-term.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid var(--white);
+}
+
+.solar-zh {
+  font-family: var(--serif);
+  font-size:var(--fs-xs);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  color: rgba(0,0,0,0.72);
+  white-space: nowrap;
+}
+
+.solar-en {
+  font-size:var(--fs-4xs);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.05;
+  color: rgba(0,0,0,0.8);
+  white-space: normal;
+  text-align: center;
+  display: none;
+}
+
+.solar-term.current-term .solar-zh {
+  color: rgba(0,0,0,0.9);
+  font-weight: 500;
+}
+
+/* 節氣帶 — 手機版：24 格塞不下，改成橫向可滑動色條，每格固定寬度方便點按 */
+@media(max-width:640px){
+  .solar-bar{
+    height:3.7rem;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    scroll-snap-type:x proximity;
+    scrollbar-width:none;
+  }
+  .solar-bar::-webkit-scrollbar{display:none}
+  .solar-track{width:max-content}
+  .solar-term{
+    flex:0 0 58px;
+    scroll-snap-align:start;
+    padding:.3rem 4px 0;
+  }
+  .solar-en{display:block}
+}
+
+/* tooltip — 淺底深字，易讀 */
+.solar-tooltip {
+  position: fixed;
+  background: var(--white);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  padding: 0.85rem 1.1rem;
+  border-radius: 10px;
+  line-height: 1.65;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 999;
+  min-width: 200px;
+  max-width: 260px;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(28,28,26,0.1), 0 1px 4px rgba(28,28,26,0.06);
+}
+.solar-tooltip.visible { opacity: 1; }
+.solar-tooltip .tt-name {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size:var(--fs-2xl);
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+.solar-tooltip .tt-desc {
+  font-size:var(--fs-base);
+  color: var(--ink-2);
+  margin-top: 0.35rem;
+  font-style: italic;
+}
+.solar-tooltip .tt-date {
+  font-size:var(--fs-xs);
+  color: var(--ink-3);
+  margin-top: 0.25rem;
+  letter-spacing: 0.06em;
+}
+.solar-tooltip .tt-count {
+  font-size:var(--fs-sm);
+  color: var(--ink-2);
+  margin-top: 0.3rem;
+  font-style: italic;
+  padding-top: 0.3rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 900px) {
+  .solar-en { display: block; }
+  .solar-zh { font-size:var(--fs-sm); }
+}
+
+/* ══════════════════════════════════════════════
+   星球誌 · Chronicles / Hidden Patterns
+══════════════════════════════════════════════ */
+.chronicles-section {
+  background: #0e0e0c;
+  padding: 4rem 3rem 4.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 背景星點裝飾 */
+.chronicles-section::before {
+  content: '· · ✦ · · · ✦ · · · · ✦ · · ✦ · · · · · ✦ · · · ✦ ·';
+  position: absolute;
+  top: 1.5rem;
+  left: 0; right: 0;
+  text-align: center;
+  font-size:var(--fs-3xs);
+  letter-spacing: 0.8em;
+  color: rgba(255,255,255,0.08);
+  pointer-events: none;
+}
+
+.chronicles-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.chronicles-label {
+  font-family: var(--sans);
+  font-size:var(--fs-2xs);
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 0.6rem;
+}
+
+.chronicles-title {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #c9a962;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  margin-bottom: 0.85rem;
+}
+
+.chronicles-sub {
+  font-size:var(--fs-sm);
+  font-weight: 300;
+  color: rgba(255,255,255,0.38);
+  line-height: 1.85;
+  letter-spacing: 0.04em;
+}
+
+.memo-icon-inline {
+  color: #c9a962;
+  font-size:var(--fs-xs);
+}
+
+.chronicles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 星球誌卡片 */
+.chronicle-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px 8px 11px 9px / 9px 11px 8px 10px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  position: relative;
+  transition: border-color 0.2s, background 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.chronicle-card:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(201,169,98,0.25);
+}
+
+.chronicle-card.chronicle-empty {
+  opacity: 0.35;
+  border-style: dashed;
+}
+
+.chronicle-num {
+  font-family: var(--serif);
+  font-size:var(--fs-2xs);
+  font-style: italic;
+  color: #c9a962;
+  opacity: 0.7;
+  letter-spacing: 0.1em;
+}
+
+.chronicle-title {
+  font-family: var(--serif);
+  font-size:var(--fs-3xl);
+  font-weight: 400;
+  color: rgba(255,255,255,0.88);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.chronicle-body {
+  font-size:var(--fs-base);
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.85;
+  letter-spacing: 0.04em;
+}
+
+.chronicle-placeholder {
+  color: rgba(255,255,255,0.2) !important;
+  font-style: italic;
+  font-size:var(--fs-xs) !important;
+}
+
+/* ✦ 機關按鈕 */
+.memo-trigger {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: 1px solid rgba(201,169,98,0.3);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #c9a962;
+  font-size:var(--fs-2xs);
+  transition: all 0.2s;
+}
+
+.memo-trigger:hover {
+  background: rgba(201,169,98,0.12);
+  border-color: #c9a962;
+  transform: rotate(30deg);
+}
+
+.memo-trigger[aria-expanded="true"] {
+  background: rgba(201,169,98,0.18);
+  border-color: #c9a962;
+  transform: rotate(135deg);
+}
+
+/* 心情故事展開面板 */
+.memo-panel {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(201,169,98,0.15);
+  animation: memoIn 0.3s ease;
+}
+
+.memo-text {
+  font-size:var(--fs-base);
+  font-weight: 300;
+  color: rgba(201,169,98,0.85);
+  line-height: 1.9;
+  letter-spacing: 0.05em;
+  font-style: italic;
+}
+
+@keyframes memoIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .chronicles-section { padding: 3rem 1.5rem 3.5rem; }
+  .chronicles-grid { grid-template-columns: 1fr; }
+  .chronicles-title { font-size: 1.4rem; }
+}
+
+
+/* ══════════════════════════════════════════════
+   ✦ Lore 星球誌機關
+══════════════════════════════════════════════ */
+
+/* 按鈕：低調浮在 card-body 右下角 */
+/* ── 星球誌觸發按鈕 — 各星球小 icon ──
+   常態：半透明小圓，低調存在
+   hover 卡片：icon 稍大＋發光暗示可點
+   展開中：輕微脈動
+─────────────────────────── */
+.lore-btn {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  background: rgba(250,250,248,0.78);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  padding: 0.3rem;
+  line-height: 1;
+  opacity: 0.55;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+  transition: opacity 0.18s, transform 0.22s ease, box-shadow 0.18s;
+  box-shadow: 0 1px 3px rgba(28,28,26,0.07);
+}
+
+.planet-icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+/* hover 按鈕本身：明顯可點 */
+.lore-btn:hover {
+  opacity: 1;
+  transform: scale(1.15);
+  box-shadow: 0 2px 8px rgba(28,28,26,0.14);
+  border-color: var(--ink-3);
+}
+
+/* hover 整張卡片時也微微浮現 */
+.recipe-card:hover .lore-btn {
+  opacity: 0.78;
+}
+
+/* 展開狀態 */
+.lore-btn[aria-expanded="true"] {
+  opacity: 1;
+  background: rgba(250,250,248,0.96);
+  border-color: var(--ink-2);
+  transform: scale(1.15);
+  box-shadow: 0 2px 8px rgba(28,28,26,0.12);
+}
+
+@keyframes lorePulse {
+  0%, 100% { transform: scale(1.15); }
+  50%       { transform: scale(1.22); }
+}
+
+/* ── popup 面板 ──
+   輕盈版：白底＋極細邊框＋溫柔陰影
+   和卡片同色系，不突兀
+─────────────────────────── */
+.lore-panel {
+  position: absolute;
+  top: 3.2rem;
+  right: 0.5rem;
+  width: min(240px, 86vw);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 2px 10px 10px 10px;
+  padding: 0.85rem 1rem 0.9rem;
+  box-shadow:
+    0 2px 8px rgba(28,28,26,0.07),
+    0 6px 20px rgba(28,28,26,0.06);
+  z-index: 50;
+  animation: loreIn 0.2s cubic-bezier(0.22,1,0.36,1);
+  transform-origin: top right;
+}
+
+/* 小三角 — 朝上指向 icon */
+.lore-panel::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 14px;
+  width: 8px;
+  height: 8px;
+  background: var(--white);
+  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  transform: rotate(45deg);
+}
+
+/* 底部極細金色線 */
+.lore-panel::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c9a96255, transparent);
+  border-radius: 0 0 10px 10px;
+}
+
+.lore-text {
+  font-family: var(--serif);
+  font-size:var(--fs-sm);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ink-2);
+  line-height: 1.82;
+  letter-spacing: 0.03em;
+}
+
+@keyframes loreIn {
+  from { opacity: 0; transform: scale(0.94) translateY(3px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);   }
+}
+
+
+/* ══════════════════════════════════════════════
+   節氣帶 sorting — 移除舊篩選邏輯的殘留樣式
+══════════════════════════════════════════════ */
+.solar-term.active .solar-zh {
+  color: rgba(0,0,0,0.9);
+  font-weight: 500;
+}
+
+/* 刪除舊的星球誌 CSS（如果存在） */
+
+.solar-term.no-entries {
+  opacity: 0.5;
+}
+.solar-term.no-entries .solar-zh {
+  color: rgba(0,0,0,0.4);
+}
+
+/* ── lore-panel 寬版（含圖片）── */
+.lore-panel--wide {
+  width: min(300px, 92vw);
+}
+
+.lore-img-wrap {
+  margin-top: 0.85rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.lore-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px 6px 0 0;
+  object-fit: cover;
+}
+
+.lore-img-caption {
+  font-size:var(--fs-2xs);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  text-align: right;
+  padding: 0.35rem 0.5rem 0.1rem;
+  background: var(--off);
+  border-radius: 0 0 6px 6px;
+}

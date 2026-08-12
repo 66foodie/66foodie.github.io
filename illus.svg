@@ -1,0 +1,1864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  66-Planet · illus.svg — 料理插圖庫 (Illustration Sprite)
+  ═══════════════════════════════════════════════════════════
+  一則料理 = 一個 <symbol>，id 對應卡片編號：No.042 → id="i042"
+  index.html 端只留一行：<use href="illus.svg#i042"></use>
+
+  ▸ 改插圖：搜尋 id="i042"，直接編輯內部圖形
+  ▸ 新增：複製一段 symbol，改 id 與註解即可
+  ▸ viewBox 一律 0 0 120 90（4:3），與 .card-visual 對齊
+  ▸ 本檔可用 VS Code / Illustrator 直接開啟預覽
+-->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+  <!-- No.001 · / 前導 / 未知 / 預視 -->
+  <symbol id="i001" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="18" r="10" fill="#f5e890" opacity="0.25"/>
+    <circle cx="28" cy="24" r="1.5" fill="#f5f0e8" opacity="0.5"/>
+    <circle cx="42" cy="16" r="1" fill="#f5f0e8" opacity="0.45"/>
+    <circle cx="78" cy="20" r="1.5" fill="#f5f0e8" opacity="0.4"/>
+    <circle cx="98" cy="28" r="1" fill="#f5f0e8" opacity="0.45"/>
+    <path d="M0 90 L44 38 L76 38 L120 90Z" fill="#6a8a6a" opacity="0.18" stroke="#6a8a6a" stroke-width="0.7"/>
+    <line x1="46" y1="38" x2="50" y2="90" stroke="#f5f0e8" stroke-width="0.6" opacity="0.25"/>
+    <line x1="74" y1="38" x2="70" y2="90" stroke="#f5f0e8" stroke-width="0.6" opacity="0.22"/>
+    <path d="M0 90 L120 90" stroke="#6a8a6a" stroke-width="1.2" opacity="0.4"/>
+    <line x1="44" y1="58" x2="76" y2="58" stroke="#f5f0e8" stroke-width="0.5" opacity="0.22"/>
+    <line x1="38" y1="70" x2="82" y2="70" stroke="#f5f0e8" stroke-width="0.5" opacity="0.2"/>
+    <line x1="20" y1="48" x2="20" y2="70" stroke="#6a8a6a" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+    <circle cx="20" cy="46" r="3" fill="#f5c840" opacity="0.6"/>
+    <line x1="100" y1="48" x2="100" y2="70" stroke="#6a8a6a" stroke-width="1" opacity="0.38" stroke-linecap="round"/>
+    <circle cx="100" cy="46" r="3" fill="#f5c840" opacity="0.55"/>
+  </symbol>
+
+  <!-- No.002 · 焗烤蕃茄牛肉咖哩(冬至) -->
+  <symbol id="i002" viewBox="0 0 120 90" fill="none">
+    <rect x="10" y="36" width="100" height="36" rx="5" fill="#e8dcc8" opacity="0.7" stroke="#aa7a6a" stroke-width="0.85"/>
+    <rect x="10" y="34" width="100" height="7" rx="3" fill="#f5c840" opacity="0.55"/>
+    <path d="M18 50 Q32 44 50 50 Q60 55 72 47 Q84 40 102 50" fill="none" stroke="#f5c840" stroke-width="2" opacity="0.55"/>
+    <path d="M16 56 Q30 51 48 56 Q58 61 70 53 Q82 46 100 54" fill="none" stroke="#f5e8a0" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="34" cy="50" r="5" fill="#aa7a6a" opacity="0.55"/>
+    <circle cx="34" cy="49" r="2.5" fill="#f5c840" opacity="0.45"/>
+    <circle cx="60" cy="47" r="5.5" fill="#aa7a6a" opacity="0.5"/>
+    <circle cx="60" cy="46" r="3" fill="#f5c840" opacity="0.42"/>
+    <circle cx="82" cy="50" r="5" fill="#aa7a6a" opacity="0.52"/>
+    <circle cx="82" cy="49" r="2.5" fill="#f5c840" opacity="0.42"/>
+    <ellipse cx="48" cy="60" rx="8" ry="3.5" fill="#f5c840" opacity="0.35" transform="rotate(-3 48 60)"/>
+    <ellipse cx="72" cy="59" rx="7" ry="3" fill="#f5c840" opacity="0.32" transform="rotate(2 72 59)"/>
+  </symbol>
+
+  <!-- No.003 · 義式烤蔬菜雞腿 -->
+  <symbol id="i003" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="54" r="32" fill="#2c2420" opacity="0.15" stroke="#6a8a8a" stroke-width="0.9"/>
+    <circle cx="60" cy="54" r="28" fill="#6a8a8a" opacity="0.18"/>
+    <line x1="12" y1="54" x2="28" y2="54" stroke="#8a7060" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="92" y1="54" x2="108" y2="54" stroke="#8a7060" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M36 44 Q48 37 60 43 Q72 37 84 44" fill="none" stroke="#f0a030" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="44" cy="52" rx="7" ry="5" fill="#e87030" opacity="0.55"/>
+    <ellipse cx="60" cy="48" rx="6" ry="4.5" fill="#f5c840" opacity="0.5"/>
+    <ellipse cx="76" cy="52" rx="7" ry="5" fill="#e87030" opacity="0.5"/>
+    <circle cx="52" cy="60" r="4" fill="#a8d070" opacity="0.55"/>
+    <circle cx="66" cy="61" r="4.5" fill="#a8d070" opacity="0.5"/>
+    <circle cx="38" cy="58" r="2.5" fill="#f5c840" opacity="0.45"/>
+    <circle cx="80" cy="59" r="2.5" fill="#f5c840" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.004 · 老黃麵店+漁光島 -->
+  <symbol id="i004" viewBox="0 0 120 90" fill="none">
+    <line x1="0" y1="50" x2="120" y2="50" stroke="#6a8a6a" stroke-width="0.7" opacity="0.35"/>
+    <path d="M16 50 Q18 42 22 38 Q26 34 30 38 Q34 42 32 50Z" fill="#6a8a6a" opacity="0.4"/>
+    <path d="M16 50 Q18 58 22 62 Q26 66 30 62 Q34 58 32 50Z" fill="#6a8a6a" opacity="0.22"/>
+    <path d="M48 50 Q50 40 56 35 Q62 30 68 35 Q74 40 72 50Z" fill="#6a8a6a" opacity="0.42"/>
+    <path d="M48 50 Q50 60 56 65 Q62 70 68 65 Q74 60 72 50Z" fill="#6a8a6a" opacity="0.24"/>
+    <circle cx="90" cy="28" r="12" fill="#f5e890" opacity="0.3"/>
+    <circle cx="90" cy="28" r="8" fill="#f5e890" opacity="0.25"/>
+    <circle cx="28" cy="38" r="3" fill="#f5c840" opacity="0.65"/>
+    <circle cx="60" cy="34" r="3.5" fill="#f5a820" opacity="0.6"/>
+    <circle cx="82" cy="42" r="2.5" fill="#f5c840" opacity="0.55"/>
+    <circle cx="104" cy="40" r="2" fill="#f5e890" opacity="0.5"/>
+    <path d="M80 50 Q88 46 94 50 Q100 46 106 50" fill="none" stroke="#6a8a6a" stroke-width="0.8" opacity="0.3"/>
+  </symbol>
+
+  <!-- No.005 · 觀世音菩薩生日素食 -->
+  <symbol id="i005" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="59" rx="42" ry="13" fill="#f0ece4" opacity="0.7" stroke="#8a8070" stroke-width="0.6"/>
+    <ellipse cx="60" cy="57" rx="40" ry="11" fill="none" stroke="#8a8070" stroke-width="0.4" opacity="0.2"/>
+    <ellipse cx="38" cy="50" rx="12" ry="8" fill="#a8d878" opacity="0.6" transform="rotate(-12 38 50)"/>
+    <ellipse cx="38" cy="49" rx="7" ry="4.5" fill="#7ab848" opacity="0.5" transform="rotate(-12 38 49)"/>
+    <ellipse cx="60" cy="48" rx="11" ry="7" fill="#f5c840" opacity="0.55"/>
+    <ellipse cx="60" cy="47" rx="6" ry="3.5" fill="#d4a020" opacity="0.45"/>
+    <ellipse cx="82" cy="50" rx="11" ry="8" fill="#e87848" opacity="0.5" transform="rotate(10 82 50)"/>
+    <ellipse cx="82" cy="49" rx="6" ry="4" fill="#f0a070" opacity="0.45" transform="rotate(10 82 49)"/>
+    <circle cx="48" cy="58" r="3" fill="#a8d070" opacity="0.55"/>
+    <circle cx="70" cy="58" r="3" fill="#a8d070" opacity="0.52"/>
+    <circle cx="60" cy="62" r="2.5" fill="#8a8070" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.006 · 烤蔬菜筆管麵 -->
+  <symbol id="i006" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="56" rx="42" ry="16" fill="#e8dcc8" opacity="0.6" stroke="#aa7a6a" stroke-width="0.8"/>
+    <rect x="28" y="42" width="15" height="7" rx="3.5" fill="#f5e8c0" opacity="0.8" stroke="#d4b880" stroke-width="0.5" transform="rotate(-22 28 42)"/>
+    <rect x="46" y="46" width="13" height="6.5" rx="3" fill="#f5e8c0" opacity="0.78" stroke="#d4b880" stroke-width="0.5" transform="rotate(16 46 46)"/>
+    <rect x="62" y="42" width="15" height="7" rx="3.5" fill="#f5e8c0" opacity="0.8" stroke="#d4b880" stroke-width="0.5" transform="rotate(-12 62 42)"/>
+    <rect x="79" y="46" width="13" height="6.5" rx="3" fill="#f5e8c0" opacity="0.75" stroke="#d4b880" stroke-width="0.5" transform="rotate(8 79 46)"/>
+    <rect x="36" y="56" width="14" height="6.5" rx="3" fill="#f5e8c0" opacity="0.75" stroke="#d4b880" stroke-width="0.5" transform="rotate(26 36 56)"/>
+    <rect x="55" y="58" width="13" height="6" rx="3" fill="#f5e8c0" opacity="0.78" stroke="#d4b880" stroke-width="0.5" transform="rotate(-16 55 58)"/>
+    <rect x="72" y="55" width="15" height="7" rx="3.5" fill="#f5e8c0" opacity="0.75" stroke="#d4b880" stroke-width="0.5" transform="rotate(10 72 55)"/>
+    <circle cx="50" cy="52" r="3.5" fill="#e05030" opacity="0.6"/>
+    <circle cx="70" cy="55" r="3" fill="#e05030" opacity="0.55"/>
+    <circle cx="40" cy="60" r="2.5" fill="#a8d070" opacity="0.65"/>
+    <circle cx="82" cy="58" r="2.5" fill="#a8d070" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.007 · 安平16觀夕平台 -->
+  <symbol id="i007" viewBox="0 0 120 90" fill="none">
+    <circle cx="88" cy="28" r="16" fill="#f5c840" opacity="0.35"/>
+    <circle cx="88" cy="28" r="12" fill="#f5a820" opacity="0.3"/>
+    <circle cx="88" cy="28" r="7" fill="#f08020" opacity="0.4"/>
+    <path d="M0 56 Q30 48 60 54 Q90 60 120 52 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.25"/>
+    <path d="M0 64 Q25 58 55 62 Q85 66 120 60 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.35"/>
+    <path d="M0 74 Q30 70 60 73 Q90 76 120 72 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.45"/>
+    <path d="M0 84 L120 84 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.3"/>
+    <path d="M22 56 Q26 44 30 56Z" fill="#6a8a6a" opacity="0.4"/>
+    <path d="M26 44 Q30 38 34 44Z" fill="#6a8a6a" opacity="0.35"/>
+    <line x1="28" y1="44" x2="28" y2="56" stroke="#6a8a6a" stroke-width="0.8" opacity="0.35"/>
+    <path d="M88 54 L86 52 L84 54Z" fill="#4a4840" opacity="0.5"/>
+    <line x1="85" y1="52" x2="85" y2="57" stroke="#4a4840" stroke-width="0.7" opacity="0.45"/>
+  </symbol>
+
+  <!-- No.008 · 地震中的法式早餐 -->
+  <symbol id="i008" viewBox="0 0 120 90" fill="none">
+    <path d="M8 54 Q12 40 60 38 Q108 40 112 54 Q108 68 60 70 Q12 68 8 54Z" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.8"/>
+    <ellipse cx="60" cy="54" rx="24" ry="9" fill="#f5deb0" opacity="0.4"/>
+    <line x1="28" y1="42" x2="24" y2="66" stroke="#c89040" stroke-width="0.7" opacity="0.35"/>
+    <line x1="40" y1="40" x2="36" y2="68" stroke="#c89040" stroke-width="0.7" opacity="0.32"/>
+    <line x1="52" y1="39" x2="48" y2="69" stroke="#c89040" stroke-width="0.7" opacity="0.35"/>
+    <line x1="64" y1="39" x2="60" y2="69" stroke="#c89040" stroke-width="0.7" opacity="0.32"/>
+    <line x1="76" y1="40" x2="72" y2="68" stroke="#c89040" stroke-width="0.7" opacity="0.35"/>
+    <line x1="88" y1="42" x2="84" y2="66" stroke="#c89040" stroke-width="0.7" opacity="0.3"/>
+    <path d="M12 50 Q60 45 108 50" fill="none" stroke="#f5deb0" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="42" cy="52" r="2.5" fill="#6a8a8a" opacity="0.4"/>
+    <circle cx="74" cy="52" r="2.5" fill="#6a8a8a" opacity="0.38"/>
+  </symbol>
+
+  <!-- No.009 · 無題午餐+台南王記好吃雞肉 -->
+  <symbol id="i009" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="60" rx="46" ry="13" fill="#f0ece4" opacity="0.7" stroke="#6a8a8a" stroke-width="0.6"/>
+    <ellipse cx="60" cy="58" rx="44" ry="11" fill="none" stroke="#6a8a8a" stroke-width="0.4" opacity="0.2"/>
+    <ellipse cx="38" cy="52" rx="14" ry="9" fill="#e87848" opacity="0.5" transform="rotate(-18 38 52)"/>
+    <ellipse cx="38" cy="52" rx="8" ry="5" fill="#f0a070" opacity="0.45" transform="rotate(-18 38 52)"/>
+    <ellipse cx="60" cy="50" rx="9" ry="7" fill="#f5c840" opacity="0.55"/>
+    <ellipse cx="82" cy="52" rx="12" ry="8" fill="#a8d070" opacity="0.5" transform="rotate(12 82 52)"/>
+    <circle cx="48" cy="59" r="3.5" fill="#6a8a8a" opacity="0.4"/>
+    <circle cx="70" cy="58" r="3" fill="#6a8a8a" opacity="0.35"/>
+    <circle cx="58" cy="62" r="2" fill="#f0e8d0" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.010 · 義大利筆管麵 -->
+  <symbol id="i010" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="56" rx="42" ry="16" fill="#e8dcc8" opacity="0.6" stroke="#8a7aaa" stroke-width="0.8"/>
+    <rect x="28" y="42" width="15" height="7" rx="3.5" fill="#f5e8c0" opacity="0.8" stroke="#d4b880" stroke-width="0.5" transform="rotate(-22 28 42)"/>
+    <rect x="46" y="46" width="13" height="6.5" rx="3" fill="#f5e8c0" opacity="0.78" stroke="#d4b880" stroke-width="0.5" transform="rotate(16 46 46)"/>
+    <rect x="62" y="42" width="15" height="7" rx="3.5" fill="#f5e8c0" opacity="0.8" stroke="#d4b880" stroke-width="0.5" transform="rotate(-12 62 42)"/>
+    <rect x="79" y="46" width="13" height="6.5" rx="3" fill="#f5e8c0" opacity="0.75" stroke="#d4b880" stroke-width="0.5" transform="rotate(8 79 46)"/>
+    <rect x="36" y="56" width="14" height="6.5" rx="3" fill="#f5e8c0" opacity="0.75" stroke="#d4b880" stroke-width="0.5" transform="rotate(26 36 56)"/>
+    <rect x="55" y="58" width="13" height="6" rx="3" fill="#f5e8c0" opacity="0.78" stroke="#d4b880" stroke-width="0.5" transform="rotate(-16 55 58)"/>
+    <rect x="72" y="55" width="15" height="7" rx="3.5" fill="#f5e8c0" opacity="0.75" stroke="#d4b880" stroke-width="0.5" transform="rotate(10 72 55)"/>
+    <circle cx="50" cy="52" r="3.5" fill="#e05030" opacity="0.6"/>
+    <circle cx="70" cy="55" r="3" fill="#e05030" opacity="0.55"/>
+    <circle cx="40" cy="60" r="2.5" fill="#a8d070" opacity="0.65"/>
+    <circle cx="82" cy="58" r="2.5" fill="#a8d070" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.011 · 壽喜燒便當 -->
+  <symbol id="i011" viewBox="0 0 120 90" fill="none">
+    <rect x="12" y="24" width="96" height="54" rx="7" fill="#f0ece4" opacity="0.75" stroke="#a08c5a" stroke-width="0.85"/>
+    <line x1="64" y1="24" x2="64" y2="78" stroke="#a08c5a" stroke-width="0.6" opacity="0.35"/>
+    <line x1="12" y1="56" x2="64" y2="56" stroke="#a08c5a" stroke-width="0.6" opacity="0.35"/>
+    <ellipse cx="38" cy="40" rx="18" ry="12" fill="#f5f0e0" opacity="0.8"/>
+    <ellipse cx="38" cy="39" rx="12" ry="8" fill="#f5c840" opacity="0.5"/>
+    <circle cx="34" cy="37" r="4" fill="#e87848" opacity="0.55"/>
+    <circle cx="44" cy="40" r="3" fill="#a08c5a" opacity="0.5"/>
+    <circle cx="38" cy="67" r="9" fill="#f5f0e0" opacity="0.75"/>
+    <circle cx="38" cy="67" r="5" fill="#a8d878" opacity="0.6"/>
+    <circle cx="38" cy="67" r="2.5" fill="#7ab848" opacity="0.5"/>
+    <path d="M68 32 Q80 28 94 32 L96 54 Q82 58 66 54Z" fill="#f5c840" opacity="0.5"/>
+    <circle cx="80" cy="42" r="4" fill="#a08c5a" opacity="0.5"/>
+    <ellipse cx="82" cy="67" rx="13" ry="8" fill="#e87848" opacity="0.45"/>
+    <ellipse cx="82" cy="66" rx="8" ry="4.5" fill="#f0a070" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.012 · 酸麵團麵包佐燻鮭魚蛋沙拉 -->
+  <symbol id="i012" viewBox="0 0 120 90" fill="none">
+    <rect x="18" y="52" width="84" height="16" rx="4" fill="#f2deb0" opacity="0.92" stroke="#c89040" stroke-width="0.7"/>
+    <rect x="20" y="40" width="80" height="14" rx="3" fill="#f5e8c0" opacity="0.8" stroke="#c89040" stroke-width="0.6"/>
+    <rect x="20" y="40" width="80" height="5" fill="#f0e090" opacity="0.5"/>
+    <ellipse cx="48" cy="47" rx="12" ry="4" fill="#aa7a6a" opacity="0.45"/>
+    <ellipse cx="72" cy="47" rx="10" ry="4" fill="#aa7a6a" opacity="0.4"/>
+    <rect x="22" y="28" width="76" height="14" rx="5" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.7"/>
+    <path d="M24 34 Q60 29 96 34" fill="none" stroke="#f5deb0" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="40" cy="44" r="2.5" fill="#e87848" opacity="0.55"/>
+    <circle cx="56" cy="43" r="2" fill="#f5c840" opacity="0.5"/>
+    <circle cx="70" cy="43" r="2.5" fill="#a8d070" opacity="0.55"/>
+    <circle cx="84" cy="44" r="2" fill="#e87848" opacity="0.48"/>
+  </symbol>
+
+  <!-- No.013 · 發現四鯤鯓 -->
+  <symbol id="i013" viewBox="0 0 120 90" fill="none">
+    <line x1="0" y1="50" x2="120" y2="50" stroke="#6a8a6a" stroke-width="0.7" opacity="0.35"/>
+    <path d="M16 50 Q18 42 22 38 Q26 34 30 38 Q34 42 32 50Z" fill="#6a8a6a" opacity="0.4"/>
+    <path d="M16 50 Q18 58 22 62 Q26 66 30 62 Q34 58 32 50Z" fill="#6a8a6a" opacity="0.22"/>
+    <path d="M48 50 Q50 40 56 35 Q62 30 68 35 Q74 40 72 50Z" fill="#6a8a6a" opacity="0.42"/>
+    <path d="M48 50 Q50 60 56 65 Q62 70 68 65 Q74 60 72 50Z" fill="#6a8a6a" opacity="0.24"/>
+    <circle cx="90" cy="28" r="12" fill="#f5e890" opacity="0.3"/>
+    <circle cx="90" cy="28" r="8" fill="#f5e890" opacity="0.25"/>
+    <circle cx="28" cy="38" r="3" fill="#f5c840" opacity="0.65"/>
+    <circle cx="60" cy="34" r="3.5" fill="#f5a820" opacity="0.6"/>
+    <circle cx="82" cy="42" r="2.5" fill="#f5c840" opacity="0.55"/>
+    <circle cx="104" cy="40" r="2" fill="#f5e890" opacity="0.5"/>
+    <path d="M80 50 Q88 46 94 50 Q100 46 106 50" fill="none" stroke="#6a8a6a" stroke-width="0.8" opacity="0.3"/>
+  </symbol>
+
+  <!-- No.014 · 佛誕日素麵 -->
+  <symbol id="i014" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="66" rx="38" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#6a8a8a" stroke-width="0.7"/>
+    <path d="M22 55 Q22 75 60 75 Q98 75 98 55" fill="none" stroke="#6a8a8a" stroke-width="0.9"/>
+    <ellipse cx="60" cy="55" rx="36" ry="10" fill="#6a8a8a" opacity="0.15"/>
+    <path d="M26 52 Q34 43 42 52 Q50 61 58 52 Q66 43 74 52 Q82 61 92 52" fill="none" stroke="#f5e8c0" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+    <path d="M24 57 Q32 50 40 57 Q48 64 56 57 Q64 50 72 57 Q80 64 90 57" fill="none" stroke="#f5e8c0" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+    <ellipse cx="44" cy="48" rx="9" ry="5.5" fill="#e87848" opacity="0.7" transform="rotate(-8 44 48)"/>
+    <ellipse cx="44" cy="47" rx="5" ry="3" fill="#f0a070" opacity="0.55" transform="rotate(-8 44 47)"/>
+    <ellipse cx="76" cy="49" rx="8" ry="5" fill="#e87848" opacity="0.65" transform="rotate(5 76 49)"/>
+    <circle cx="62" cy="47" r="6" fill="#f5e8a0" opacity="0.9" stroke="#6a8a8a" stroke-width="0.6"/>
+    <circle cx="62" cy="47" r="3.5" fill="#f0a030" opacity="0.85"/>
+    <circle cx="34" cy="60" r="2" fill="#a8d070" opacity="0.7"/>
+    <circle cx="50" cy="61" r="1.5" fill="#a8d070" opacity="0.65"/>
+    <circle cx="88" cy="60" r="2" fill="#a8d070" opacity="0.65"/>
+  </symbol>
+
+  <!-- No.015 · 家常炒麵 -->
+  <symbol id="i015" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="66" rx="44" ry="11" fill="#2c2420" opacity="0.35" stroke="#a08c5a" stroke-width="0.7"/>
+    <ellipse cx="60" cy="60" rx="42" ry="10" fill="#e8dcc8" opacity="0.55" stroke="#a08c5a" stroke-width="0.8"/>
+    <path d="M18 58 Q30 47 48 56 Q62 64 78 52 Q90 44 102 56" fill="none" stroke="#f0d890" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+    <path d="M20 62 Q32 53 50 60 Q64 68 80 57 Q92 50 100 60" fill="none" stroke="#f0d890" stroke-width="2.5" stroke-linecap="round" opacity="0.58"/>
+    <ellipse cx="42" cy="52" rx="8" ry="5" fill="#e87848" opacity="0.65" transform="rotate(-8 42 52)"/>
+    <ellipse cx="72" cy="54" rx="7" ry="4.5" fill="#e87848" opacity="0.6" transform="rotate(6 72 54)"/>
+    <circle cx="56" cy="50" r="3.5" fill="#a8d070" opacity="0.6"/>
+    <circle cx="66" cy="56" r="3" fill="#a8d070" opacity="0.55"/>
+    <line x1="98" y1="60" x2="112" y2="55" stroke="#8a7060" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- No.016 · 雨天鰻魚飯 -->
+  <symbol id="i016" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="65" rx="36" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#a08c5a" stroke-width="0.7"/>
+    <path d="M24 54 Q24 74 60 74 Q96 74 96 54" fill="none" stroke="#a08c5a" stroke-width="0.9"/>
+    <ellipse cx="60" cy="54" rx="34" ry="9" fill="#f5f0e0" opacity="0.7"/>
+    <path d="M26 50 Q40 44 56 50 Q60 52 64 50 Q78 44 94 50" fill="#a08c5a" opacity="0.3" stroke="none"/>
+    <ellipse cx="40" cy="49" rx="9" ry="5.5" fill="#e87848" opacity="0.65"/>
+    <ellipse cx="40" cy="48" rx="5" ry="3" fill="#f0a070" opacity="0.5"/>
+    <ellipse cx="62" cy="47" rx="11" ry="5" fill="#a08c5a" opacity="0.55"/>
+    <ellipse cx="80" cy="50" rx="8" ry="5" fill="#f5c840" opacity="0.55"/>
+    <circle cx="52" cy="54" r="2.5" fill="#a8d070" opacity="0.6"/>
+    <circle cx="72" cy="55" r="2" fill="#a8d070" opacity="0.55"/>
+  </symbol>
+
+  <!-- No.017 · 美味三明治 -->
+  <symbol id="i017" viewBox="0 0 120 90" fill="none">
+    <path d="M14 65 Q60 70 106 65 L106 58 Q60 53 14 58 Z" fill="#f2deb0" opacity="0.95"/>
+    <path d="M14 65 Q60 70 106 65" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <path d="M16 58 Q60 53 104 58 L104 53 Q60 48 16 53Z" fill="#a8d878" opacity="0.55"/>
+    <path d="M18 53 Q60 48 102 53 L102 48 Q60 43 18 48Z" fill="#f0c87a" opacity="0.5"/>
+    <path d="M18 48 Q60 43 102 48 L102 43 Q60 38 18 43Z" fill="#e87848" opacity="0.45"/>
+    <path d="M18 43 Q60 38 102 43 L102 38 Q60 33 18 38Z" fill="#f0e8d0" opacity="0.65"/>
+    <path d="M20 33 Q60 28 100 33 L100 38 Q60 33 20 38Z" fill="#f2deb0" opacity="0.9"/>
+    <path d="M20 28 Q60 24 100 28" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.5"/>
+    <ellipse cx="42" cy="55.5" rx="7" ry="2" fill="#8a8070" opacity="0.3"/>
+    <ellipse cx="74" cy="51" rx="6" ry="1.8" fill="#8a8070" opacity="0.28"/>
+  </symbol>
+
+  <!-- No.018 · 干貝烏龍湯麵 -->
+  <symbol id="i018" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="65" rx="40" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#8a7aaa" stroke-width="0.7"/>
+    <path d="M20 54 Q20 74 60 74 Q100 74 100 54" fill="none" stroke="#8a7aaa" stroke-width="0.9"/>
+    <ellipse cx="60" cy="54" rx="38" ry="10" fill="#8a7aaa" opacity="0.12"/>
+    <path d="M24 54 Q38 44 54 54 Q68 64 84 54 Q92 47 98 53" fill="none" stroke="#f5f0e8" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <path d="M26 58 Q40 50 56 58 Q70 66 86 58" fill="none" stroke="#f5f0e8" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+    <ellipse cx="42" cy="50" rx="7" ry="4.5" fill="#e87848" opacity="0.65" transform="rotate(-5 42 50)"/>
+    <ellipse cx="74" cy="52" rx="7" ry="4.5" fill="#e87848" opacity="0.6" transform="rotate(4 74 52)"/>
+    <circle cx="60" cy="56" r="4" fill="#f5e8a0" opacity="0.75"/>
+    <circle cx="34" cy="60" r="2.5" fill="#a8d070" opacity="0.6"/>
+    <circle cx="86" cy="60" r="2.5" fill="#a8d070" opacity="0.58"/>
+    <circle cx="50" cy="62" r="2" fill="#8a7aaa" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.019 · 土星日的蚵仔與夕陽 -->
+  <symbol id="i019" viewBox="0 0 120 90" fill="none">
+    <circle cx="88" cy="28" r="16" fill="#f5c840" opacity="0.35"/>
+    <circle cx="88" cy="28" r="12" fill="#f5a820" opacity="0.3"/>
+    <circle cx="88" cy="28" r="7" fill="#f08020" opacity="0.4"/>
+    <path d="M0 56 Q30 48 60 54 Q90 60 120 52 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.25"/>
+    <path d="M0 64 Q25 58 55 62 Q85 66 120 60 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.35"/>
+    <path d="M0 74 Q30 70 60 73 Q90 76 120 72 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.45"/>
+    <path d="M0 84 L120 84 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.3"/>
+    <path d="M22 56 Q26 44 30 56Z" fill="#6a8a6a" opacity="0.4"/>
+    <path d="M26 44 Q30 38 34 44Z" fill="#6a8a6a" opacity="0.35"/>
+    <line x1="28" y1="44" x2="28" y2="56" stroke="#6a8a6a" stroke-width="0.8" opacity="0.35"/>
+    <path d="M88 54 L86 52 L84 54Z" fill="#4a4840" opacity="0.5"/>
+    <line x1="85" y1="52" x2="85" y2="57" stroke="#4a4840" stroke-width="0.7" opacity="0.45"/>
+  </symbol>
+
+  <!-- No.020 · 蕎麥麵初登場 -->
+  <symbol id="i020" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="64" rx="36" ry="9" fill="#e8dcc8" opacity="0.6" stroke="#a08c5a" stroke-width="0.7"/>
+    <path d="M24 54 Q24 73 60 73 Q96 73 96 54" fill="none" stroke="#a08c5a" stroke-width="0.9"/>
+    <line x1="33" y1="54" x2="31" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+    <line x1="39" y1="54" x2="37" y2="70" stroke="#7a6050" stroke-width="1.3" opacity="0.45"/>
+    <line x1="45" y1="54" x2="43" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+    <line x1="51" y1="54" x2="49" y2="70" stroke="#7a6050" stroke-width="1.2" opacity="0.42"/>
+    <line x1="57" y1="54" x2="55" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.48" stroke-linecap="round"/>
+    <line x1="63" y1="54" x2="61" y2="70" stroke="#7a6050" stroke-width="1.3" opacity="0.44"/>
+    <line x1="69" y1="54" x2="67" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.48" stroke-linecap="round"/>
+    <line x1="75" y1="54" x2="73" y2="70" stroke="#7a6050" stroke-width="1.2" opacity="0.42"/>
+    <ellipse cx="78" cy="48" rx="12" ry="7" fill="#f5e8c0" opacity="0.8" transform="rotate(-6 78 48)"/>
+    <ellipse cx="78" cy="47" rx="7" ry="4" fill="#f0c870" opacity="0.65" transform="rotate(-6 78 47)"/>
+    <circle cx="34" cy="61" r="2.5" fill="#a8d070" opacity="0.65"/>
+    <circle cx="52" cy="60" r="2" fill="#a8d070" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.021 · 海陸蕎麥麵  (夏至後) -->
+  <symbol id="i021" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="64" rx="36" ry="9" fill="#e8dcc8" opacity="0.6" stroke="#8a7aaa" stroke-width="0.7"/>
+    <path d="M24 54 Q24 73 60 73 Q96 73 96 54" fill="none" stroke="#8a7aaa" stroke-width="0.9"/>
+    <line x1="33" y1="54" x2="31" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+    <line x1="39" y1="54" x2="37" y2="70" stroke="#7a6050" stroke-width="1.3" opacity="0.45"/>
+    <line x1="45" y1="54" x2="43" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+    <line x1="51" y1="54" x2="49" y2="70" stroke="#7a6050" stroke-width="1.2" opacity="0.42"/>
+    <line x1="57" y1="54" x2="55" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.48" stroke-linecap="round"/>
+    <line x1="63" y1="54" x2="61" y2="70" stroke="#7a6050" stroke-width="1.3" opacity="0.44"/>
+    <line x1="69" y1="54" x2="67" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.48" stroke-linecap="round"/>
+    <line x1="75" y1="54" x2="73" y2="70" stroke="#7a6050" stroke-width="1.2" opacity="0.42"/>
+    <ellipse cx="78" cy="48" rx="12" ry="7" fill="#f5e8c0" opacity="0.8" transform="rotate(-6 78 48)"/>
+    <ellipse cx="78" cy="47" rx="7" ry="4" fill="#f0c870" opacity="0.65" transform="rotate(-6 78 47)"/>
+    <circle cx="34" cy="61" r="2.5" fill="#a8d070" opacity="0.65"/>
+    <circle cx="52" cy="60" r="2" fill="#a8d070" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.022 · BOSSDAY蚵仔三明治 -->
+  <symbol id="i022" viewBox="0 0 120 90" fill="none">
+    <path d="M20 68 L60 24 L100 68 Z" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.8"/>
+    <path d="M26 68 L60 32 L94 68" fill="none" stroke="#c89040" stroke-width="0.6" opacity="0.35"/>
+    <path d="M25 68 L60 30 L95 68 L90 68 L60 36 L30 68Z" fill="#a8d878" opacity="0.4"/>
+    <path d="M28 68 L60 36 L92 68 L88 68 L60 42 L32 68Z" fill="#f5c880" opacity="0.45"/>
+    <path d="M31 68 L60 42 L89 68 L86 68 L60 47 L34 68Z" fill="#e87848" opacity="0.35"/>
+    <path d="M34 68 L60 47 L86 68 L84 68 L60 51 L36 68Z" fill="#f0e8d0" opacity="0.6"/>
+    <line x1="20" y1="68" x2="100" y2="68" stroke="#c89040" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="52" cy="52" rx="4" ry="2.5" fill="#e87848" opacity="0.5" transform="rotate(-28 52 52)"/>
+    <ellipse cx="68" cy="52" rx="4" ry="2.5" fill="#f5c880" opacity="0.45" transform="rotate(28 68 52)"/>
+  </symbol>
+
+  <!-- No.023 · 新化林場滑一🍌 -->
+  <symbol id="i023" viewBox="0 0 120 90" fill="none">
+    <circle cx="96" cy="20" r="11" fill="#f5e890" opacity="0.4"/>
+    <circle cx="96" cy="20" r="7" fill="#f5e890" opacity="0.3"/>
+    <path d="M0 80 L120 80 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.45"/>
+    <line x1="18" y1="80" x2="18" y2="38" stroke="#6a8a6a" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
+    <path d="M8 42 Q18 30 28 42Z" fill="#6a8a6a" opacity="0.5"/>
+    <path d="M9 52 Q18 40 27 52Z" fill="#6a8a6a" opacity="0.42"/>
+    <line x1="38" y1="80" x2="38" y2="28" stroke="#6a8a6a" stroke-width="2" opacity="0.45" stroke-linecap="round"/>
+    <path d="M28 32 Q38 20 48 32Z" fill="#6a8a6a" opacity="0.48"/>
+    <path d="M29 42 Q38 30 47 42Z" fill="#6a8a6a" opacity="0.4"/>
+    <line x1="60" y1="80" x2="60" y2="34" stroke="#6a8a6a" stroke-width="2.5" opacity="0.48" stroke-linecap="round"/>
+    <path d="M50 38 Q60 26 70 38Z" fill="#6a8a6a" opacity="0.48"/>
+    <path d="M51 48 Q60 36 69 48Z" fill="#6a8a6a" opacity="0.38"/>
+    <line x1="82" y1="80" x2="82" y2="42" stroke="#6a8a6a" stroke-width="2" opacity="0.42" stroke-linecap="round"/>
+    <path d="M72 46 Q82 34 92 46Z" fill="#6a8a6a" opacity="0.44"/>
+    <line x1="102" y1="80" x2="102" y2="48" stroke="#6a8a6a" stroke-width="1.8" opacity="0.38" stroke-linecap="round"/>
+    <path d="M93 52 Q102 42 111 52Z" fill="#6a8a6a" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.024 · 酪梨燻鮭魚三明治 -->
+  <symbol id="i024" viewBox="0 0 120 90" fill="none">
+    <path d="M12 70 Q60 74 108 70 L108 63 Q60 58 12 63 Z" fill="#f2deb0" opacity="0.95"/>
+    <path d="M12 70 Q60 74 108 70" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <path d="M12 63 Q26 53 34 60 Q40 50 50 57 Q56 47 64 54 Q70 63 52 67 Q32 70 12 63 Z" fill="#a8d878" opacity="0.55"/>
+    <path d="M14 64 Q36 51 62 55" fill="none" stroke="#7ab848" stroke-width="0.5" opacity="0.5"/>
+    <path d="M108 63 Q94 53 86 60 Q80 50 70 57 Q64 47 56 54 Q62 63 80 67 Q96 70 108 63 Z" fill="#a8d878" opacity="0.52"/>
+    <path d="M106 64 Q84 51 58 55" fill="none" stroke="#7ab848" stroke-width="0.5" opacity="0.5"/>
+    <path d="M14 63 Q40 54 60 52 Q80 54 106 63" fill="none" stroke="#e8c4a0" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+    <path d="M15 62 Q40 55 60 53 Q80 55 105 62" fill="none" stroke="#f8f3ec" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+    <ellipse cx="34" cy="57" rx="3.5" ry="2" fill="#e07858" opacity="0.78" transform="rotate(-7 34 57)"/>
+    <ellipse cx="50" cy="54" rx="3" ry="1.8" fill="#d86848" opacity="0.72" transform="rotate(4 50 54)"/>
+    <ellipse cx="65" cy="53" rx="3.5" ry="1.9" fill="#e07858" opacity="0.75" transform="rotate(-3 65 53)"/>
+    <ellipse cx="80" cy="54" rx="3" ry="1.8" fill="#d86848" opacity="0.7" transform="rotate(5 80 54)"/>
+    <ellipse cx="94" cy="57" rx="3.2" ry="1.8" fill="#e07858" opacity="0.73" transform="rotate(-5 94 57)"/>
+    <circle cx="42" cy="55" r="1.1" fill="#7aaa6a" opacity="0.82"/>
+    <circle cx="57" cy="53" r="1" fill="#6a9a5a" opacity="0.78"/>
+    <circle cx="72" cy="53" r="1.2" fill="#7aaa6a" opacity="0.8"/>
+    <circle cx="87" cy="55" r="1" fill="#6a9a5a" opacity="0.75"/>
+    <circle cx="28" cy="59" r="0.9" fill="#7aaa6a" opacity="0.7"/>
+    <path d="M13 52 Q60 46 107 52 L107 44 Q60 38 13 44 Z" fill="#f2deb0" opacity="0.9"/>
+    <path d="M13 44 Q60 38 107 44" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.025 · 酪梨雞胸肉哇沙米海苔手捲(小暑前) -->
+  <symbol id="i025" viewBox="0 0 120 90" fill="none">
+    <path d="M42 16 L94 74 Q86 84 78 76 L26 22Z" fill="#f2deb0" opacity="0.88" stroke="#c89040" stroke-width="0.8"/>
+    <path d="M46 18 L92 72" fill="none" stroke="#c89040" stroke-width="0.6" opacity="0.3"/>
+    <path d="M50 20 L90 70" fill="none" stroke="#c89040" stroke-width="0.5" opacity="0.22"/>
+    <ellipse cx="38" cy="32" rx="12" ry="9" fill="#3a3028" opacity="0.6" transform="rotate(-40 38 32)"/>
+    <ellipse cx="46" cy="26" rx="9" ry="7" fill="#a8d878" opacity="0.65" transform="rotate(-40 46 26)"/>
+    <circle cx="50" cy="30" r="4.5" fill="#f5f0e0" opacity="0.7"/>
+    <circle cx="50" cy="29" r="2.5" fill="#e87848" opacity="0.6"/>
+    <circle cx="42" cy="38" r="3" fill="#f5c840" opacity="0.55"/>
+    <circle cx="56" cy="36" r="2.5" fill="#a8d070" opacity="0.6"/>
+    <circle cx="62" cy="44" r="2" fill="#8a8070" opacity="0.45"/>
+  </symbol>
+
+  <!-- No.026 · 爪哇牛肉咖哩烏龍麵(小暑後) -->
+  <symbol id="i026" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="65" rx="40" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#a08c5a" stroke-width="0.7"/>
+    <path d="M20 54 Q20 74 60 74 Q100 74 100 54" fill="none" stroke="#a08c5a" stroke-width="0.9"/>
+    <ellipse cx="60" cy="54" rx="38" ry="10" fill="#a08c5a" opacity="0.12"/>
+    <path d="M24 54 Q38 44 54 54 Q68 64 84 54 Q92 47 98 53" fill="none" stroke="#f5f0e8" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <path d="M26 58 Q40 50 56 58 Q70 66 86 58" fill="none" stroke="#f5f0e8" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+    <ellipse cx="42" cy="50" rx="7" ry="4.5" fill="#e87848" opacity="0.65" transform="rotate(-5 42 50)"/>
+    <ellipse cx="74" cy="52" rx="7" ry="4.5" fill="#e87848" opacity="0.6" transform="rotate(4 74 52)"/>
+    <circle cx="60" cy="56" r="4" fill="#f5e8a0" opacity="0.75"/>
+    <circle cx="34" cy="60" r="2.5" fill="#a8d070" opacity="0.6"/>
+    <circle cx="86" cy="60" r="2.5" fill="#a8d070" opacity="0.58"/>
+    <circle cx="50" cy="62" r="2" fill="#a08c5a" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.027 · 西班牙蒜蝦墨魚麵 -->
+  <symbol id="i027" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="66" rx="40" ry="10" fill="#2c2420" opacity="0.4" stroke="#6a8a8a" stroke-width="0.7"/>
+    <path d="M20 55 Q20 75 60 75 Q100 75 100 55" fill="none" stroke="#6a8a8a" stroke-width="0.9"/>
+    <ellipse cx="60" cy="55" rx="38" ry="10" fill="#3c2c28" opacity="0.5"/>
+    <path d="M24 52 Q38 40 54 50 Q64 58 80 46 Q90 40 96 52" fill="none" stroke="#4a3830" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/>
+    <path d="M26 56 Q40 47 56 54 Q68 62 84 52 Q92 46 96 54" fill="none" stroke="#4a3830" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+    <ellipse cx="42" cy="48" rx="6" ry="4" fill="#e87848" opacity="0.8" transform="rotate(-8 42 48)"/>
+    <ellipse cx="42" cy="47" rx="3" ry="2" fill="#f0a070" opacity="0.6" transform="rotate(-8 42 47)"/>
+    <ellipse cx="72" cy="50" rx="5.5" ry="3.5" fill="#e87848" opacity="0.75" transform="rotate(5 72 50)"/>
+    <circle cx="56" cy="52" r="3" fill="#f5e8a0" opacity="0.7"/>
+    <circle cx="82" cy="56" r="2.5" fill="#f5e8a0" opacity="0.65"/>
+    <circle cx="34" cy="58" r="2" fill="#f5c840" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.028 · 鰻魚麻油飯 -->
+  <symbol id="i028" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="65" rx="36" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#8a7aaa" stroke-width="0.7"/>
+    <path d="M24 54 Q24 74 60 74 Q96 74 96 54" fill="none" stroke="#8a7aaa" stroke-width="0.9"/>
+    <ellipse cx="60" cy="54" rx="34" ry="9" fill="#f5f0e0" opacity="0.7"/>
+    <path d="M26 50 Q40 44 56 50 Q60 52 64 50 Q78 44 94 50" fill="#8a7aaa" opacity="0.3" stroke="none"/>
+    <ellipse cx="40" cy="49" rx="9" ry="5.5" fill="#e87848" opacity="0.65"/>
+    <ellipse cx="40" cy="48" rx="5" ry="3" fill="#f0a070" opacity="0.5"/>
+    <ellipse cx="62" cy="47" rx="11" ry="5" fill="#8a7aaa" opacity="0.55"/>
+    <ellipse cx="80" cy="50" rx="8" ry="5" fill="#f5c840" opacity="0.55"/>
+    <circle cx="52" cy="54" r="2.5" fill="#a8d070" opacity="0.6"/>
+    <circle cx="72" cy="55" r="2" fill="#a8d070" opacity="0.55"/>
+  </symbol>
+
+  <!-- No.029 · 奧林匹亞龍蝦沙拉三明治 -->
+  <symbol id="i029" viewBox="0 0 120 90" fill="none">
+    <path d="M12 70 Q60 74 108 70 L108 63 Q60 58 12 63 Z" fill="#f2deb0" opacity="0.95"/>
+    <path d="M12 70 Q60 74 108 70" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <path d="M12 63 Q26 53 34 60 Q40 50 50 57 Q56 47 64 54 Q70 63 52 67 Q32 70 12 63 Z" fill="#a8d878" opacity="0.55"/>
+    <path d="M14 64 Q36 51 62 55" fill="none" stroke="#7ab848" stroke-width="0.5" opacity="0.5"/>
+    <path d="M108 63 Q94 53 86 60 Q80 50 70 57 Q64 47 56 54 Q62 63 80 67 Q96 70 108 63 Z" fill="#a8d878" opacity="0.52"/>
+    <path d="M106 64 Q84 51 58 55" fill="none" stroke="#7ab848" stroke-width="0.5" opacity="0.5"/>
+    <path d="M14 63 Q40 54 60 52 Q80 54 106 63" fill="none" stroke="#e8c4a0" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+    <path d="M15 62 Q40 55 60 53 Q80 55 105 62" fill="none" stroke="#f8f3ec" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+    <ellipse cx="34" cy="57" rx="3.5" ry="2" fill="#e07858" opacity="0.78" transform="rotate(-7 34 57)"/>
+    <ellipse cx="50" cy="54" rx="3" ry="1.8" fill="#d86848" opacity="0.72" transform="rotate(4 50 54)"/>
+    <ellipse cx="65" cy="53" rx="3.5" ry="1.9" fill="#e07858" opacity="0.75" transform="rotate(-3 65 53)"/>
+    <ellipse cx="80" cy="54" rx="3" ry="1.8" fill="#d86848" opacity="0.7" transform="rotate(5 80 54)"/>
+    <ellipse cx="94" cy="57" rx="3.2" ry="1.8" fill="#e07858" opacity="0.73" transform="rotate(-5 94 57)"/>
+    <circle cx="42" cy="55" r="1.1" fill="#7aaa6a" opacity="0.82"/>
+    <circle cx="57" cy="53" r="1" fill="#6a9a5a" opacity="0.78"/>
+    <circle cx="72" cy="53" r="1.2" fill="#7aaa6a" opacity="0.8"/>
+    <circle cx="87" cy="55" r="1" fill="#6a9a5a" opacity="0.75"/>
+    <circle cx="28" cy="59" r="0.9" fill="#7aaa6a" opacity="0.7"/>
+    <path d="M13 52 Q60 46 107 52 L107 44 Q60 38 13 44 Z" fill="#f2deb0" opacity="0.9"/>
+    <path d="M13 44 Q60 38 107 44" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.030 · 16號泰式黃咖哩(中元節前) -->
+  <symbol id="i030" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="62" rx="44" ry="12" fill="#f0ece4" opacity="0.7" stroke="#aa7a6a" stroke-width="0.65"/>
+    <ellipse cx="38" cy="57" rx="22" ry="13" fill="#f5f0e0" opacity="0.8"/>
+    <ellipse cx="38" cy="56" rx="16" ry="9" fill="#f5f0d8" opacity="0.6"/>
+    <ellipse cx="80" cy="57" rx="24" ry="14" fill="#f5a820" opacity="0.4"/>
+    <ellipse cx="80" cy="55" rx="18" ry="10" fill="#e89020" opacity="0.3"/>
+    <circle cx="74" cy="53" r="5" fill="#aa7a6a" opacity="0.55"/>
+    <circle cx="74" cy="52" r="2.5" fill="#f5c840" opacity="0.45"/>
+    <circle cx="86" cy="57" r="4.5" fill="#aa7a6a" opacity="0.5"/>
+    <circle cx="82" cy="62" r="3.5" fill="#e87848" opacity="0.5"/>
+    <circle cx="95" cy="55" r="3" fill="#a8d070" opacity="0.55"/>
+    <line x1="58" y1="48" x2="60" y2="72" stroke="#aa7a6a" stroke-width="0.6" opacity="0.3"/>
+  </symbol>
+
+  <!-- No.031 · 五心肝牛腱三明治(中元節後) -->
+  <symbol id="i031" viewBox="0 0 120 90" fill="none">
+    <path d="M14 65 Q60 70 106 65 L106 58 Q60 53 14 58 Z" fill="#f2deb0" opacity="0.95"/>
+    <path d="M14 65 Q60 70 106 65" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <path d="M16 58 Q60 53 104 58 L104 53 Q60 48 16 53Z" fill="#a8d878" opacity="0.55"/>
+    <path d="M18 53 Q60 48 102 53 L102 48 Q60 43 18 48Z" fill="#f0c87a" opacity="0.5"/>
+    <path d="M18 48 Q60 43 102 48 L102 43 Q60 38 18 43Z" fill="#e87848" opacity="0.45"/>
+    <path d="M18 43 Q60 38 102 43 L102 38 Q60 33 18 38Z" fill="#f0e8d0" opacity="0.65"/>
+    <path d="M20 33 Q60 28 100 33 L100 38 Q60 33 20 38Z" fill="#f2deb0" opacity="0.9"/>
+    <path d="M20 28 Q60 24 100 28" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.5"/>
+    <ellipse cx="42" cy="55.5" rx="7" ry="2" fill="#a08c5a" opacity="0.3"/>
+    <ellipse cx="74" cy="51" rx="6" ry="1.8" fill="#a08c5a" opacity="0.28"/>
+  </symbol>
+
+  <!-- No.032 · 打拋豬千層麵(處暑) -->
+  <symbol id="i032" viewBox="0 0 120 90" fill="none">
+    <rect x="18" y="34" width="84" height="40" rx="3" fill="#e8dcc8" opacity="0.75" stroke="#aa7a6a" stroke-width="0.8"/>
+    <rect x="18" y="34" width="84" height="8" rx="2" fill="#f5e8c0" opacity="0.8"/>
+    <rect x="18" y="42" width="84" height="7" fill="#e05030" opacity="0.4"/>
+    <rect x="18" y="49" width="84" height="7" fill="#f5e8c0" opacity="0.75"/>
+    <rect x="18" y="56" width="84" height="7" fill="#e05030" opacity="0.35"/>
+    <rect x="18" y="63" width="84" height="6" rx="2" fill="#f5e8c0" opacity="0.7"/>
+    <path d="M22 38 Q60 35 98 38" fill="none" stroke="#d4b880" stroke-width="0.5" opacity="0.35"/>
+    <circle cx="36" cy="46" r="3.5" fill="#c04020" opacity="0.55"/>
+    <circle cx="58" cy="46" r="3" fill="#c04020" opacity="0.5"/>
+    <circle cx="80" cy="46" r="3.5" fill="#c04020" opacity="0.52"/>
+    <circle cx="44" cy="60" r="2.5" fill="#a8d070" opacity="0.55"/>
+    <circle cx="70" cy="59" r="2.5" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.033 · 燻鮭魚三明治 -->
+  <symbol id="i033" viewBox="0 0 120 90" fill="none">
+    <path d="M20 68 L60 24 L100 68 Z" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.8"/>
+    <path d="M26 68 L60 32 L94 68" fill="none" stroke="#c89040" stroke-width="0.6" opacity="0.35"/>
+    <path d="M25 68 L60 30 L95 68 L90 68 L60 36 L30 68Z" fill="#a8d878" opacity="0.4"/>
+    <path d="M28 68 L60 36 L92 68 L88 68 L60 42 L32 68Z" fill="#f5c880" opacity="0.45"/>
+    <path d="M31 68 L60 42 L89 68 L86 68 L60 47 L34 68Z" fill="#e87848" opacity="0.35"/>
+    <path d="M34 68 L60 47 L86 68 L84 68 L60 51 L36 68Z" fill="#f0e8d0" opacity="0.6"/>
+    <line x1="20" y1="68" x2="100" y2="68" stroke="#c89040" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="52" cy="52" rx="4" ry="2.5" fill="#e87848" opacity="0.5" transform="rotate(-28 52 52)"/>
+    <ellipse cx="68" cy="52" rx="4" ry="2.5" fill="#f5c880" opacity="0.45" transform="rotate(28 68 52)"/>
+  </symbol>
+
+  <!-- No.034 · 西班牙海鮮燉飯 -->
+  <symbol id="i034" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="65" rx="46" ry="12" fill="#e8dcc8" opacity="0.6" stroke="#8a8070" stroke-width="0.8"/>
+    <ellipse cx="60" cy="59" rx="44" ry="10" fill="#f5c840" opacity="0.35" stroke="#8a8070" stroke-width="0.9"/>
+    <ellipse cx="60" cy="57" rx="40" ry="8" fill="#e8b830" opacity="0.3"/>
+    <ellipse cx="38" cy="55" rx="7" ry="4.5" fill="#e87848" opacity="0.7"/>
+    <ellipse cx="38" cy="54" rx="4" ry="2.5" fill="#f0a070" opacity="0.6"/>
+    <ellipse cx="56" cy="52" rx="6" ry="4" fill="#f5c840" opacity="0.6"/>
+    <ellipse cx="72" cy="53" rx="7" ry="4.5" fill="#e87848" opacity="0.65"/>
+    <ellipse cx="72" cy="52" rx="4" ry="2.5" fill="#f0a070" opacity="0.55"/>
+    <ellipse cx="84" cy="56" rx="5.5" ry="3.5" fill="#f5c840" opacity="0.55"/>
+    <circle cx="48" cy="60" r="3" fill="#c84030" opacity="0.5"/>
+    <circle cx="66" cy="61" r="2.5" fill="#c84030" opacity="0.45"/>
+    <circle cx="78" cy="60" r="2" fill="#a8d070" opacity="0.55"/>
+    <line x1="96" y1="59" x2="110" y2="53" stroke="#8a7060" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- No.035 · 紐約風烤牛肉三明治 -->
+  <symbol id="i035" viewBox="0 0 120 90" fill="none">
+    <path d="M12 70 Q60 74 108 70 L108 63 Q60 58 12 63 Z" fill="#f2deb0" opacity="0.95"/>
+    <path d="M12 70 Q60 74 108 70" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <path d="M12 63 Q26 53 34 60 Q40 50 50 57 Q56 47 64 54 Q70 63 52 67 Q32 70 12 63 Z" fill="#a8d878" opacity="0.55"/>
+    <path d="M14 64 Q36 51 62 55" fill="none" stroke="#7ab848" stroke-width="0.5" opacity="0.5"/>
+    <path d="M108 63 Q94 53 86 60 Q80 50 70 57 Q64 47 56 54 Q62 63 80 67 Q96 70 108 63 Z" fill="#a8d878" opacity="0.52"/>
+    <path d="M106 64 Q84 51 58 55" fill="none" stroke="#7ab848" stroke-width="0.5" opacity="0.5"/>
+    <path d="M14 63 Q40 54 60 52 Q80 54 106 63" fill="none" stroke="#e8c4a0" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+    <path d="M15 62 Q40 55 60 53 Q80 55 105 62" fill="none" stroke="#f8f3ec" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+    <ellipse cx="34" cy="57" rx="3.5" ry="2" fill="#e07858" opacity="0.78" transform="rotate(-7 34 57)"/>
+    <ellipse cx="50" cy="54" rx="3" ry="1.8" fill="#d86848" opacity="0.72" transform="rotate(4 50 54)"/>
+    <ellipse cx="65" cy="53" rx="3.5" ry="1.9" fill="#e07858" opacity="0.75" transform="rotate(-3 65 53)"/>
+    <ellipse cx="80" cy="54" rx="3" ry="1.8" fill="#d86848" opacity="0.7" transform="rotate(5 80 54)"/>
+    <ellipse cx="94" cy="57" rx="3.2" ry="1.8" fill="#e07858" opacity="0.73" transform="rotate(-5 94 57)"/>
+    <circle cx="42" cy="55" r="1.1" fill="#7aaa6a" opacity="0.82"/>
+    <circle cx="57" cy="53" r="1" fill="#6a9a5a" opacity="0.78"/>
+    <circle cx="72" cy="53" r="1.2" fill="#7aaa6a" opacity="0.8"/>
+    <circle cx="87" cy="55" r="1" fill="#6a9a5a" opacity="0.75"/>
+    <circle cx="28" cy="59" r="0.9" fill="#7aaa6a" opacity="0.7"/>
+    <path d="M13 52 Q60 46 107 52 L107 44 Q60 38 13 44 Z" fill="#f2deb0" opacity="0.9"/>
+    <path d="M13 44 Q60 38 107 44" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.036 · 搬入Marhaus(白露甚好) -->
+  <symbol id="i036" viewBox="0 0 120 90" fill="none">
+    <rect x="6" y="16" width="24" height="36" rx="2" fill="#6a8a6a" opacity="0.35" stroke="#6a8a6a" stroke-width="0.6"/>
+    <rect x="9" y="20" width="5" height="4" rx="1" fill="#f5c840" opacity="0.6"/>
+    <rect x="16" y="22" width="5" height="4" rx="1" fill="#f5c840" opacity="0.5"/>
+    <rect x="9" y="28" width="5" height="4" rx="1" fill="#f5e890" opacity="0.55"/>
+    <rect x="32" y="24" width="18" height="28" rx="2" fill="#6a8a6a" opacity="0.3" stroke="#6a8a6a" stroke-width="0.5"/>
+    <rect x="35" y="28" width="4" height="3" rx="1" fill="#f5c840" opacity="0.55"/>
+    <rect x="42" y="26" width="4" height="3" rx="1" fill="#f5c840" opacity="0.5"/>
+    <rect x="54" y="14" width="26" height="38" rx="2" fill="#6a8a6a" opacity="0.38" stroke="#6a8a6a" stroke-width="0.6"/>
+    <rect x="58" y="18" width="5" height="4" rx="1" fill="#f5c840" opacity="0.6"/>
+    <rect x="65" y="20" width="5" height="4" rx="1" fill="#f5e890" opacity="0.55"/>
+    <rect x="58" y="28" width="5" height="4" rx="1" fill="#f5c840" opacity="0.5"/>
+    <rect x="65" y="30" width="5" height="4" rx="1" fill="#f5c840" opacity="0.48"/>
+    <rect x="84" y="20" width="22" height="32" rx="2" fill="#6a8a6a" opacity="0.32" stroke="#6a8a6a" stroke-width="0.5"/>
+    <rect x="87" y="24" width="4" height="3" rx="1" fill="#f5c840" opacity="0.55"/>
+    <rect x="94" y="26" width="4" height="3" rx="1" fill="#f5e890" opacity="0.5"/>
+    <path d="M0 62 L120 62" stroke="#6a8a6a" stroke-width="0.8" opacity="0.35"/>
+    <circle cx="18" cy="66" r="6" fill="#6a8a6a" opacity="0.2"/>
+    <circle cx="42" cy="66" r="5" fill="#6a8a6a" opacity="0.18"/>
+    <circle cx="68" cy="66" r="8" fill="#6a8a6a" opacity="0.22"/>
+    <circle cx="96" cy="66" r="5" fill="#6a8a6a" opacity="0.18"/>
+  </symbol>
+
+  <!-- No.037 · 油豆腐鑲肉花枝蝦仁漿(白露後) -->
+  <symbol id="i037" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="60" rx="46" ry="13" fill="#f0ece4" opacity="0.7" stroke="#a08c5a" stroke-width="0.6"/>
+    <ellipse cx="60" cy="58" rx="44" ry="11" fill="none" stroke="#a08c5a" stroke-width="0.4" opacity="0.2"/>
+    <ellipse cx="38" cy="52" rx="14" ry="9" fill="#e87848" opacity="0.5" transform="rotate(-18 38 52)"/>
+    <ellipse cx="38" cy="52" rx="8" ry="5" fill="#f0a070" opacity="0.45" transform="rotate(-18 38 52)"/>
+    <ellipse cx="60" cy="50" rx="9" ry="7" fill="#f5c840" opacity="0.55"/>
+    <ellipse cx="82" cy="52" rx="12" ry="8" fill="#a8d070" opacity="0.5" transform="rotate(12 82 52)"/>
+    <circle cx="48" cy="59" r="3.5" fill="#a08c5a" opacity="0.4"/>
+    <circle cx="70" cy="58" r="3" fill="#a08c5a" opacity="0.35"/>
+    <circle cx="58" cy="62" r="2" fill="#f0e8d0" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.038 · 毛豆金星海味堡(中秋前一日) -->
+  <symbol id="i038" viewBox="0 0 120 90" fill="none">
+    <path d="M20 52 Q60 38 100 52" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.8"/>
+    <ellipse cx="60" cy="38" rx="24" ry="6" fill="#f5e8c8" opacity="0.6"/>
+    <circle cx="42" cy="42" r="1.2" fill="#c89040" opacity="0.5"/>
+    <circle cx="55" cy="40" r="1" fill="#c89040" opacity="0.45"/>
+    <circle cx="68" cy="41" r="1.2" fill="#c89040" opacity="0.5"/>
+    <circle cx="78" cy="43" r="1" fill="#c89040" opacity="0.4"/>
+    <rect x="18" y="52" width="84" height="5" rx="1" fill="#f5c840" opacity="0.7"/>
+    <rect x="18" y="57" width="84" height="6" rx="1" fill="#e87030" opacity="0.75"/>
+    <rect x="20" y="63" width="80" height="4" rx="1" fill="#a8d070" opacity="0.6"/>
+    <rect x="20" y="67" width="80" height="5" rx="1" fill="#f0e0c0" opacity="0.7"/>
+    <path d="M20 72 Q60 77 100 72 L100 67 Q60 72 20 67Z" fill="#f2deb0" opacity="0.92"/>
+    <path d="M20 72 Q60 77 100 72" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <ellipse cx="44" cy="60" rx="8" ry="2.5" fill="#c86030" opacity="0.35"/>
+    <ellipse cx="72" cy="61" rx="7" ry="2.5" fill="#c86030" opacity="0.3"/>
+  </symbol>
+
+  <!-- No.039 · 超級月亮公路 -->
+  <symbol id="i039" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="26" r="24" fill="#f5e890" opacity="0.22"/>
+    <circle cx="60" cy="26" r="20" fill="#f5e890" opacity="0.18"/>
+    <circle cx="60" cy="26" r="15" fill="#f5e890" opacity="0.22"/>
+    <circle cx="60" cy="26" r="10" fill="#f5e890" opacity="0.28"/>
+    <circle cx="66" cy="22" r="3" fill="#e8d870" opacity="0.2"/>
+    <circle cx="54" cy="28" r="2" fill="#e8d870" opacity="0.18"/>
+    <circle cx="62" cy="32" r="1.5" fill="#e8d870" opacity="0.15"/>
+    <path d="M0 90 L0 68 Q18 62 38 68 Q58 74 78 66 Q98 58 120 66 L120 90Z" fill="#6a8a6a" opacity="0.3"/>
+    <path d="M0 90 L0 76 Q28 70 58 74 Q88 78 120 74 L120 90Z" fill="#6a8a6a" opacity="0.45"/>
+    <path d="M0 90 L120 90" stroke="#6a8a6a" stroke-width="1" opacity="0.35"/>
+    <path d="M0 90 L44 50 L76 50 L120 90" fill="none" stroke="#f5f0e8" stroke-width="0.7" opacity="0.25"/>
+    <line x1="58" y1="50" x2="54" y2="90" stroke="#f5f0e8" stroke-width="0.5" opacity="0.2"/>
+    <line x1="62" y1="50" x2="66" y2="90" stroke="#f5f0e8" stroke-width="0.5" opacity="0.18"/>
+  </symbol>
+
+  <!-- No.040 · 颱風天的港點包場 -->
+  <symbol id="i040" viewBox="0 0 120 90" fill="none">
+    <circle cx="30" cy="50" r="20" fill="#f0ece4" opacity="0.65" stroke="#6a8a6a" stroke-width="0.6"/>
+    <ellipse cx="24" cy="46" rx="7" ry="5" fill="#e87848" opacity="0.55"/>
+    <ellipse cx="36" cy="54" rx="8" ry="5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="30" cy="50" r="2.5" fill="#6a8a6a" opacity="0.4"/>
+    <circle cx="78" cy="44" r="18" fill="#f0ece4" opacity="0.6" stroke="#6a8a6a" stroke-width="0.6"/>
+    <ellipse cx="74" cy="40" rx="6" ry="4" fill="#a8d070" opacity="0.6"/>
+    <ellipse cx="83" cy="48" rx="5" ry="4" fill="#6a8a6a" opacity="0.45"/>
+    <circle cx="82" cy="66" r="15" fill="#f0ece4" opacity="0.62" stroke="#6a8a6a" stroke-width="0.55"/>
+    <ellipse cx="80" cy="64" rx="6" ry="4" fill="#e07850" opacity="0.55"/>
+    <circle cx="84" cy="68" r="2.5" fill="#f5c840" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.041 · 蕃茄蔬菜湯油豆腐丸子 -->
+  <symbol id="i041" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="52" rx="42" ry="15" fill="#e8dcc8" opacity="0.7" stroke="#aa7a6a" stroke-width="0.8"/>
+    <ellipse cx="60" cy="52" rx="42" ry="15" fill="none" stroke="#aa7a6a" stroke-width="0.5" opacity="0.25"/>
+    <ellipse cx="60" cy="52" rx="34" ry="10" fill="#aa7a6a" opacity="0.15"/>
+    <ellipse cx="42" cy="49" rx="7" ry="5" fill="#aa7a6a" opacity="0.45" transform="rotate(-10 42 49)"/>
+    <ellipse cx="58" cy="46" rx="5" ry="3.5" fill="#f0c87a" opacity="0.6" transform="rotate(5 58 46)"/>
+    <ellipse cx="72" cy="48" rx="6" ry="4" fill="#aa7a6a" opacity="0.4" transform="rotate(8 72 48)"/>
+    <circle cx="50" cy="55" r="3" fill="#e87848" opacity="0.5"/>
+    <circle cx="66" cy="57" r="2.5" fill="#a8d070" opacity="0.6"/>
+    <circle cx="78" cy="53" r="3.5" fill="#aa7a6a" opacity="0.35"/>
+    <circle cx="38" cy="56" r="2" fill="#f0c87a" opacity="0.55"/>
+  </symbol>
+
+  <!-- No.042 · 六甲落羽松 -->
+  <symbol id="i042" viewBox="0 0 120 90" fill="none">
+    <circle cx="96" cy="20" r="11" fill="#f5e890" opacity="0.4"/>
+    <circle cx="96" cy="20" r="7" fill="#f5e890" opacity="0.3"/>
+    <path d="M0 80 L120 80 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.45"/>
+    <line x1="18" y1="80" x2="18" y2="38" stroke="#6a8a6a" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
+    <path d="M8 42 Q18 30 28 42Z" fill="#6a8a6a" opacity="0.5"/>
+    <path d="M9 52 Q18 40 27 52Z" fill="#6a8a6a" opacity="0.42"/>
+    <line x1="38" y1="80" x2="38" y2="28" stroke="#6a8a6a" stroke-width="2" opacity="0.45" stroke-linecap="round"/>
+    <path d="M28 32 Q38 20 48 32Z" fill="#6a8a6a" opacity="0.48"/>
+    <path d="M29 42 Q38 30 47 42Z" fill="#6a8a6a" opacity="0.4"/>
+    <line x1="60" y1="80" x2="60" y2="34" stroke="#6a8a6a" stroke-width="2.5" opacity="0.48" stroke-linecap="round"/>
+    <path d="M50 38 Q60 26 70 38Z" fill="#6a8a6a" opacity="0.48"/>
+    <path d="M51 48 Q60 36 69 48Z" fill="#6a8a6a" opacity="0.38"/>
+    <line x1="82" y1="80" x2="82" y2="42" stroke="#6a8a6a" stroke-width="2" opacity="0.42" stroke-linecap="round"/>
+    <path d="M72 46 Q82 34 92 46Z" fill="#6a8a6a" opacity="0.44"/>
+    <line x1="102" y1="80" x2="102" y2="48" stroke="#6a8a6a" stroke-width="1.8" opacity="0.38" stroke-linecap="round"/>
+    <path d="M93 52 Q102 42 111 52Z" fill="#6a8a6a" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.043 · 寒露餐桌上有著秋天顏色 -->
+  <symbol id="i043" viewBox="0 0 120 90" fill="none">
+    <rect x="8" y="32" width="104" height="44" rx="5" fill="#e8dcc8" opacity="0.7" stroke="#6a8a8a" stroke-width="0.6"/>
+    <ellipse cx="30" cy="54" rx="14" ry="9" fill="#e87848" opacity="0.55" transform="rotate(-10 30 54)"/>
+    <ellipse cx="30" cy="54" rx="8" ry="5" fill="#f0a070" opacity="0.5" transform="rotate(-10 30 54)"/>
+    <ellipse cx="54" cy="48" rx="11" ry="8" fill="#f5c840" opacity="0.5" transform="rotate(8 54 48)"/>
+    <ellipse cx="78" cy="55" rx="13" ry="8" fill="#a8d070" opacity="0.55" transform="rotate(-5 78 55)"/>
+    <ellipse cx="98" cy="48" rx="10" ry="7" fill="#6a8a8a" opacity="0.45" transform="rotate(14 98 48)"/>
+    <circle cx="42" cy="64" r="3.5" fill="#e87030" opacity="0.5"/>
+    <circle cx="66" cy="62" r="3" fill="#6a8a8a" opacity="0.4"/>
+    <circle cx="22" cy="46" r="2.5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="90" cy="62" r="2" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.044 · 鹽麴雞肉墨西哥捲餅(超級月亮前一天) -->
+  <symbol id="i044" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="50" r="34" fill="#f2deb0" opacity="0.88" stroke="#c89040" stroke-width="0.8"/>
+    <circle cx="60" cy="50" r="28" fill="none" stroke="#c89040" stroke-width="0.4" opacity="0.3"/>
+    <path d="M32 50 Q60 34 88 50 Q60 66 32 50Z" fill="#e87848" opacity="0.4"/>
+    <circle cx="46" cy="45" r="6" fill="#a8d878" opacity="0.65"/>
+    <circle cx="46" cy="44" r="3" fill="#7ab848" opacity="0.5"/>
+    <circle cx="64" cy="43" r="5.5" fill="#f5c840" opacity="0.6"/>
+    <circle cx="64" cy="42" r="3" fill="#d4a020" opacity="0.5"/>
+    <circle cx="56" cy="56" r="4.5" fill="#6a8a8a" opacity="0.5"/>
+    <circle cx="56" cy="55" r="2.5" fill="#f5e8a0" opacity="0.45"/>
+    <circle cx="72" cy="54" r="4" fill="#e87848" opacity="0.5"/>
+    <circle cx="72" cy="53" r="2" fill="#f0a070" opacity="0.45"/>
+    <path d="M32 50 Q60 44 88 50" fill="none" stroke="#c89040" stroke-width="0.7" opacity="0.35"/>
+  </symbol>
+
+  <!-- No.045 · 鹽麴里肌金星捲餅 -->
+  <symbol id="i045" viewBox="0 0 120 90" fill="none">
+    <path d="M24 26 Q24 16 60 16 Q96 16 96 26 L96 68 Q96 78 60 78 Q24 78 24 68Z" fill="#f2deb0" opacity="0.88" stroke="#c89040" stroke-width="0.8"/>
+    <ellipse cx="60" cy="26" rx="36" ry="9" fill="#f5deb0" opacity="0.85" stroke="#c89040" stroke-width="0.7"/>
+    <ellipse cx="60" cy="68" rx="36" ry="9" fill="#f5deb0" opacity="0.8" stroke="#c89040" stroke-width="0.6"/>
+    <path d="M26 40 Q60 36 94 40" fill="none" stroke="#a8d070" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <path d="M26 51 Q60 47 94 51" fill="none" stroke="#e87848" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+    <path d="M26 60 Q60 56 94 60" fill="none" stroke="#f5e8a0" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="42" cy="46" r="3" fill="#8a7aaa" opacity="0.5"/>
+    <circle cx="60" cy="54" r="2.5" fill="#e87848" opacity="0.55"/>
+    <circle cx="78" cy="46" r="3" fill="#8a7aaa" opacity="0.45"/>
+    <circle cx="42" cy="20" r="3" fill="#a8d070" opacity="0.6"/>
+    <circle cx="60" cy="18" r="2.5" fill="#e87848" opacity="0.55"/>
+    <circle cx="78" cy="20" r="3" fill="#f5c840" opacity="0.55"/>
+  </symbol>
+
+  <!-- No.046 · 起司咖哩霜降牛肉(霜降次日) -->
+  <symbol id="i046" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="65" rx="38" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#a08c5a" stroke-width="0.7"/>
+    <path d="M22 54 Q22 74 60 74 Q98 74 98 54" fill="none" stroke="#a08c5a" stroke-width="0.9"/>
+    <ellipse cx="60" cy="54" rx="36" ry="9" fill="#f5a820" opacity="0.45"/>
+    <path d="M24 57 Q36 51 54 55 Q62 59 70 53 Q80 47 98 55" fill="#e89020" opacity="0.3" stroke="none"/>
+    <path d="M26 60 Q38 55 54 58 Q62 62 70 56 Q80 51 96 58" fill="none" stroke="#f5c840" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+    <circle cx="40" cy="52" r="5.5" fill="#a08c5a" opacity="0.6"/>
+    <circle cx="40" cy="51" r="2.5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="62" cy="50" r="5" fill="#a08c5a" opacity="0.55"/>
+    <circle cx="62" cy="49" r="2.5" fill="#f5c840" opacity="0.45"/>
+    <circle cx="80" cy="53" r="5" fill="#a08c5a" opacity="0.58"/>
+    <circle cx="80" cy="52" r="2.5" fill="#f5c840" opacity="0.42"/>
+    <path d="M34 60 Q60 56 86 60" fill="none" stroke="#f5e0a0" stroke-width="1.8" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.047 · Aussie Brekky 澳式大早餐 -->
+  <symbol id="i047" viewBox="0 0 120 90" fill="none">
+    <rect x="8" y="32" width="104" height="44" rx="5" fill="#e8dcc8" opacity="0.7" stroke="#6a8a6a" stroke-width="0.6"/>
+    <ellipse cx="30" cy="54" rx="14" ry="9" fill="#e87848" opacity="0.55" transform="rotate(-10 30 54)"/>
+    <ellipse cx="30" cy="54" rx="8" ry="5" fill="#f0a070" opacity="0.5" transform="rotate(-10 30 54)"/>
+    <ellipse cx="54" cy="48" rx="11" ry="8" fill="#f5c840" opacity="0.5" transform="rotate(8 54 48)"/>
+    <ellipse cx="78" cy="55" rx="13" ry="8" fill="#a8d070" opacity="0.55" transform="rotate(-5 78 55)"/>
+    <ellipse cx="98" cy="48" rx="10" ry="7" fill="#6a8a6a" opacity="0.45" transform="rotate(14 98 48)"/>
+    <circle cx="42" cy="64" r="3.5" fill="#e87030" opacity="0.5"/>
+    <circle cx="66" cy="62" r="3" fill="#6a8a6a" opacity="0.4"/>
+    <circle cx="22" cy="46" r="2.5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="90" cy="62" r="2" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.048 · 煙燻鮭魚烤蔬菜溫沙拉搭配煎餅 -->
+  <symbol id="i048" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="63" rx="42" ry="12" fill="#e8dcc8" opacity="0.6" stroke="#a08c5a" stroke-width="0.7"/>
+    <ellipse cx="60" cy="60" rx="40" ry="10" fill="#a8d878" opacity="0.2"/>
+    <path d="M24 49 Q34 38 50 44 Q56 48 64 42 Q72 34 86 44 Q94 52 92 48" fill="none" stroke="#a8d070" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="38" cy="49" rx="11" ry="7" fill="#a8d878" opacity="0.6" transform="rotate(-14 38 49)"/>
+    <ellipse cx="38" cy="48" rx="6" ry="3.5" fill="#7ab848" opacity="0.5" transform="rotate(-14 38 48)"/>
+    <ellipse cx="60" cy="46" rx="9" ry="6" fill="#f5c840" opacity="0.55" transform="rotate(6 60 46)"/>
+    <ellipse cx="78" cy="50" rx="10" ry="7" fill="#e87848" opacity="0.5" transform="rotate(-9 78 50)"/>
+    <ellipse cx="78" cy="49" rx="5.5" ry="3.5" fill="#f0a070" opacity="0.45" transform="rotate(-9 78 49)"/>
+    <circle cx="48" cy="56" r="3.5" fill="#e07050" opacity="0.5"/>
+    <circle cx="65" cy="58" r="4" fill="#f5c840" opacity="0.45"/>
+    <circle cx="80" cy="57" r="3" fill="#a8d070" opacity="0.55"/>
+    <circle cx="32" cy="56" r="2.5" fill="#a08c5a" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.049 · 屬於我們的生日蛋糕(66生日) -->
+  <symbol id="i049" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="70" rx="36" ry="9" fill="#e8dcc8" opacity="0.6" stroke="#6a8a8a" stroke-width="0.7"/>
+    <path d="M24 44 L24 70 Q24 79 60 79 Q96 79 96 70 L96 44 Q96 36 60 36 Q24 36 24 44Z" fill="#f5f0e8" opacity="0.85" stroke="#6a8a8a" stroke-width="0.8"/>
+    <ellipse cx="60" cy="44" rx="36" ry="8" fill="#f5f0e8" opacity="0.9" stroke="#6a8a8a" stroke-width="0.7"/>
+    <path d="M28 58 Q60 53 92 58" fill="none" stroke="#f5c8c0" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+    <path d="M28 57 Q60 52 92 57" fill="none" stroke="#f8e0e0" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="38" cy="42" r="3.5" fill="#e84840" opacity="0.7"/>
+    <circle cx="38" cy="41" r="1.8" fill="#f07070" opacity="0.5"/>
+    <circle cx="52" cy="40" r="3" fill="#e84840" opacity="0.65"/>
+    <circle cx="68" cy="40" r="3.5" fill="#e84840" opacity="0.7"/>
+    <circle cx="68" cy="39" r="1.8" fill="#f07070" opacity="0.5"/>
+    <circle cx="82" cy="41" r="3" fill="#e84840" opacity="0.65"/>
+    <line x1="60" y1="36" x2="60" y2="20" stroke="#6a8a8a" stroke-width="0.9" opacity="0.5"/>
+    <circle cx="60" cy="19" r="2.5" fill="#6a8a8a" opacity="0.65"/>
+    <line x1="44" y1="36" x2="44" y2="22" stroke="#6a8a8a" stroke-width="0.8" opacity="0.4"/>
+    <circle cx="44" cy="21" r="2" fill="#6a8a8a" opacity="0.55"/>
+    <line x1="76" y1="36" x2="76" y2="23" stroke="#6a8a8a" stroke-width="0.8" opacity="0.4"/>
+    <circle cx="76" cy="22" r="2" fill="#6a8a8a" opacity="0.55"/>
+  </symbol>
+
+  <!-- No.050 · 蝦仁毛豆鹹湯圓(立冬) -->
+  <symbol id="i050" viewBox="0 0 120 90" fill="none">
+    <path d="M14 68 Q60 73 106 68 L106 60 Q60 55 14 60 Z" fill="#e8dcc8" opacity="0.85"/>
+    <path d="M14 60 Q60 55 106 60" fill="none" stroke="#b89860" stroke-width="0.8" opacity="0.5"/>
+    <ellipse cx="60" cy="60" rx="44" ry="8" fill="#8a8070" opacity="0.18"/>
+    <ellipse cx="60" cy="60" rx="44" ry="8" fill="none" stroke="#8a8070" stroke-width="0.7" opacity="0.5"/>
+    <circle cx="38" cy="57" r="4" fill="#8a8070" opacity="0.5"/>
+    <circle cx="52" cy="55" r="2.8" fill="#f0e8d0" opacity="0.7"/>
+    <circle cx="64" cy="54" r="3.5" fill="#8a8070" opacity="0.45"/>
+    <circle cx="78" cy="56" r="3" fill="#f0e8d0" opacity="0.65"/>
+    <circle cx="88" cy="58" r="2.5" fill="#8a8070" opacity="0.4"/>
+    <path d="M48 52 C46 44 50 38 47 31" stroke="#8a8070" stroke-width="0.7" opacity="0.3" fill="none"/>
+    <path d="M60 50 C58 42 62 36 60 29" stroke="#8a8070" stroke-width="0.7" opacity="0.25" fill="none"/>
+    <path d="M72 52 C74 44 70 38 73 31" stroke="#8a8070" stroke-width="0.7" opacity="0.28" fill="none"/>
+  </symbol>
+
+  <!-- No.051 · 66星球漫遊-生日遊 -->
+  <symbol id="i051" viewBox="0 0 120 90" fill="none">
+    <circle cx="88" cy="28" r="16" fill="#f5c840" opacity="0.35"/>
+    <circle cx="88" cy="28" r="12" fill="#f5a820" opacity="0.3"/>
+    <circle cx="88" cy="28" r="7" fill="#f08020" opacity="0.4"/>
+    <path d="M0 56 Q30 48 60 54 Q90 60 120 52 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.25"/>
+    <path d="M0 64 Q25 58 55 62 Q85 66 120 60 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.35"/>
+    <path d="M0 74 Q30 70 60 73 Q90 76 120 72 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.45"/>
+    <path d="M0 84 L120 84 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.3"/>
+    <path d="M22 56 Q26 44 30 56Z" fill="#6a8a6a" opacity="0.4"/>
+    <path d="M26 44 Q30 38 34 44Z" fill="#6a8a6a" opacity="0.35"/>
+    <line x1="28" y1="44" x2="28" y2="56" stroke="#6a8a6a" stroke-width="0.8" opacity="0.35"/>
+    <path d="M88 54 L86 52 L84 54Z" fill="#4a4840" opacity="0.5"/>
+    <line x1="85" y1="52" x2="85" y2="57" stroke="#4a4840" stroke-width="0.7" opacity="0.45"/>
+  </symbol>
+
+  <!-- No.052 · 佛光山米煎牛排蘑菇南瓜 -->
+  <symbol id="i052" viewBox="0 0 120 90" fill="none">
+    <rect x="8" y="32" width="104" height="44" rx="5" fill="#e8dcc8" opacity="0.7" stroke="#8a7aaa" stroke-width="0.6"/>
+    <ellipse cx="30" cy="54" rx="14" ry="9" fill="#e87848" opacity="0.55" transform="rotate(-10 30 54)"/>
+    <ellipse cx="30" cy="54" rx="8" ry="5" fill="#f0a070" opacity="0.5" transform="rotate(-10 30 54)"/>
+    <ellipse cx="54" cy="48" rx="11" ry="8" fill="#f5c840" opacity="0.5" transform="rotate(8 54 48)"/>
+    <ellipse cx="78" cy="55" rx="13" ry="8" fill="#a8d070" opacity="0.55" transform="rotate(-5 78 55)"/>
+    <ellipse cx="98" cy="48" rx="10" ry="7" fill="#8a7aaa" opacity="0.45" transform="rotate(14 98 48)"/>
+    <circle cx="42" cy="64" r="3.5" fill="#e87030" opacity="0.5"/>
+    <circle cx="66" cy="62" r="3" fill="#8a7aaa" opacity="0.4"/>
+    <circle cx="22" cy="46" r="2.5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="90" cy="62" r="2" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.053 · 佛光山米蝦仁蛋包飯 -->
+  <symbol id="i053" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="57" rx="36" ry="15" fill="#f5e890" opacity="0.75" stroke="#c8a830" stroke-width="0.9"/>
+    <ellipse cx="60" cy="55" rx="34" ry="13" fill="#f8e870" opacity="0.5" stroke="#c8a830" stroke-width="0.5"/>
+    <path d="M28 57 Q42 49 60 53 Q78 57 92 51" fill="none" stroke="#d4a820" stroke-width="0.8" opacity="0.4"/>
+    <path d="M26 61 Q42 55 60 59 Q78 63 94 57" fill="none" stroke="#d4a820" stroke-width="0.7" opacity="0.3"/>
+    <ellipse cx="60" cy="47" rx="14" ry="6" fill="#e87848" opacity="0.3" stroke="#e87848" stroke-width="0.5"/>
+    <path d="M50 46 Q60 44 70 46" fill="none" stroke="#d4a820" stroke-width="0.8" opacity="0.35"/>
+    <circle cx="44" cy="62" r="2.5" fill="#e87030" opacity="0.4"/>
+    <circle cx="76" cy="62" r="2.5" fill="#e87030" opacity="0.38"/>
+  </symbol>
+
+  <!-- No.054 · 金星世界冠軍麻油蚵仔燉飯 -->
+  <symbol id="i054" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="64" rx="38" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#8a7aaa" stroke-width="0.7"/>
+    <path d="M22 53 Q22 73 60 73 Q98 73 98 53" fill="none" stroke="#8a7aaa" stroke-width="0.9"/>
+    <ellipse cx="60" cy="53" rx="36" ry="9" fill="#8a7aaa" opacity="0.25"/>
+    <path d="M26 57 Q38 51 54 55 Q62 59 70 53 Q80 47 96 54" fill="#8a7aaa" opacity="0.18" stroke="none"/>
+    <path d="M28 61 Q42 56 56 59 Q66 63 78 57 Q88 52 94 57" fill="none" stroke="#f5e8c0" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="42" cy="52" r="5" fill="#8a7aaa" opacity="0.55"/>
+    <circle cx="42" cy="51" r="2.5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="66" cy="50" r="5.5" fill="#8a7aaa" opacity="0.5"/>
+    <circle cx="66" cy="49" r="3" fill="#f5c840" opacity="0.45"/>
+    <circle cx="80" cy="54" r="3.5" fill="#e87848" opacity="0.45"/>
+    <circle cx="34" cy="58" r="2" fill="#a8d070" opacity="0.55"/>
+    <circle cx="86" cy="58" r="2" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.055 · 66星球漫遊-Kakacawan -->
+  <symbol id="i055" viewBox="0 0 120 90" fill="none">
+    <circle cx="94" cy="18" r="10" fill="#f5e890" opacity="0.35"/>
+    <circle cx="97" cy="16" r="10" fill="#6a8a6a" opacity="0.25"/>
+    <circle cx="20" cy="22" r="1.5" fill="#f5e890" opacity="0.5"/>
+    <circle cx="32" cy="16" r="1" fill="#f5e890" opacity="0.4"/>
+    <circle cx="50" cy="24" r="1.5" fill="#f5e890" opacity="0.45"/>
+    <path d="M0 90 L0 62 Q18 42 36 56 Q50 66 64 44 Q78 22 96 42 L120 34 L120 90Z" fill="#6a8a6a" opacity="0.2"/>
+    <path d="M0 90 L0 70 Q16 56 34 66 Q50 74 68 58 Q84 42 106 54 L120 48 L120 90Z" fill="#6a8a6a" opacity="0.3"/>
+    <path d="M0 90 L0 78 Q28 70 56 76 Q84 82 120 74 L120 90Z" fill="#6a8a6a" opacity="0.45"/>
+    <path d="M62 44 Q66 36 70 44" fill="none" stroke="#f5f0e8" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="50" cy="55" r="1.5" fill="#f5f0e8" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.056 · 鹹湯圓(冬至前) -->
+  <symbol id="i056" viewBox="0 0 120 90" fill="none">
+    <path d="M16 68 Q60 73 104 68 L104 60 Q60 55 16 60 Z" fill="#e8dcc8" opacity="0.85"/>
+    <path d="M16 68 Q60 73 104 68" fill="none" stroke="#b89860" stroke-width="0.8" opacity="0.5"/>
+    <path d="M18 60 Q60 56 102 60 L102 52 Q60 48 18 52 Z" fill="#d4c8b0" opacity="0.9" stroke="#a08c5a" stroke-width="0.7"/>
+    <path d="M22 52 Q60 46 98 52" fill="#a08c5a" opacity="0.12" stroke="none"/>
+    <ellipse cx="60" cy="52" rx="36" ry="7" fill="none" stroke="#a08c5a" stroke-width="0.6" opacity="0.4"/>
+    <path d="M44 44 Q60 38 76 44 Q72 35 60 33 Q48 35 44 44Z" fill="#a08c5a" opacity="0.25" stroke="#a08c5a" stroke-width="0.7"/>
+    <ellipse cx="60" cy="33" rx="5" ry="3" fill="#a08c5a" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.057 · 仲冬麻油腰子燉飯 -->
+  <symbol id="i057" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="64" rx="38" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#6a8a8a" stroke-width="0.7"/>
+    <path d="M22 53 Q22 73 60 73 Q98 73 98 53" fill="none" stroke="#6a8a8a" stroke-width="0.9"/>
+    <ellipse cx="60" cy="53" rx="36" ry="9" fill="#6a8a8a" opacity="0.25"/>
+    <path d="M26 57 Q38 51 54 55 Q62 59 70 53 Q80 47 96 54" fill="#6a8a8a" opacity="0.18" stroke="none"/>
+    <path d="M28 61 Q42 56 56 59 Q66 63 78 57 Q88 52 94 57" fill="none" stroke="#f5e8c0" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="42" cy="52" r="5" fill="#6a8a8a" opacity="0.55"/>
+    <circle cx="42" cy="51" r="2.5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="66" cy="50" r="5.5" fill="#6a8a8a" opacity="0.5"/>
+    <circle cx="66" cy="49" r="3" fill="#f5c840" opacity="0.45"/>
+    <circle cx="80" cy="54" r="3.5" fill="#e87848" opacity="0.45"/>
+    <circle cx="34" cy="58" r="2" fill="#a8d070" opacity="0.55"/>
+    <circle cx="86" cy="58" r="2" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.058 · 耶誕大餐烤南瓜 -->
+  <symbol id="i058" viewBox="0 0 120 90" fill="none">
+    <rect x="10" y="38" width="100" height="30" rx="15" fill="#f0ece4" opacity="0.75" stroke="#6a8a8a" stroke-width="0.7"/>
+    <line x1="47" y1="38" x2="47" y2="68" stroke="#6a8a8a" stroke-width="0.5" opacity="0.25"/>
+    <line x1="73" y1="38" x2="73" y2="68" stroke="#6a8a8a" stroke-width="0.5" opacity="0.25"/>
+    <ellipse cx="28" cy="53" rx="14" ry="9" fill="#e87848" opacity="0.55"/>
+    <ellipse cx="28" cy="53" rx="8" ry="5" fill="#f0a070" opacity="0.45"/>
+    <ellipse cx="60" cy="53" rx="10" ry="8" fill="#f5c840" opacity="0.5"/>
+    <circle cx="58" cy="50" r="3" fill="#6a8a8a" opacity="0.45"/>
+    <circle cx="62" cy="56" r="2.5" fill="#6a8a8a" opacity="0.4"/>
+    <ellipse cx="91" cy="53" rx="13" ry="9" fill="#a8d070" opacity="0.55"/>
+    <circle cx="88" cy="50" r="2.5" fill="#7ab840" opacity="0.5"/>
+    <circle cx="94" cy="56" r="2" fill="#7ab840" opacity="0.45"/>
+  </symbol>
+
+  <!-- No.059 · Laksa油豆腐蝦仁燴飯金剛米 -->
+  <symbol id="i059" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="65" rx="36" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#a08c5a" stroke-width="0.7"/>
+    <path d="M24 54 Q24 74 60 74 Q96 74 96 54" fill="none" stroke="#a08c5a" stroke-width="0.9"/>
+    <ellipse cx="60" cy="54" rx="34" ry="9" fill="#f5f0e0" opacity="0.7"/>
+    <path d="M26 50 Q40 44 56 50 Q60 52 64 50 Q78 44 94 50" fill="#a08c5a" opacity="0.3" stroke="none"/>
+    <ellipse cx="40" cy="49" rx="9" ry="5.5" fill="#e87848" opacity="0.65"/>
+    <ellipse cx="40" cy="48" rx="5" ry="3" fill="#f0a070" opacity="0.5"/>
+    <ellipse cx="62" cy="47" rx="11" ry="5" fill="#a08c5a" opacity="0.55"/>
+    <ellipse cx="80" cy="50" rx="8" ry="5" fill="#f5c840" opacity="0.55"/>
+    <circle cx="52" cy="54" r="2.5" fill="#a8d070" opacity="0.6"/>
+    <circle cx="72" cy="55" r="2" fill="#a8d070" opacity="0.55"/>
+  </symbol>
+
+  <!-- No.060 · 乾煎小卷松阪豬金剛米 (大寒前) -->
+  <symbol id="i060" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="60" rx="46" ry="13" fill="#f0ece4" opacity="0.7" stroke="#aa7a6a" stroke-width="0.6"/>
+    <ellipse cx="60" cy="58" rx="44" ry="11" fill="none" stroke="#aa7a6a" stroke-width="0.4" opacity="0.2"/>
+    <ellipse cx="38" cy="52" rx="14" ry="9" fill="#e87848" opacity="0.5" transform="rotate(-18 38 52)"/>
+    <ellipse cx="38" cy="52" rx="8" ry="5" fill="#f0a070" opacity="0.45" transform="rotate(-18 38 52)"/>
+    <ellipse cx="60" cy="50" rx="9" ry="7" fill="#f5c840" opacity="0.55"/>
+    <ellipse cx="82" cy="52" rx="12" ry="8" fill="#a8d070" opacity="0.5" transform="rotate(12 82 52)"/>
+    <circle cx="48" cy="59" r="3.5" fill="#aa7a6a" opacity="0.4"/>
+    <circle cx="70" cy="58" r="3" fill="#aa7a6a" opacity="0.35"/>
+    <circle cx="58" cy="62" r="2" fill="#f0e8d0" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.061 · BOSSDAY+蛋沙拉三明治(大寒) -->
+  <symbol id="i061" viewBox="0 0 120 90" fill="none">
+    <path d="M20 68 L60 24 L100 68 Z" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.8"/>
+    <path d="M26 68 L60 32 L94 68" fill="none" stroke="#c89040" stroke-width="0.6" opacity="0.35"/>
+    <path d="M25 68 L60 30 L95 68 L90 68 L60 36 L30 68Z" fill="#a8d878" opacity="0.4"/>
+    <path d="M28 68 L60 36 L92 68 L88 68 L60 42 L32 68Z" fill="#f5c880" opacity="0.45"/>
+    <path d="M31 68 L60 42 L89 68 L86 68 L60 47 L34 68Z" fill="#e87848" opacity="0.35"/>
+    <path d="M34 68 L60 47 L86 68 L84 68 L60 51 L36 68Z" fill="#f0e8d0" opacity="0.6"/>
+    <line x1="20" y1="68" x2="100" y2="68" stroke="#c89040" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="52" cy="52" rx="4" ry="2.5" fill="#e87848" opacity="0.5" transform="rotate(-28 52 52)"/>
+    <ellipse cx="68" cy="52" rx="4" ry="2.5" fill="#f5c880" opacity="0.45" transform="rotate(28 68 52)"/>
+  </symbol>
+
+  <!-- No.062 · 浮玉三彩春織恩惠(立春) -->
+  <symbol id="i062" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="59" rx="42" ry="13" fill="#f0ece4" opacity="0.7" stroke="#8a7aaa" stroke-width="0.6"/>
+    <ellipse cx="60" cy="57" rx="40" ry="11" fill="none" stroke="#8a7aaa" stroke-width="0.4" opacity="0.2"/>
+    <ellipse cx="38" cy="50" rx="12" ry="8" fill="#a8d878" opacity="0.6" transform="rotate(-12 38 50)"/>
+    <ellipse cx="38" cy="49" rx="7" ry="4.5" fill="#7ab848" opacity="0.5" transform="rotate(-12 38 49)"/>
+    <ellipse cx="60" cy="48" rx="11" ry="7" fill="#f5c840" opacity="0.55"/>
+    <ellipse cx="60" cy="47" rx="6" ry="3.5" fill="#d4a020" opacity="0.45"/>
+    <ellipse cx="82" cy="50" rx="11" ry="8" fill="#e87848" opacity="0.5" transform="rotate(10 82 50)"/>
+    <ellipse cx="82" cy="49" rx="6" ry="4" fill="#f0a070" opacity="0.45" transform="rotate(10 82 49)"/>
+    <circle cx="48" cy="58" r="3" fill="#a8d070" opacity="0.55"/>
+    <circle cx="70" cy="58" r="3" fill="#a8d070" opacity="0.52"/>
+    <circle cx="60" cy="62" r="2.5" fill="#8a7aaa" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.063 · 蕃茄濃湯蒜香雞肉墨魚麵 -->
+  <symbol id="i063" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="66" rx="40" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#aa7a6a" stroke-width="0.7"/>
+    <path d="M20 55 Q20 75 60 75 Q100 75 100 55" fill="none" stroke="#aa7a6a" stroke-width="0.9"/>
+    <path d="M26 52 Q40 40 54 50 Q64 58 78 46 Q88 38 94 50" fill="none" stroke="#f5e8c0" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M28 55 Q42 45 56 53 Q66 60 80 50 Q88 44 92 53" fill="none" stroke="#f5e8c0" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+    <path d="M30 59 Q44 51 58 57 Q68 63 82 55" fill="none" stroke="#f5e8c0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <circle cx="46" cy="46" r="4.5" fill="#e05030" opacity="0.65"/>
+    <circle cx="46" cy="46" r="2" fill="#f08060" opacity="0.5"/>
+    <circle cx="74" cy="48" r="4" fill="#e05030" opacity="0.6"/>
+    <ellipse cx="60" cy="58" rx="6" ry="3" fill="#a8d070" opacity="0.55"/>
+    <circle cx="36" cy="56" r="2" fill="#f5c840" opacity="0.55"/>
+    <circle cx="86" cy="56" r="2" fill="#f5c840" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.064 · 鹹湯圓＋波菜馬鈴薯蔬菜湯(元宵) -->
+  <symbol id="i064" viewBox="0 0 120 90" fill="none">
+    <path d="M14 68 Q60 73 106 68 L106 60 Q60 55 14 60 Z" fill="#e8dcc8" opacity="0.85"/>
+    <path d="M14 60 Q60 55 106 60" fill="none" stroke="#b89860" stroke-width="0.8" opacity="0.5"/>
+    <ellipse cx="60" cy="60" rx="44" ry="8" fill="#6a8a8a" opacity="0.18"/>
+    <ellipse cx="60" cy="60" rx="44" ry="8" fill="none" stroke="#6a8a8a" stroke-width="0.7" opacity="0.5"/>
+    <circle cx="38" cy="57" r="4" fill="#6a8a8a" opacity="0.5"/>
+    <circle cx="52" cy="55" r="2.8" fill="#f0e8d0" opacity="0.7"/>
+    <circle cx="64" cy="54" r="3.5" fill="#6a8a8a" opacity="0.45"/>
+    <circle cx="78" cy="56" r="3" fill="#f0e8d0" opacity="0.65"/>
+    <circle cx="88" cy="58" r="2.5" fill="#6a8a8a" opacity="0.4"/>
+    <path d="M48 52 C46 44 50 38 47 31" stroke="#6a8a8a" stroke-width="0.7" opacity="0.3" fill="none"/>
+    <path d="M60 50 C58 42 62 36 60 29" stroke="#6a8a8a" stroke-width="0.7" opacity="0.25" fill="none"/>
+    <path d="M72 52 C74 44 70 38 73 31" stroke="#6a8a8a" stroke-width="0.7" opacity="0.28" fill="none"/>
+  </symbol>
+
+  <!-- No.065 · 月津港燈節 -->
+  <symbol id="i065" viewBox="0 0 120 90" fill="none">
+    <line x1="0" y1="50" x2="120" y2="50" stroke="#6a8a6a" stroke-width="0.7" opacity="0.35"/>
+    <path d="M16 50 Q18 42 22 38 Q26 34 30 38 Q34 42 32 50Z" fill="#6a8a6a" opacity="0.4"/>
+    <path d="M16 50 Q18 58 22 62 Q26 66 30 62 Q34 58 32 50Z" fill="#6a8a6a" opacity="0.22"/>
+    <path d="M48 50 Q50 40 56 35 Q62 30 68 35 Q74 40 72 50Z" fill="#6a8a6a" opacity="0.42"/>
+    <path d="M48 50 Q50 60 56 65 Q62 70 68 65 Q74 60 72 50Z" fill="#6a8a6a" opacity="0.24"/>
+    <circle cx="90" cy="28" r="12" fill="#f5e890" opacity="0.3"/>
+    <circle cx="90" cy="28" r="8" fill="#f5e890" opacity="0.25"/>
+    <circle cx="28" cy="38" r="3" fill="#f5c840" opacity="0.65"/>
+    <circle cx="60" cy="34" r="3.5" fill="#f5a820" opacity="0.6"/>
+    <circle cx="82" cy="42" r="2.5" fill="#f5c840" opacity="0.55"/>
+    <circle cx="104" cy="40" r="2" fill="#f5e890" opacity="0.5"/>
+    <path d="M80 50 Q88 46 94 50 Q100 46 106 50" fill="none" stroke="#6a8a6a" stroke-width="0.8" opacity="0.3"/>
+  </symbol>
+
+  <!-- No.066 · 茄汁蝦仁燴飯(雨水) -->
+  <symbol id="i066" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="65" rx="36" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#a08c5a" stroke-width="0.7"/>
+    <path d="M24 54 Q24 74 60 74 Q96 74 96 54" fill="none" stroke="#a08c5a" stroke-width="0.9"/>
+    <ellipse cx="60" cy="54" rx="34" ry="9" fill="#f5f0e0" opacity="0.7"/>
+    <path d="M26 50 Q40 44 56 50 Q60 52 64 50 Q78 44 94 50" fill="#a08c5a" opacity="0.3" stroke="none"/>
+    <ellipse cx="40" cy="49" rx="9" ry="5.5" fill="#e87848" opacity="0.65"/>
+    <ellipse cx="40" cy="48" rx="5" ry="3" fill="#f0a070" opacity="0.5"/>
+    <ellipse cx="62" cy="47" rx="11" ry="5" fill="#a08c5a" opacity="0.55"/>
+    <ellipse cx="80" cy="50" rx="8" ry="5" fill="#f5c840" opacity="0.55"/>
+    <circle cx="52" cy="54" r="2.5" fill="#a8d070" opacity="0.6"/>
+    <circle cx="72" cy="55" r="2" fill="#a8d070" opacity="0.55"/>
+  </symbol>
+
+  <!-- No.067 · 鹽麴雞肉佐金剛米(驚蟄) -->
+  <symbol id="i067" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="56" rx="40" ry="16" fill="#f0ece4" opacity="0.6" stroke="#6a8a8a" stroke-width="0.7"/>
+    <path d="M34 70 L60 28 L86 70 Z" fill="#f5f0e0" opacity="0.9" stroke="#d4b880" stroke-width="0.8"/>
+    <path d="M38 70 L60 34 L82 70 Z" fill="none" stroke="#d4b880" stroke-width="0.5" opacity="0.35"/>
+    <rect x="32" y="64" width="56" height="10" rx="2" fill="#3a3028" opacity="0.55"/>
+    <path d="M38 70 L60 36 L82 70" fill="none" stroke="#6a8a8a" stroke-width="0.5" opacity="0.25"/>
+    <ellipse cx="60" cy="52" rx="10" ry="6" fill="#6a8a8a" opacity="0.45"/>
+    <ellipse cx="60" cy="51" rx="5" ry="3" fill="#f5c840" opacity="0.5"/>
+    <circle cx="52" cy="58" r="2" fill="#6a8a8a" opacity="0.35"/>
+    <circle cx="68" cy="58" r="2" fill="#6a8a8a" opacity="0.32"/>
+  </symbol>
+
+  <!-- No.068 · 初春午後公路速寫 -->
+  <symbol id="i068" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="18" r="10" fill="#f5e890" opacity="0.25"/>
+    <circle cx="28" cy="24" r="1.5" fill="#f5f0e8" opacity="0.5"/>
+    <circle cx="42" cy="16" r="1" fill="#f5f0e8" opacity="0.45"/>
+    <circle cx="78" cy="20" r="1.5" fill="#f5f0e8" opacity="0.4"/>
+    <circle cx="98" cy="28" r="1" fill="#f5f0e8" opacity="0.45"/>
+    <path d="M0 90 L44 38 L76 38 L120 90Z" fill="#6a8a6a" opacity="0.18" stroke="#6a8a6a" stroke-width="0.7"/>
+    <line x1="46" y1="38" x2="50" y2="90" stroke="#f5f0e8" stroke-width="0.6" opacity="0.25"/>
+    <line x1="74" y1="38" x2="70" y2="90" stroke="#f5f0e8" stroke-width="0.6" opacity="0.22"/>
+    <path d="M0 90 L120 90" stroke="#6a8a6a" stroke-width="1.2" opacity="0.4"/>
+    <line x1="44" y1="58" x2="76" y2="58" stroke="#f5f0e8" stroke-width="0.5" opacity="0.22"/>
+    <line x1="38" y1="70" x2="82" y2="70" stroke="#f5f0e8" stroke-width="0.5" opacity="0.2"/>
+    <line x1="20" y1="48" x2="20" y2="70" stroke="#6a8a6a" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+    <circle cx="20" cy="46" r="3" fill="#f5c840" opacity="0.6"/>
+    <line x1="100" y1="48" x2="100" y2="70" stroke="#6a8a6a" stroke-width="1" opacity="0.38" stroke-linecap="round"/>
+    <circle cx="100" cy="46" r="3" fill="#f5c840" opacity="0.55"/>
+  </symbol>
+
+  <!-- No.069 · 野菜素咖哩佐長濱黑糙米 -->
+  <symbol id="i069" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="65" rx="38" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#8a7aaa" stroke-width="0.7"/>
+    <path d="M22 54 Q22 74 60 74 Q98 74 98 54" fill="none" stroke="#8a7aaa" stroke-width="0.9"/>
+    <ellipse cx="60" cy="54" rx="36" ry="9" fill="#f5a820" opacity="0.45"/>
+    <path d="M24 57 Q36 51 54 55 Q62 59 70 53 Q80 47 98 55" fill="#e89020" opacity="0.3" stroke="none"/>
+    <path d="M26 60 Q38 55 54 58 Q62 62 70 56 Q80 51 96 58" fill="none" stroke="#f5c840" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+    <circle cx="40" cy="52" r="5.5" fill="#8a7aaa" opacity="0.6"/>
+    <circle cx="40" cy="51" r="2.5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="62" cy="50" r="5" fill="#8a7aaa" opacity="0.55"/>
+    <circle cx="62" cy="49" r="2.5" fill="#f5c840" opacity="0.45"/>
+    <circle cx="80" cy="53" r="5" fill="#8a7aaa" opacity="0.58"/>
+    <circle cx="80" cy="52" r="2.5" fill="#f5c840" opacity="0.42"/>
+    <path d="M34 60 Q60 56 86 60" fill="none" stroke="#f5e0a0" stroke-width="1.8" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.070 · 青豆仁蝦煎蛋三明治 -->
+  <symbol id="i070" viewBox="0 0 120 90" fill="none">
+    <path d="M12 70 Q60 74 108 70 L108 63 Q60 58 12 63 Z" fill="#f2deb0" opacity="0.95"/>
+    <path d="M12 70 Q60 74 108 70" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <path d="M12 63 Q26 53 34 60 Q40 50 50 57 Q56 47 64 54 Q70 63 52 67 Q32 70 12 63 Z" fill="#a8d878" opacity="0.55"/>
+    <path d="M14 64 Q36 51 62 55" fill="none" stroke="#7ab848" stroke-width="0.5" opacity="0.5"/>
+    <path d="M108 63 Q94 53 86 60 Q80 50 70 57 Q64 47 56 54 Q62 63 80 67 Q96 70 108 63 Z" fill="#a8d878" opacity="0.52"/>
+    <path d="M106 64 Q84 51 58 55" fill="none" stroke="#7ab848" stroke-width="0.5" opacity="0.5"/>
+    <path d="M14 63 Q40 54 60 52 Q80 54 106 63" fill="none" stroke="#e8c4a0" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+    <path d="M15 62 Q40 55 60 53 Q80 55 105 62" fill="none" stroke="#f8f3ec" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+    <ellipse cx="34" cy="57" rx="3.5" ry="2" fill="#e07858" opacity="0.78" transform="rotate(-7 34 57)"/>
+    <ellipse cx="50" cy="54" rx="3" ry="1.8" fill="#d86848" opacity="0.72" transform="rotate(4 50 54)"/>
+    <ellipse cx="65" cy="53" rx="3.5" ry="1.9" fill="#e07858" opacity="0.75" transform="rotate(-3 65 53)"/>
+    <ellipse cx="80" cy="54" rx="3" ry="1.8" fill="#d86848" opacity="0.7" transform="rotate(5 80 54)"/>
+    <ellipse cx="94" cy="57" rx="3.2" ry="1.8" fill="#e07858" opacity="0.73" transform="rotate(-5 94 57)"/>
+    <circle cx="42" cy="55" r="1.1" fill="#7aaa6a" opacity="0.82"/>
+    <circle cx="57" cy="53" r="1" fill="#6a9a5a" opacity="0.78"/>
+    <circle cx="72" cy="53" r="1.2" fill="#7aaa6a" opacity="0.8"/>
+    <circle cx="87" cy="55" r="1" fill="#6a9a5a" opacity="0.75"/>
+    <circle cx="28" cy="59" r="0.9" fill="#7aaa6a" opacity="0.7"/>
+    <path d="M13 52 Q60 46 107 52 L107 44 Q60 38 13 44 Z" fill="#f2deb0" opacity="0.9"/>
+    <path d="M13 44 Q60 38 107 44" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.071 · 南門花市+孔廟鄉賢祠 -->
+  <symbol id="i071" viewBox="0 0 120 90" fill="none">
+    <rect x="6" y="16" width="24" height="36" rx="2" fill="#6a8a6a" opacity="0.35" stroke="#6a8a6a" stroke-width="0.6"/>
+    <rect x="9" y="20" width="5" height="4" rx="1" fill="#f5c840" opacity="0.6"/>
+    <rect x="16" y="22" width="5" height="4" rx="1" fill="#f5c840" opacity="0.5"/>
+    <rect x="9" y="28" width="5" height="4" rx="1" fill="#f5e890" opacity="0.55"/>
+    <rect x="32" y="24" width="18" height="28" rx="2" fill="#6a8a6a" opacity="0.3" stroke="#6a8a6a" stroke-width="0.5"/>
+    <rect x="35" y="28" width="4" height="3" rx="1" fill="#f5c840" opacity="0.55"/>
+    <rect x="42" y="26" width="4" height="3" rx="1" fill="#f5c840" opacity="0.5"/>
+    <rect x="54" y="14" width="26" height="38" rx="2" fill="#6a8a6a" opacity="0.38" stroke="#6a8a6a" stroke-width="0.6"/>
+    <rect x="58" y="18" width="5" height="4" rx="1" fill="#f5c840" opacity="0.6"/>
+    <rect x="65" y="20" width="5" height="4" rx="1" fill="#f5e890" opacity="0.55"/>
+    <rect x="58" y="28" width="5" height="4" rx="1" fill="#f5c840" opacity="0.5"/>
+    <rect x="65" y="30" width="5" height="4" rx="1" fill="#f5c840" opacity="0.48"/>
+    <rect x="84" y="20" width="22" height="32" rx="2" fill="#6a8a6a" opacity="0.32" stroke="#6a8a6a" stroke-width="0.5"/>
+    <rect x="87" y="24" width="4" height="3" rx="1" fill="#f5c840" opacity="0.55"/>
+    <rect x="94" y="26" width="4" height="3" rx="1" fill="#f5e890" opacity="0.5"/>
+    <path d="M0 62 L120 62" stroke="#6a8a6a" stroke-width="0.8" opacity="0.35"/>
+    <circle cx="18" cy="66" r="6" fill="#6a8a6a" opacity="0.2"/>
+    <circle cx="42" cy="66" r="5" fill="#6a8a6a" opacity="0.18"/>
+    <circle cx="68" cy="66" r="8" fill="#6a8a6a" opacity="0.22"/>
+    <circle cx="96" cy="66" r="5" fill="#6a8a6a" opacity="0.18"/>
+  </symbol>
+
+  <!-- No.072 · 天公廟薑黃麵(觀世音菩薩生日) -->
+  <symbol id="i072" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="66" rx="38" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#6a8a8a" stroke-width="0.7"/>
+    <path d="M22 55 Q22 75 60 75 Q98 75 98 55" fill="none" stroke="#6a8a8a" stroke-width="0.9"/>
+    <ellipse cx="60" cy="55" rx="36" ry="10" fill="#6a8a8a" opacity="0.15"/>
+    <path d="M26 52 Q34 43 42 52 Q50 61 58 52 Q66 43 74 52 Q82 61 92 52" fill="none" stroke="#f5e8c0" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+    <path d="M24 57 Q32 50 40 57 Q48 64 56 57 Q64 50 72 57 Q80 64 90 57" fill="none" stroke="#f5e8c0" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+    <ellipse cx="44" cy="48" rx="9" ry="5.5" fill="#e87848" opacity="0.7" transform="rotate(-8 44 48)"/>
+    <ellipse cx="44" cy="47" rx="5" ry="3" fill="#f0a070" opacity="0.55" transform="rotate(-8 44 47)"/>
+    <ellipse cx="76" cy="49" rx="8" ry="5" fill="#e87848" opacity="0.65" transform="rotate(5 76 49)"/>
+    <circle cx="62" cy="47" r="6" fill="#f5e8a0" opacity="0.9" stroke="#6a8a8a" stroke-width="0.6"/>
+    <circle cx="62" cy="47" r="3.5" fill="#f0a030" opacity="0.85"/>
+    <circle cx="34" cy="60" r="2" fill="#a8d070" opacity="0.7"/>
+    <circle cx="50" cy="61" r="1.5" fill="#a8d070" opacity="0.65"/>
+    <circle cx="88" cy="60" r="2" fill="#a8d070" opacity="0.65"/>
+  </symbol>
+
+  <!-- No.073 · 紙包春雨春菊石狗公魚(春分) -->
+  <symbol id="i073" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="54" r="32" fill="#2c2420" opacity="0.15" stroke="#8a8070" stroke-width="0.9"/>
+    <circle cx="60" cy="54" r="28" fill="#8a8070" opacity="0.18"/>
+    <line x1="12" y1="54" x2="28" y2="54" stroke="#8a7060" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="92" y1="54" x2="108" y2="54" stroke="#8a7060" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M36 44 Q48 37 60 43 Q72 37 84 44" fill="none" stroke="#f0a030" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="44" cy="52" rx="7" ry="5" fill="#e87030" opacity="0.55"/>
+    <ellipse cx="60" cy="48" rx="6" ry="4.5" fill="#f5c840" opacity="0.5"/>
+    <ellipse cx="76" cy="52" rx="7" ry="5" fill="#e87030" opacity="0.5"/>
+    <circle cx="52" cy="60" r="4" fill="#a8d070" opacity="0.55"/>
+    <circle cx="66" cy="61" r="4.5" fill="#a8d070" opacity="0.5"/>
+    <circle cx="38" cy="58" r="2.5" fill="#f5c840" opacity="0.45"/>
+    <circle cx="80" cy="59" r="2.5" fill="#f5c840" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.074 · 鹹蛋黃義大利麵 -->
+  <symbol id="i074" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="66" rx="40" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#8a7aaa" stroke-width="0.7"/>
+    <path d="M20 55 Q20 75 60 75 Q100 75 100 55" fill="none" stroke="#8a7aaa" stroke-width="0.9"/>
+    <path d="M26 52 Q40 40 54 50 Q64 58 78 46 Q88 38 94 50" fill="none" stroke="#f5e8c0" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M28 55 Q42 45 56 53 Q66 60 80 50 Q88 44 92 53" fill="none" stroke="#f5e8c0" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+    <path d="M30 59 Q44 51 58 57 Q68 63 82 55" fill="none" stroke="#f5e8c0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <circle cx="46" cy="46" r="4.5" fill="#e05030" opacity="0.65"/>
+    <circle cx="46" cy="46" r="2" fill="#f08060" opacity="0.5"/>
+    <circle cx="74" cy="48" r="4" fill="#e05030" opacity="0.6"/>
+    <ellipse cx="60" cy="58" rx="6" ry="3" fill="#a8d070" opacity="0.55"/>
+    <circle cx="36" cy="56" r="2" fill="#f5c840" opacity="0.55"/>
+    <circle cx="86" cy="56" r="2" fill="#f5c840" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.075 · 兒童節的水彩畫@大內 -->
+  <symbol id="i075" viewBox="0 0 120 90" fill="none">
+    <circle cx="94" cy="18" r="10" fill="#f5e890" opacity="0.35"/>
+    <circle cx="97" cy="16" r="10" fill="#6a8a6a" opacity="0.25"/>
+    <circle cx="20" cy="22" r="1.5" fill="#f5e890" opacity="0.5"/>
+    <circle cx="32" cy="16" r="1" fill="#f5e890" opacity="0.4"/>
+    <circle cx="50" cy="24" r="1.5" fill="#f5e890" opacity="0.45"/>
+    <path d="M0 90 L0 62 Q18 42 36 56 Q50 66 64 44 Q78 22 96 42 L120 34 L120 90Z" fill="#6a8a6a" opacity="0.2"/>
+    <path d="M0 90 L0 70 Q16 56 34 66 Q50 74 68 58 Q84 42 106 54 L120 48 L120 90Z" fill="#6a8a6a" opacity="0.3"/>
+    <path d="M0 90 L0 78 Q28 70 56 76 Q84 82 120 74 L120 90Z" fill="#6a8a6a" opacity="0.45"/>
+    <path d="M62 44 Q66 36 70 44" fill="none" stroke="#f5f0e8" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="50" cy="55" r="1.5" fill="#f5f0e8" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.076 · 西班牙烘蛋佐燻鮭魚 -->
+  <symbol id="i076" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="53" r="34" fill="#f2deb0" opacity="0.88" stroke="#c89040" stroke-width="0.85"/>
+    <circle cx="60" cy="53" r="30" fill="none" stroke="#c89040" stroke-width="0.4" opacity="0.3"/>
+    <path d="M60 53 L60 20" stroke="#8a7aaa" stroke-width="0.6" opacity="0.3"/>
+    <path d="M60 53 L85 72" stroke="#8a7aaa" stroke-width="0.6" opacity="0.28"/>
+    <path d="M60 53 L35 72" stroke="#8a7aaa" stroke-width="0.6" opacity="0.28"/>
+    <ellipse cx="50" cy="40" rx="10" ry="7" fill="#f5c840" opacity="0.5" transform="rotate(20 50 40)"/>
+    <ellipse cx="50" cy="39" rx="6" ry="4" fill="#d4a020" opacity="0.4" transform="rotate(20 50 40)"/>
+    <ellipse cx="72" cy="42" rx="9" ry="6" fill="#e87848" opacity="0.5" transform="rotate(-15 72 42)"/>
+    <circle cx="52" cy="60" r="3.5" fill="#8a7aaa" opacity="0.45"/>
+    <circle cx="68" cy="58" r="3" fill="#8a7aaa" opacity="0.42"/>
+    <circle cx="44" cy="55" r="2.5" fill="#a8d070" opacity="0.55"/>
+    <circle cx="76" cy="55" r="2.5" fill="#a8d070" opacity="0.52"/>
+    <circle cx="60" cy="65" r="2" fill="#e87848" opacity="0.45"/>
+  </symbol>
+
+  <!-- No.077 · 鰻魚蕎麥麵 -->
+  <symbol id="i077" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="64" rx="36" ry="9" fill="#e8dcc8" opacity="0.6" stroke="#aa7a6a" stroke-width="0.7"/>
+    <path d="M24 54 Q24 73 60 73 Q96 73 96 54" fill="none" stroke="#aa7a6a" stroke-width="0.9"/>
+    <line x1="33" y1="54" x2="31" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+    <line x1="39" y1="54" x2="37" y2="70" stroke="#7a6050" stroke-width="1.3" opacity="0.45"/>
+    <line x1="45" y1="54" x2="43" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+    <line x1="51" y1="54" x2="49" y2="70" stroke="#7a6050" stroke-width="1.2" opacity="0.42"/>
+    <line x1="57" y1="54" x2="55" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.48" stroke-linecap="round"/>
+    <line x1="63" y1="54" x2="61" y2="70" stroke="#7a6050" stroke-width="1.3" opacity="0.44"/>
+    <line x1="69" y1="54" x2="67" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.48" stroke-linecap="round"/>
+    <line x1="75" y1="54" x2="73" y2="70" stroke="#7a6050" stroke-width="1.2" opacity="0.42"/>
+    <ellipse cx="78" cy="48" rx="12" ry="7" fill="#f5e8c0" opacity="0.8" transform="rotate(-6 78 48)"/>
+    <ellipse cx="78" cy="47" rx="7" ry="4" fill="#f0c870" opacity="0.65" transform="rotate(-6 78 47)"/>
+    <circle cx="34" cy="61" r="2.5" fill="#a8d070" opacity="0.65"/>
+    <circle cx="52" cy="60" r="2" fill="#a8d070" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.078 · 鰻魚三明治(穀雨後) -->
+  <symbol id="i078" viewBox="0 0 120 90" fill="none">
+    <path d="M26 26 Q26 16 60 16 Q94 16 94 26 L94 66 Q94 76 60 76 Q26 76 26 66Z" fill="#f2deb0" opacity="0.88" stroke="#c89040" stroke-width="0.8"/>
+    <ellipse cx="60" cy="26" rx="34" ry="9" fill="#f5deb0" opacity="0.85" stroke="#c89040" stroke-width="0.7"/>
+    <ellipse cx="60" cy="66" rx="34" ry="9" fill="#f5deb0" opacity="0.8" stroke="#c89040" stroke-width="0.6"/>
+    <path d="M28 40 Q60 36 92 40" fill="none" stroke="#a8d070" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M28 50 Q60 46 92 50" fill="none" stroke="#e87848" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+    <path d="M28 58 Q60 54 92 58" fill="none" stroke="#f5e8a0" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="44" cy="44" r="2.5" fill="#a08c5a" opacity="0.45"/>
+    <circle cx="60" cy="48" r="2" fill="#e87848" opacity="0.5"/>
+    <circle cx="76" cy="44" r="2.5" fill="#a08c5a" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.079 · 蛋沙拉+洋蔥鮪魚三明治 -->
+  <symbol id="i079" viewBox="0 0 120 90" fill="none">
+    <path d="M14 65 Q60 70 106 65 L106 58 Q60 53 14 58 Z" fill="#f2deb0" opacity="0.95"/>
+    <path d="M14 65 Q60 70 106 65" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <path d="M16 58 Q60 53 104 58 L104 53 Q60 48 16 53Z" fill="#a8d878" opacity="0.55"/>
+    <path d="M18 53 Q60 48 102 53 L102 48 Q60 43 18 48Z" fill="#f0c87a" opacity="0.5"/>
+    <path d="M18 48 Q60 43 102 48 L102 43 Q60 38 18 43Z" fill="#e87848" opacity="0.45"/>
+    <path d="M18 43 Q60 38 102 43 L102 38 Q60 33 18 38Z" fill="#f0e8d0" opacity="0.65"/>
+    <path d="M20 33 Q60 28 100 33 L100 38 Q60 33 20 38Z" fill="#f2deb0" opacity="0.9"/>
+    <path d="M20 28 Q60 24 100 28" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.5"/>
+    <ellipse cx="42" cy="55.5" rx="7" ry="2" fill="#8a7aaa" opacity="0.3"/>
+    <ellipse cx="74" cy="51" rx="6" ry="1.8" fill="#8a7aaa" opacity="0.28"/>
+  </symbol>
+
+  <!-- No.080 · 北非小米沙拉 +土耳其Kebab -->
+  <symbol id="i080" viewBox="0 0 120 90" fill="none">
+    <circle cx="30" cy="50" r="20" fill="#f0ece4" opacity="0.65" stroke="#aa7a6a" stroke-width="0.6"/>
+    <ellipse cx="24" cy="46" rx="7" ry="5" fill="#e87848" opacity="0.55"/>
+    <ellipse cx="36" cy="54" rx="8" ry="5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="30" cy="50" r="2.5" fill="#aa7a6a" opacity="0.4"/>
+    <circle cx="78" cy="44" r="18" fill="#f0ece4" opacity="0.6" stroke="#aa7a6a" stroke-width="0.6"/>
+    <ellipse cx="74" cy="40" rx="6" ry="4" fill="#a8d070" opacity="0.6"/>
+    <ellipse cx="83" cy="48" rx="5" ry="4" fill="#aa7a6a" opacity="0.45"/>
+    <circle cx="82" cy="66" r="15" fill="#f0ece4" opacity="0.62" stroke="#aa7a6a" stroke-width="0.55"/>
+    <ellipse cx="80" cy="64" rx="6" ry="4" fill="#e07850" opacity="0.55"/>
+    <circle cx="84" cy="68" r="2.5" fill="#f5c840" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.081 · 煙花女義大利麵_清炒海鮮筆管麵 -->
+  <symbol id="i081" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="56" rx="42" ry="16" fill="#e8dcc8" opacity="0.6" stroke="#aa7a6a" stroke-width="0.8"/>
+    <rect x="28" y="42" width="15" height="7" rx="3.5" fill="#f5e8c0" opacity="0.8" stroke="#d4b880" stroke-width="0.5" transform="rotate(-22 28 42)"/>
+    <rect x="46" y="46" width="13" height="6.5" rx="3" fill="#f5e8c0" opacity="0.78" stroke="#d4b880" stroke-width="0.5" transform="rotate(16 46 46)"/>
+    <rect x="62" y="42" width="15" height="7" rx="3.5" fill="#f5e8c0" opacity="0.8" stroke="#d4b880" stroke-width="0.5" transform="rotate(-12 62 42)"/>
+    <rect x="79" y="46" width="13" height="6.5" rx="3" fill="#f5e8c0" opacity="0.75" stroke="#d4b880" stroke-width="0.5" transform="rotate(8 79 46)"/>
+    <rect x="36" y="56" width="14" height="6.5" rx="3" fill="#f5e8c0" opacity="0.75" stroke="#d4b880" stroke-width="0.5" transform="rotate(26 36 56)"/>
+    <rect x="55" y="58" width="13" height="6" rx="3" fill="#f5e8c0" opacity="0.78" stroke="#d4b880" stroke-width="0.5" transform="rotate(-16 55 58)"/>
+    <rect x="72" y="55" width="15" height="7" rx="3.5" fill="#f5e8c0" opacity="0.75" stroke="#d4b880" stroke-width="0.5" transform="rotate(10 72 55)"/>
+    <circle cx="50" cy="52" r="3.5" fill="#e05030" opacity="0.6"/>
+    <circle cx="70" cy="55" r="3" fill="#e05030" opacity="0.55"/>
+    <circle cx="40" cy="60" r="2.5" fill="#a8d070" opacity="0.65"/>
+    <circle cx="82" cy="58" r="2.5" fill="#a8d070" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.082 · 越南春捲(小滿) -->
+  <symbol id="i082" viewBox="0 0 120 90" fill="none">
+    <rect x="20" y="28" width="80" height="44" rx="22" fill="#f5f0e8" opacity="0.75" stroke="#d4c8a0" stroke-width="0.8"/>
+    <rect x="26" y="34" width="68" height="32" rx="16" fill="none" stroke="#d4c8a0" stroke-width="0.5" opacity="0.4"/>
+    <ellipse cx="42" cy="50" rx="11" ry="8" fill="#a8d878" opacity="0.65"/>
+    <ellipse cx="42" cy="49" rx="6" ry="4" fill="#7ab848" opacity="0.5"/>
+    <ellipse cx="60" cy="50" rx="9" ry="7" fill="#f5c840" opacity="0.6"/>
+    <ellipse cx="60" cy="49" rx="5" ry="3.5" fill="#d4a020" opacity="0.5"/>
+    <ellipse cx="78" cy="50" rx="11" ry="8" fill="#e87848" opacity="0.55"/>
+    <ellipse cx="78" cy="49" rx="6" ry="4" fill="#f0a070" opacity="0.45"/>
+    <circle cx="36" cy="44" r="2" fill="#f5c840" opacity="0.5"/>
+    <circle cx="84" cy="44" r="2" fill="#a8d070" opacity="0.5"/>
+    <path d="M26 50 Q34 45 40 50 Q46 45 52 50" fill="none" stroke="#c8a880" stroke-width="0.6" opacity="0.3"/>
+    <path d="M68 50 Q74 45 80 50 Q86 45 92 50" fill="none" stroke="#c8a880" stroke-width="0.6" opacity="0.3"/>
+  </symbol>
+
+  <!-- No.083 · 香煎鮭魚鴨胸佐冰湖野米甜波菜 -->
+  <symbol id="i083" viewBox="0 0 120 90" fill="none">
+    <rect x="10" y="38" width="100" height="30" rx="15" fill="#f0ece4" opacity="0.75" stroke="#8a8070" stroke-width="0.7"/>
+    <line x1="47" y1="38" x2="47" y2="68" stroke="#8a8070" stroke-width="0.5" opacity="0.25"/>
+    <line x1="73" y1="38" x2="73" y2="68" stroke="#8a8070" stroke-width="0.5" opacity="0.25"/>
+    <ellipse cx="28" cy="53" rx="14" ry="9" fill="#e87848" opacity="0.55"/>
+    <ellipse cx="28" cy="53" rx="8" ry="5" fill="#f0a070" opacity="0.45"/>
+    <ellipse cx="60" cy="53" rx="10" ry="8" fill="#f5c840" opacity="0.5"/>
+    <circle cx="58" cy="50" r="3" fill="#8a8070" opacity="0.45"/>
+    <circle cx="62" cy="56" r="2.5" fill="#8a8070" opacity="0.4"/>
+    <ellipse cx="91" cy="53" rx="13" ry="9" fill="#a8d070" opacity="0.55"/>
+    <circle cx="88" cy="50" r="2.5" fill="#7ab840" opacity="0.5"/>
+    <circle cx="94" cy="56" r="2" fill="#7ab840" opacity="0.45"/>
+  </symbol>
+
+  <!-- No.084 · 法式臺味鹹派(芒種後) -->
+  <symbol id="i084" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="53" r="34" fill="#f2deb0" opacity="0.88" stroke="#c89040" stroke-width="0.85"/>
+    <circle cx="60" cy="53" r="30" fill="none" stroke="#c89040" stroke-width="0.4" opacity="0.3"/>
+    <path d="M60 53 L60 20" stroke="#aa7a6a" stroke-width="0.6" opacity="0.3"/>
+    <path d="M60 53 L85 72" stroke="#aa7a6a" stroke-width="0.6" opacity="0.28"/>
+    <path d="M60 53 L35 72" stroke="#aa7a6a" stroke-width="0.6" opacity="0.28"/>
+    <ellipse cx="50" cy="40" rx="10" ry="7" fill="#f5c840" opacity="0.5" transform="rotate(20 50 40)"/>
+    <ellipse cx="50" cy="39" rx="6" ry="4" fill="#d4a020" opacity="0.4" transform="rotate(20 50 40)"/>
+    <ellipse cx="72" cy="42" rx="9" ry="6" fill="#e87848" opacity="0.5" transform="rotate(-15 72 42)"/>
+    <circle cx="52" cy="60" r="3.5" fill="#aa7a6a" opacity="0.45"/>
+    <circle cx="68" cy="58" r="3" fill="#aa7a6a" opacity="0.42"/>
+    <circle cx="44" cy="55" r="2.5" fill="#a8d070" opacity="0.55"/>
+    <circle cx="76" cy="55" r="2.5" fill="#a8d070" opacity="0.52"/>
+    <circle cx="60" cy="65" r="2" fill="#e87848" opacity="0.45"/>
+  </symbol>
+
+  <!-- No.085 · 紅燒牛肉燉飯 -->
+  <symbol id="i085" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="64" rx="38" ry="10" fill="#e8dcc8" opacity="0.6" stroke="#aa7a6a" stroke-width="0.7"/>
+    <path d="M22 53 Q22 73 60 73 Q98 73 98 53" fill="none" stroke="#aa7a6a" stroke-width="0.9"/>
+    <ellipse cx="60" cy="53" rx="36" ry="9" fill="#aa7a6a" opacity="0.25"/>
+    <path d="M26 57 Q38 51 54 55 Q62 59 70 53 Q80 47 96 54" fill="#aa7a6a" opacity="0.18" stroke="none"/>
+    <path d="M28 61 Q42 56 56 59 Q66 63 78 57 Q88 52 94 57" fill="none" stroke="#f5e8c0" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="42" cy="52" r="5" fill="#aa7a6a" opacity="0.55"/>
+    <circle cx="42" cy="51" r="2.5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="66" cy="50" r="5.5" fill="#aa7a6a" opacity="0.5"/>
+    <circle cx="66" cy="49" r="3" fill="#f5c840" opacity="0.45"/>
+    <circle cx="80" cy="54" r="3.5" fill="#e87848" opacity="0.45"/>
+    <circle cx="34" cy="58" r="2" fill="#a8d070" opacity="0.55"/>
+    <circle cx="86" cy="58" r="2" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.086 · 逐鹿部落開箱66小書 -->
+  <symbol id="i086" viewBox="0 0 120 90" fill="none">
+    <circle cx="96" cy="20" r="11" fill="#f5e890" opacity="0.4"/>
+    <circle cx="96" cy="20" r="7" fill="#f5e890" opacity="0.3"/>
+    <path d="M0 80 L120 80 L120 90 L0 90Z" fill="#6a8a6a" opacity="0.45"/>
+    <line x1="18" y1="80" x2="18" y2="38" stroke="#6a8a6a" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
+    <path d="M8 42 Q18 30 28 42Z" fill="#6a8a6a" opacity="0.5"/>
+    <path d="M9 52 Q18 40 27 52Z" fill="#6a8a6a" opacity="0.42"/>
+    <line x1="38" y1="80" x2="38" y2="28" stroke="#6a8a6a" stroke-width="2" opacity="0.45" stroke-linecap="round"/>
+    <path d="M28 32 Q38 20 48 32Z" fill="#6a8a6a" opacity="0.48"/>
+    <path d="M29 42 Q38 30 47 42Z" fill="#6a8a6a" opacity="0.4"/>
+    <line x1="60" y1="80" x2="60" y2="34" stroke="#6a8a6a" stroke-width="2.5" opacity="0.48" stroke-linecap="round"/>
+    <path d="M50 38 Q60 26 70 38Z" fill="#6a8a6a" opacity="0.48"/>
+    <path d="M51 48 Q60 36 69 48Z" fill="#6a8a6a" opacity="0.38"/>
+    <line x1="82" y1="80" x2="82" y2="42" stroke="#6a8a6a" stroke-width="2" opacity="0.42" stroke-linecap="round"/>
+    <path d="M72 46 Q82 34 92 46Z" fill="#6a8a6a" opacity="0.44"/>
+    <line x1="102" y1="80" x2="102" y2="48" stroke="#6a8a6a" stroke-width="1.8" opacity="0.38" stroke-linecap="round"/>
+    <path d="M93 52 Q102 42 111 52Z" fill="#6a8a6a" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.087 · BOSS三明治 -->
+  <symbol id="i087" viewBox="0 0 120 90" fill="none">
+    <path d="M20 52 Q60 38 100 52" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.8"/>
+    <ellipse cx="60" cy="38" rx="24" ry="6" fill="#f5e8c8" opacity="0.6"/>
+    <circle cx="42" cy="42" r="1.2" fill="#c89040" opacity="0.5"/>
+    <circle cx="55" cy="40" r="1" fill="#c89040" opacity="0.45"/>
+    <circle cx="68" cy="41" r="1.2" fill="#c89040" opacity="0.5"/>
+    <circle cx="78" cy="43" r="1" fill="#c89040" opacity="0.4"/>
+    <rect x="18" y="52" width="84" height="5" rx="1" fill="#f5c840" opacity="0.7"/>
+    <rect x="18" y="57" width="84" height="6" rx="1" fill="#e87030" opacity="0.75"/>
+    <rect x="20" y="63" width="80" height="4" rx="1" fill="#a8d070" opacity="0.6"/>
+    <rect x="20" y="67" width="80" height="5" rx="1" fill="#f0e0c0" opacity="0.7"/>
+    <path d="M20 72 Q60 77 100 72 L100 67 Q60 72 20 67Z" fill="#f2deb0" opacity="0.92"/>
+    <path d="M20 72 Q60 77 100 72" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <ellipse cx="44" cy="60" rx="8" ry="2.5" fill="#c86030" opacity="0.35"/>
+    <ellipse cx="72" cy="61" rx="7" ry="2.5" fill="#c86030" opacity="0.3"/>
+  </symbol>
+
+  <!-- No.088 · 挪威烤鴨?(小暑後) -->
+  <symbol id="i088" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="54" r="32" fill="#2c2420" opacity="0.15" stroke="#a08c5a" stroke-width="0.9"/>
+    <circle cx="60" cy="54" r="28" fill="#a08c5a" opacity="0.18"/>
+    <line x1="12" y1="54" x2="28" y2="54" stroke="#8a7060" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="92" y1="54" x2="108" y2="54" stroke="#8a7060" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M36 44 Q48 37 60 43 Q72 37 84 44" fill="none" stroke="#f0a030" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="44" cy="52" rx="7" ry="5" fill="#e87030" opacity="0.55"/>
+    <ellipse cx="60" cy="48" rx="6" ry="4.5" fill="#f5c840" opacity="0.5"/>
+    <ellipse cx="76" cy="52" rx="7" ry="5" fill="#e87030" opacity="0.5"/>
+    <circle cx="52" cy="60" r="4" fill="#a8d070" opacity="0.55"/>
+    <circle cx="66" cy="61" r="4.5" fill="#a8d070" opacity="0.5"/>
+    <circle cx="38" cy="58" r="2.5" fill="#f5c840" opacity="0.45"/>
+    <circle cx="80" cy="59" r="2.5" fill="#f5c840" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.089 · 油雞麻醬天使冷麵Angel Hair -->
+  <symbol id="i089" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="64" rx="38" ry="10" fill="#e8dcc8" opacity="0.55" stroke="#6a8a8a" stroke-width="0.6"/>
+    <path d="M22 54 Q22 73 60 73 Q98 73 98 54" fill="none" stroke="#6a8a8a" stroke-width="0.8"/>
+    <path d="M26 53 Q40 43 56 51 Q64 57 76 47 Q84 41 90 51" fill="none" stroke="#f5e8c0" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+    <path d="M28 56 Q42 48 58 54 Q66 59 78 51 Q86 45 90 53" fill="none" stroke="#f5e8c0" stroke-width="1" stroke-linecap="round" opacity="0.55"/>
+    <path d="M30 59 Q44 53 60 57 Q68 62 80 56" fill="none" stroke="#f5e8c0" stroke-width="0.9" stroke-linecap="round" opacity="0.42"/>
+    <path d="M32 62 Q46 57 62 60 Q72 64 84 60" fill="none" stroke="#f5e8c0" stroke-width="0.7" stroke-linecap="round" opacity="0.3"/>
+    <ellipse cx="48" cy="50" rx="7" ry="4" fill="#f0a030" opacity="0.55" transform="rotate(-5 48 50)"/>
+    <ellipse cx="48" cy="49" rx="4" ry="2" fill="#f5c840" opacity="0.45" transform="rotate(-5 48 49)"/>
+    <circle cx="72" cy="52" r="3" fill="#f0a030" opacity="0.5"/>
+    <circle cx="38" cy="58" r="2" fill="#a8d070" opacity="0.55"/>
+    <circle cx="82" cy="58" r="2" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.090 · 墨西哥捲burritos -->
+  <symbol id="i090" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="50" r="34" fill="#f2deb0" opacity="0.88" stroke="#c89040" stroke-width="0.8"/>
+    <circle cx="60" cy="50" r="28" fill="none" stroke="#c89040" stroke-width="0.4" opacity="0.3"/>
+    <path d="M32 50 Q60 34 88 50 Q60 66 32 50Z" fill="#e87848" opacity="0.4"/>
+    <circle cx="46" cy="45" r="6" fill="#a8d878" opacity="0.65"/>
+    <circle cx="46" cy="44" r="3" fill="#7ab848" opacity="0.5"/>
+    <circle cx="64" cy="43" r="5.5" fill="#f5c840" opacity="0.6"/>
+    <circle cx="64" cy="42" r="3" fill="#d4a020" opacity="0.5"/>
+    <circle cx="56" cy="56" r="4.5" fill="#8a8070" opacity="0.5"/>
+    <circle cx="56" cy="55" r="2.5" fill="#f5e8a0" opacity="0.45"/>
+    <circle cx="72" cy="54" r="4" fill="#e87848" opacity="0.5"/>
+    <circle cx="72" cy="53" r="2" fill="#f0a070" opacity="0.45"/>
+    <path d="M32 50 Q60 44 88 50" fill="none" stroke="#c89040" stroke-width="0.7" opacity="0.35"/>
+  </symbol>
+
+  <!-- No.091 · 匈牙利燉牛肉Goulash Hungarian Beef Stew -->
+  <symbol id="i091" viewBox="0 0 120 90" fill="none">
+    <path d="M14 70 Q60 75 106 70 L106 62 Q60 57 14 62 Z" fill="#e8dcc8" opacity="0.85"/>
+    <path d="M14 70 Q60 75 106 70" fill="none" stroke="#b89860" stroke-width="0.8" opacity="0.45"/>
+    <ellipse cx="60" cy="62" rx="44" ry="9" fill="#aa7a6a" opacity="0.2"/>
+    <path d="M20 60 Q34 50 46 58 Q54 64 62 56 Q70 48 82 56 Q90 62 100 58" fill="none" stroke="#f5e8c0" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <path d="M22 64 Q36 56 48 62 Q56 66 64 60 Q72 53 84 60 Q92 65 100 62" fill="none" stroke="#f5e8c0" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <ellipse cx="44" cy="54" rx="8" ry="5" fill="#e87848" opacity="0.7" transform="rotate(-5 44 54)"/>
+    <ellipse cx="44" cy="54" rx="4" ry="2.5" fill="#f0a070" opacity="0.5" transform="rotate(-5 44 54)"/>
+    <ellipse cx="78" cy="54" rx="7" ry="5" fill="#e87848" opacity="0.65" transform="rotate(4 78 54)"/>
+    <circle cx="62" cy="52" r="5.5" fill="#f5e8a0" opacity="0.9" stroke="#aa7a6a" stroke-width="0.6"/>
+    <circle cx="62" cy="52" r="3" fill="#f0a030" opacity="0.8"/>
+    <circle cx="34" cy="60" r="2" fill="#a8d070" opacity="0.7"/>
+    <circle cx="88" cy="60" r="2" fill="#a8d070" opacity="0.65"/>
+  </symbol>
+
+  <!-- No.092 · 威靈頓牛排Beef Wellington -->
+  <symbol id="i092" viewBox="0 0 120 90" fill="none">
+    <path d="M16 46 Q16 34 60 32 Q104 34 104 46 L104 62 Q104 72 60 72 Q16 72 16 62Z" fill="#f2deb0" opacity="0.88" stroke="#c89040" stroke-width="0.9"/>
+    <path d="M20 44 Q20 36 60 34 Q100 36 100 44" fill="none" stroke="#c89040" stroke-width="0.7" opacity="0.4"/>
+    <line x1="28" y1="36" x2="26" y2="70" stroke="#c89040" stroke-width="0.6" opacity="0.28"/>
+    <line x1="38" y1="34" x2="36" y2="72" stroke="#c89040" stroke-width="0.6" opacity="0.25"/>
+    <line x1="48" y1="33" x2="46" y2="72" stroke="#c89040" stroke-width="0.6" opacity="0.28"/>
+    <line x1="58" y1="33" x2="56" y2="72" stroke="#c89040" stroke-width="0.6" opacity="0.25"/>
+    <line x1="68" y1="33" x2="66" y2="72" stroke="#c89040" stroke-width="0.6" opacity="0.28"/>
+    <line x1="78" y1="34" x2="76" y2="72" stroke="#c89040" stroke-width="0.6" opacity="0.25"/>
+    <line x1="88" y1="36" x2="86" y2="70" stroke="#c89040" stroke-width="0.6" opacity="0.25"/>
+    <ellipse cx="60" cy="54" rx="24" ry="12" fill="#8a5838" opacity="0.45"/>
+    <ellipse cx="60" cy="53" rx="18" ry="9" fill="#a06840" opacity="0.4"/>
+    <ellipse cx="60" cy="52" rx="12" ry="6" fill="#c87850" opacity="0.35"/>
+    <circle cx="46" cy="54" r="3" fill="#6a4828" opacity="0.4"/>
+    <circle cx="74" cy="54" r="3" fill="#6a4828" opacity="0.38"/>
+  </symbol>
+
+  <!-- No.093 · 蒙特婁Montreal Bagel烤鴨貝果 -->
+  <symbol id="i093" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="52" rx="34" ry="18" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.9"/>
+    <ellipse cx="60" cy="52" rx="18" ry="9" fill="#f5deb0" opacity="0.5"/>
+    <ellipse cx="60" cy="52" rx="18" ry="9" fill="none" stroke="#c89040" stroke-width="0.7"/>
+    <path d="M30 46 Q60 38 90 46" fill="none" stroke="#c89040" stroke-width="0.6" opacity="0.3"/>
+    <path d="M30 58 Q60 66 90 58" fill="none" stroke="#c89040" stroke-width="0.6" opacity="0.3"/>
+    <ellipse cx="38" cy="52" rx="8" ry="7" fill="#6a8a8a" opacity="0.35"/>
+    <ellipse cx="82" cy="52" rx="8" ry="7" fill="#6a8a8a" opacity="0.32"/>
+    <ellipse cx="60" cy="42" rx="8" ry="4" fill="#f5e8c0" opacity="0.5"/>
+    <circle cx="44" cy="48" r="2" fill="#e87848" opacity="0.5"/>
+    <circle cx="76" cy="48" r="2" fill="#e87848" opacity="0.48"/>
+    <circle cx="60" cy="40" r="1.8" fill="#6a8a8a" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.094 · 西班牙JamonSerrano火腿起司盤 -->
+  <symbol id="i094" viewBox="0 0 120 90" fill="none">
+    <circle cx="30" cy="50" r="20" fill="#f0ece4" opacity="0.65" stroke="#8a8070" stroke-width="0.6"/>
+    <ellipse cx="24" cy="46" rx="7" ry="5" fill="#e87848" opacity="0.55"/>
+    <ellipse cx="36" cy="54" rx="8" ry="5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="30" cy="50" r="2.5" fill="#8a8070" opacity="0.4"/>
+    <circle cx="78" cy="44" r="18" fill="#f0ece4" opacity="0.6" stroke="#8a8070" stroke-width="0.6"/>
+    <ellipse cx="74" cy="40" rx="6" ry="4" fill="#a8d070" opacity="0.6"/>
+    <ellipse cx="83" cy="48" rx="5" ry="4" fill="#8a8070" opacity="0.45"/>
+    <circle cx="82" cy="66" r="15" fill="#f0ece4" opacity="0.62" stroke="#8a8070" stroke-width="0.55"/>
+    <ellipse cx="80" cy="64" rx="6" ry="4" fill="#e07850" opacity="0.55"/>
+    <circle cx="84" cy="68" r="2.5" fill="#f5c840" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.095 · 希臘風香煎鰈魚花枝佐中東鷹嘴豆泥 -->
+  <symbol id="i095" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="60" rx="46" ry="13" fill="#f0ece4" opacity="0.7" stroke="#aa7a6a" stroke-width="0.6"/>
+    <ellipse cx="60" cy="58" rx="44" ry="11" fill="none" stroke="#aa7a6a" stroke-width="0.4" opacity="0.2"/>
+    <ellipse cx="38" cy="52" rx="14" ry="9" fill="#e87848" opacity="0.5" transform="rotate(-18 38 52)"/>
+    <ellipse cx="38" cy="52" rx="8" ry="5" fill="#f0a070" opacity="0.45" transform="rotate(-18 38 52)"/>
+    <ellipse cx="60" cy="50" rx="9" ry="7" fill="#f5c840" opacity="0.55"/>
+    <ellipse cx="82" cy="52" rx="12" ry="8" fill="#a8d070" opacity="0.5" transform="rotate(12 82 52)"/>
+    <circle cx="48" cy="59" r="3.5" fill="#aa7a6a" opacity="0.4"/>
+    <circle cx="70" cy="58" r="3" fill="#aa7a6a" opacity="0.35"/>
+    <circle cx="58" cy="62" r="2" fill="#f0e8d0" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.096 · 希臘風香煎鰈魚花枝佐中東鷹嘴豆泥 -->
+  <symbol id="i096" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="54" r="32" fill="#2c2420" opacity="0.15" stroke="#aa7a6a" stroke-width="0.9"/>
+    <circle cx="60" cy="54" r="28" fill="#aa7a6a" opacity="0.18"/>
+    <line x1="12" y1="54" x2="28" y2="54" stroke="#8a7060" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="92" y1="54" x2="108" y2="54" stroke="#8a7060" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M36 44 Q48 37 60 43 Q72 37 84 44" fill="none" stroke="#f0a030" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="44" cy="52" rx="7" ry="5" fill="#e87030" opacity="0.55"/>
+    <ellipse cx="60" cy="48" rx="6" ry="4.5" fill="#f5c840" opacity="0.5"/>
+    <ellipse cx="76" cy="52" rx="7" ry="5" fill="#e87030" opacity="0.5"/>
+    <circle cx="52" cy="60" r="4" fill="#a8d070" opacity="0.55"/>
+    <circle cx="66" cy="61" r="4.5" fill="#a8d070" opacity="0.5"/>
+    <circle cx="38" cy="58" r="2.5" fill="#f5c840" opacity="0.45"/>
+    <circle cx="80" cy="59" r="2.5" fill="#f5c840" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.097 · 福爾摩沙海森堡 -->
+  <symbol id="i097" viewBox="0 0 120 90" fill="none">
+    <path d="M20 52 Q60 38 100 52" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.8"/>
+    <ellipse cx="60" cy="38" rx="24" ry="6" fill="#f5e8c8" opacity="0.6"/>
+    <circle cx="42" cy="42" r="1.2" fill="#c89040" opacity="0.5"/>
+    <circle cx="55" cy="40" r="1" fill="#c89040" opacity="0.45"/>
+    <circle cx="68" cy="41" r="1.2" fill="#c89040" opacity="0.5"/>
+    <circle cx="78" cy="43" r="1" fill="#c89040" opacity="0.4"/>
+    <rect x="18" y="52" width="84" height="5" rx="1" fill="#f5c840" opacity="0.7"/>
+    <rect x="18" y="57" width="84" height="6" rx="1" fill="#e87030" opacity="0.75"/>
+    <rect x="20" y="63" width="80" height="4" rx="1" fill="#a8d070" opacity="0.6"/>
+    <rect x="20" y="67" width="80" height="5" rx="1" fill="#f0e0c0" opacity="0.7"/>
+    <path d="M20 72 Q60 77 100 72 L100 67 Q60 72 20 67Z" fill="#f2deb0" opacity="0.92"/>
+    <path d="M20 72 Q60 77 100 72" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <ellipse cx="44" cy="60" rx="8" ry="2.5" fill="#c86030" opacity="0.35"/>
+    <ellipse cx="72" cy="61" rx="7" ry="2.5" fill="#c86030" opacity="0.3"/>
+  </symbol>
+
+  <!-- No.098 · 藤原小日常-鮪魚小法國佐鷹嘴豆泥球 -->
+  <symbol id="i098" viewBox="0 0 120 90" fill="none">
+    <path d="M8 54 Q12 40 60 38 Q108 40 112 54 Q108 68 60 70 Q12 68 8 54Z" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.8"/>
+    <ellipse cx="60" cy="54" rx="24" ry="9" fill="#f5deb0" opacity="0.4"/>
+    <line x1="28" y1="42" x2="24" y2="66" stroke="#c89040" stroke-width="0.7" opacity="0.35"/>
+    <line x1="40" y1="40" x2="36" y2="68" stroke="#c89040" stroke-width="0.7" opacity="0.32"/>
+    <line x1="52" y1="39" x2="48" y2="69" stroke="#c89040" stroke-width="0.7" opacity="0.35"/>
+    <line x1="64" y1="39" x2="60" y2="69" stroke="#c89040" stroke-width="0.7" opacity="0.32"/>
+    <line x1="76" y1="40" x2="72" y2="68" stroke="#c89040" stroke-width="0.7" opacity="0.35"/>
+    <line x1="88" y1="42" x2="84" y2="66" stroke="#c89040" stroke-width="0.7" opacity="0.3"/>
+    <path d="M12 50 Q60 45 108 50" fill="none" stroke="#f5deb0" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="42" cy="52" r="2.5" fill="#8a7aaa" opacity="0.4"/>
+    <circle cx="74" cy="52" r="2.5" fill="#8a7aaa" opacity="0.38"/>
+  </symbol>
+
+  <!-- No.099 · 泰式涼拌豬肉LaabMoo_泰式蝦餅 -->
+  <symbol id="i099" viewBox="0 0 120 90" fill="none">
+    <rect x="8" y="32" width="104" height="44" rx="5" fill="#e8dcc8" opacity="0.7" stroke="#6a8a8a" stroke-width="0.6"/>
+    <ellipse cx="30" cy="54" rx="14" ry="9" fill="#e87848" opacity="0.55" transform="rotate(-10 30 54)"/>
+    <ellipse cx="30" cy="54" rx="8" ry="5" fill="#f0a070" opacity="0.5" transform="rotate(-10 30 54)"/>
+    <ellipse cx="54" cy="48" rx="11" ry="8" fill="#f5c840" opacity="0.5" transform="rotate(8 54 48)"/>
+    <ellipse cx="78" cy="55" rx="13" ry="8" fill="#a8d070" opacity="0.55" transform="rotate(-5 78 55)"/>
+    <ellipse cx="98" cy="48" rx="10" ry="7" fill="#6a8a8a" opacity="0.45" transform="rotate(14 98 48)"/>
+    <circle cx="42" cy="64" r="3.5" fill="#e87030" opacity="0.5"/>
+    <circle cx="66" cy="62" r="3" fill="#6a8a8a" opacity="0.4"/>
+    <circle cx="22" cy="46" r="2.5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="90" cy="62" r="2" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.100 · Perfect Indian Rice +Master Masala Recipe -->
+  <symbol id="i100" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="56" rx="40" ry="16" fill="#f0ece4" opacity="0.6" stroke="#8a8078" stroke-width="0.7"/>
+    <path d="M34 70 L60 28 L86 70 Z" fill="#f5f0e0" opacity="0.9" stroke="#d4b880" stroke-width="0.8"/>
+    <path d="M38 70 L60 34 L82 70 Z" fill="none" stroke="#d4b880" stroke-width="0.5" opacity="0.35"/>
+    <rect x="32" y="64" width="56" height="10" rx="2" fill="#3a3028" opacity="0.55"/>
+    <path d="M38 70 L60 36 L82 70" fill="none" stroke="#8a8078" stroke-width="0.5" opacity="0.25"/>
+    <ellipse cx="60" cy="52" rx="10" ry="6" fill="#8a8078" opacity="0.45"/>
+    <ellipse cx="60" cy="51" rx="5" ry="3" fill="#f5c840" opacity="0.5"/>
+    <circle cx="52" cy="58" r="2" fill="#8a8078" opacity="0.35"/>
+    <circle cx="68" cy="58" r="2" fill="#8a8078" opacity="0.32"/>
+  </symbol>
+
+  <!-- No.101 · 印度香料蔬菜咖哩紅糟肉佐印度Basmati Rice -->
+  <symbol id="i101" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="62" rx="44" ry="12" fill="#f0ece4" opacity="0.7" stroke="#a08c5a" stroke-width="0.65"/>
+    <ellipse cx="38" cy="57" rx="22" ry="13" fill="#f5f0e0" opacity="0.8"/>
+    <ellipse cx="38" cy="56" rx="16" ry="9" fill="#f5f0d8" opacity="0.6"/>
+    <ellipse cx="80" cy="57" rx="24" ry="14" fill="#f5a820" opacity="0.4"/>
+    <ellipse cx="80" cy="55" rx="18" ry="10" fill="#e89020" opacity="0.3"/>
+    <circle cx="74" cy="53" r="5" fill="#a08c5a" opacity="0.55"/>
+    <circle cx="74" cy="52" r="2.5" fill="#f5c840" opacity="0.45"/>
+    <circle cx="86" cy="57" r="4.5" fill="#a08c5a" opacity="0.5"/>
+    <circle cx="82" cy="62" r="3.5" fill="#e87848" opacity="0.5"/>
+    <circle cx="95" cy="55" r="3" fill="#a8d070" opacity="0.55"/>
+    <line x1="58" y1="48" x2="60" y2="72" stroke="#a08c5a" stroke-width="0.6" opacity="0.3"/>
+  </symbol>
+
+  <!-- No.102 · Voyage and Spices 航海與香料 -->
+  <symbol id="i102" viewBox="0 0 120 90" fill="none">
+    <circle cx="30" cy="50" r="20" fill="#f0ece4" opacity="0.65" stroke="#8a8070" stroke-width="0.6"/>
+    <ellipse cx="24" cy="46" rx="7" ry="5" fill="#e87848" opacity="0.55"/>
+    <ellipse cx="36" cy="54" rx="8" ry="5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="30" cy="50" r="2.5" fill="#8a8070" opacity="0.4"/>
+    <circle cx="78" cy="44" r="18" fill="#f0ece4" opacity="0.6" stroke="#8a8070" stroke-width="0.6"/>
+    <ellipse cx="74" cy="40" rx="6" ry="4" fill="#a8d070" opacity="0.6"/>
+    <ellipse cx="83" cy="48" rx="5" ry="4" fill="#8a8070" opacity="0.45"/>
+    <circle cx="82" cy="66" r="15" fill="#f0ece4" opacity="0.62" stroke="#8a8070" stroke-width="0.55"/>
+    <ellipse cx="80" cy="64" rx="6" ry="4" fill="#e07850" opacity="0.55"/>
+    <circle cx="84" cy="68" r="2.5" fill="#f5c840" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.103 · 泰式海陸Laab feat. 徐爸牛肉 -->
+  <symbol id="i103" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="60" rx="46" ry="13" fill="#f0ece4" opacity="0.7" stroke="#aa7a6a" stroke-width="0.6"/>
+    <ellipse cx="60" cy="58" rx="44" ry="11" fill="none" stroke="#aa7a6a" stroke-width="0.4" opacity="0.2"/>
+    <ellipse cx="38" cy="52" rx="14" ry="9" fill="#e87848" opacity="0.5" transform="rotate(-18 38 52)"/>
+    <ellipse cx="38" cy="52" rx="8" ry="5" fill="#f0a070" opacity="0.45" transform="rotate(-18 38 52)"/>
+    <ellipse cx="60" cy="50" rx="9" ry="7" fill="#f5c840" opacity="0.55"/>
+    <ellipse cx="82" cy="52" rx="12" ry="8" fill="#a8d070" opacity="0.5" transform="rotate(12 82 52)"/>
+    <circle cx="48" cy="59" r="3.5" fill="#aa7a6a" opacity="0.4"/>
+    <circle cx="70" cy="58" r="3" fill="#aa7a6a" opacity="0.35"/>
+    <circle cx="58" cy="62" r="2" fill="#f0e8d0" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.104 · Cooking for whole grains 五穀雜糧煮法 -->
+  <symbol id="i104" viewBox="0 0 120 90" fill="none">
+    <rect x="20" y="20" width="80" height="52" rx="4" fill="#f5f0e8" opacity="0.85" stroke="#8a8078" stroke-width="0.9"/>
+    <rect x="20" y="20" width="80" height="10" rx="4" fill="#8a8078" opacity="0.4"/>
+    <line x1="60" y1="20" x2="60" y2="72" stroke="#8a8078" stroke-width="1.5" opacity="0.45"/>
+    <line x1="28" y1="36" x2="56" y2="36" stroke="#8a8078" stroke-width="0.7" opacity="0.35"/>
+    <line x1="28" y1="42" x2="56" y2="42" stroke="#8a8078" stroke-width="0.7" opacity="0.32"/>
+    <line x1="28" y1="48" x2="56" y2="48" stroke="#8a8078" stroke-width="0.7" opacity="0.3"/>
+    <line x1="28" y1="54" x2="56" y2="54" stroke="#8a8078" stroke-width="0.7" opacity="0.28"/>
+    <line x1="28" y1="60" x2="56" y2="60" stroke="#8a8078" stroke-width="0.7" opacity="0.25"/>
+    <line x1="64" y1="36" x2="92" y2="36" stroke="#8a8078" stroke-width="0.7" opacity="0.35"/>
+    <line x1="64" y1="42" x2="92" y2="42" stroke="#8a8078" stroke-width="0.7" opacity="0.32"/>
+    <line x1="64" y1="48" x2="92" y2="48" stroke="#8a8078" stroke-width="0.7" opacity="0.3"/>
+    <line x1="64" y1="54" x2="92" y2="54" stroke="#8a8078" stroke-width="0.7" opacity="0.28"/>
+    <path d="M20 72 L100 72 Q100 78 60 78 Q20 78 20 72Z" fill="#8a8078" opacity="0.35"/>
+  </symbol>
+
+  <!-- No.105 · 乾煎松阪豬佐秋分雜米飯 -->
+  <symbol id="i105" viewBox="0 0 120 90" fill="none">
+    <rect x="8" y="32" width="104" height="44" rx="5" fill="#e8dcc8" opacity="0.7" stroke="#a08c5a" stroke-width="0.6"/>
+    <ellipse cx="30" cy="54" rx="14" ry="9" fill="#e87848" opacity="0.55" transform="rotate(-10 30 54)"/>
+    <ellipse cx="30" cy="54" rx="8" ry="5" fill="#f0a070" opacity="0.5" transform="rotate(-10 30 54)"/>
+    <ellipse cx="54" cy="48" rx="11" ry="8" fill="#f5c840" opacity="0.5" transform="rotate(8 54 48)"/>
+    <ellipse cx="78" cy="55" rx="13" ry="8" fill="#a8d070" opacity="0.55" transform="rotate(-5 78 55)"/>
+    <ellipse cx="98" cy="48" rx="10" ry="7" fill="#a08c5a" opacity="0.45" transform="rotate(14 98 48)"/>
+    <circle cx="42" cy="64" r="3.5" fill="#e87030" opacity="0.5"/>
+    <circle cx="66" cy="62" r="3" fill="#a08c5a" opacity="0.4"/>
+    <circle cx="22" cy="46" r="2.5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="90" cy="62" r="2" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.106 · 藤原日常三明治-蛋沙拉+鮪魚 -->
+  <symbol id="i106" viewBox="0 0 120 90" fill="none">
+    <path d="M12 70 Q60 74 108 70 L108 63 Q60 58 12 63 Z" fill="#f2deb0" opacity="0.95"/>
+    <path d="M12 70 Q60 74 108 70" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <path d="M12 63 Q26 53 34 60 Q40 50 50 57 Q56 47 64 54 Q70 63 52 67 Q32 70 12 63 Z" fill="#a8d878" opacity="0.55"/>
+    <path d="M14 64 Q36 51 62 55" fill="none" stroke="#7ab848" stroke-width="0.5" opacity="0.5"/>
+    <path d="M108 63 Q94 53 86 60 Q80 50 70 57 Q64 47 56 54 Q62 63 80 67 Q96 70 108 63 Z" fill="#a8d878" opacity="0.52"/>
+    <path d="M106 64 Q84 51 58 55" fill="none" stroke="#7ab848" stroke-width="0.5" opacity="0.5"/>
+    <path d="M14 63 Q40 54 60 52 Q80 54 106 63" fill="none" stroke="#e8c4a0" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+    <path d="M15 62 Q40 55 60 53 Q80 55 105 62" fill="none" stroke="#f8f3ec" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+    <ellipse cx="34" cy="57" rx="3.5" ry="2" fill="#e07858" opacity="0.78" transform="rotate(-7 34 57)"/>
+    <ellipse cx="50" cy="54" rx="3" ry="1.8" fill="#d86848" opacity="0.72" transform="rotate(4 50 54)"/>
+    <ellipse cx="65" cy="53" rx="3.5" ry="1.9" fill="#e07858" opacity="0.75" transform="rotate(-3 65 53)"/>
+    <ellipse cx="80" cy="54" rx="3" ry="1.8" fill="#d86848" opacity="0.7" transform="rotate(5 80 54)"/>
+    <ellipse cx="94" cy="57" rx="3.2" ry="1.8" fill="#e07858" opacity="0.73" transform="rotate(-5 94 57)"/>
+    <circle cx="42" cy="55" r="1.1" fill="#7aaa6a" opacity="0.82"/>
+    <circle cx="57" cy="53" r="1" fill="#6a9a5a" opacity="0.78"/>
+    <circle cx="72" cy="53" r="1.2" fill="#7aaa6a" opacity="0.8"/>
+    <circle cx="87" cy="55" r="1" fill="#6a9a5a" opacity="0.75"/>
+    <circle cx="28" cy="59" r="0.9" fill="#7aaa6a" opacity="0.7"/>
+    <path d="M13 52 Q60 46 107 52 L107 44 Q60 38 13 44 Z" fill="#f2deb0" opacity="0.9"/>
+    <path d="M13 44 Q60 38 107 44" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.107 · 藤原壽司店 -->
+  <symbol id="i107" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="55" rx="46" ry="17" fill="#f0ece4" opacity="0.7" stroke="#6a8a8a" stroke-width="0.8"/>
+    <ellipse cx="30" cy="53" rx="12" ry="8" fill="#f5e8c0" opacity="0.8"/>
+    <ellipse cx="30" cy="51" rx="6" ry="3" fill="#e07850" opacity="0.7"/>
+    <ellipse cx="52" cy="53" rx="12" ry="8" fill="#f5e8c0" opacity="0.8"/>
+    <ellipse cx="52" cy="51" rx="6" ry="3" fill="#f0a030" opacity="0.65"/>
+    <ellipse cx="74" cy="53" rx="12" ry="8" fill="#f5e8c0" opacity="0.8"/>
+    <ellipse cx="74" cy="51" rx="6" ry="3" fill="#e87848" opacity="0.7"/>
+    <ellipse cx="96" cy="53" rx="11" ry="8" fill="#f5e8c0" opacity="0.75"/>
+    <ellipse cx="96" cy="51" rx="5.5" ry="3" fill="#a8d8a0" opacity="0.65"/>
+    <path d="M24 57 Q30 53 36 57" fill="none" stroke="#6a8a8a" stroke-width="0.6" opacity="0.4"/>
+    <path d="M46 57 Q52 53 58 57" fill="none" stroke="#6a8a8a" stroke-width="0.6" opacity="0.4"/>
+    <path d="M68 57 Q74 53 80 57" fill="none" stroke="#6a8a8a" stroke-width="0.6" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.108 · 貝勒蘑菇三明治 -->
+  <symbol id="i108" viewBox="0 0 120 90" fill="none">
+    <path d="M14 65 Q60 70 106 65 L106 58 Q60 53 14 58 Z" fill="#f2deb0" opacity="0.95"/>
+    <path d="M14 65 Q60 70 106 65" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.55"/>
+    <path d="M16 58 Q60 53 104 58 L104 53 Q60 48 16 53Z" fill="#a8d878" opacity="0.55"/>
+    <path d="M18 53 Q60 48 102 53 L102 48 Q60 43 18 48Z" fill="#f0c87a" opacity="0.5"/>
+    <path d="M18 48 Q60 43 102 48 L102 43 Q60 38 18 43Z" fill="#e87848" opacity="0.45"/>
+    <path d="M18 43 Q60 38 102 43 L102 38 Q60 33 18 38Z" fill="#f0e8d0" opacity="0.65"/>
+    <path d="M20 33 Q60 28 100 33 L100 38 Q60 33 20 38Z" fill="#f2deb0" opacity="0.9"/>
+    <path d="M20 28 Q60 24 100 28" fill="none" stroke="#c89040" stroke-width="0.8" opacity="0.5"/>
+    <ellipse cx="42" cy="55.5" rx="7" ry="2" fill="#8a8070" opacity="0.3"/>
+    <ellipse cx="74" cy="51" rx="6" ry="1.8" fill="#8a8070" opacity="0.28"/>
+  </symbol>
+
+  <!-- No.109 · 藤原貝果-焗烤蘑菇起司貝果 -->
+  <symbol id="i109" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="52" rx="34" ry="18" fill="#f2deb0" opacity="0.9" stroke="#c89040" stroke-width="0.9"/>
+    <ellipse cx="60" cy="52" rx="18" ry="9" fill="#f5deb0" opacity="0.5"/>
+    <ellipse cx="60" cy="52" rx="18" ry="9" fill="none" stroke="#c89040" stroke-width="0.7"/>
+    <path d="M30 46 Q60 38 90 46" fill="none" stroke="#c89040" stroke-width="0.6" opacity="0.3"/>
+    <path d="M30 58 Q60 66 90 58" fill="none" stroke="#c89040" stroke-width="0.6" opacity="0.3"/>
+    <ellipse cx="38" cy="52" rx="8" ry="7" fill="#a08c5a" opacity="0.35"/>
+    <ellipse cx="82" cy="52" rx="8" ry="7" fill="#a08c5a" opacity="0.32"/>
+    <ellipse cx="60" cy="42" rx="8" ry="4" fill="#f5e8c0" opacity="0.5"/>
+    <circle cx="44" cy="48" r="2" fill="#e87848" opacity="0.5"/>
+    <circle cx="76" cy="48" r="2" fill="#e87848" opacity="0.48"/>
+    <circle cx="60" cy="40" r="1.8" fill="#a08c5a" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.110 · 南洋沙嗲黃金豬-霜降風 -->
+  <symbol id="i110" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="52" r="36" fill="#f0ece4" opacity="0.7" stroke="#8a8070" stroke-width="0.7"/>
+    <circle cx="60" cy="52" r="30" fill="none" stroke="#8a8070" stroke-width="0.4" opacity="0.2"/>
+    <ellipse cx="44" cy="42" rx="12" ry="8" fill="#e87848" opacity="0.45" transform="rotate(-15 44 42)"/>
+    <ellipse cx="44" cy="42" rx="7" ry="4.5" fill="#f0a070" opacity="0.4" transform="rotate(-15 44 42)"/>
+    <ellipse cx="76" cy="42" rx="11" ry="8" fill="#a8d070" opacity="0.55" transform="rotate(10 76 42)"/>
+    <ellipse cx="46" cy="62" rx="10" ry="7" fill="#f5c840" opacity="0.5" transform="rotate(5 46 62)"/>
+    <ellipse cx="74" cy="62" rx="11" ry="7" fill="#8a8070" opacity="0.45" transform="rotate(-8 74 62)"/>
+    <circle cx="60" cy="52" r="5" fill="#f0e8d0" opacity="0.7"/>
+    <circle cx="60" cy="52" r="2.5" fill="#8a8070" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.111 · 鴨胸蕎麥麵 -->
+  <symbol id="i111" viewBox="0 0 120 90" fill="none">
+    <ellipse cx="60" cy="64" rx="36" ry="9" fill="#e8dcc8" opacity="0.6" stroke="#a08c5a" stroke-width="0.7"/>
+    <path d="M24 54 Q24 73 60 73 Q96 73 96 54" fill="none" stroke="#a08c5a" stroke-width="0.9"/>
+    <line x1="33" y1="54" x2="31" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+    <line x1="39" y1="54" x2="37" y2="70" stroke="#7a6050" stroke-width="1.3" opacity="0.45"/>
+    <line x1="45" y1="54" x2="43" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+    <line x1="51" y1="54" x2="49" y2="70" stroke="#7a6050" stroke-width="1.2" opacity="0.42"/>
+    <line x1="57" y1="54" x2="55" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.48" stroke-linecap="round"/>
+    <line x1="63" y1="54" x2="61" y2="70" stroke="#7a6050" stroke-width="1.3" opacity="0.44"/>
+    <line x1="69" y1="54" x2="67" y2="70" stroke="#8a7060" stroke-width="1.5" opacity="0.48" stroke-linecap="round"/>
+    <line x1="75" y1="54" x2="73" y2="70" stroke="#7a6050" stroke-width="1.2" opacity="0.42"/>
+    <ellipse cx="78" cy="48" rx="12" ry="7" fill="#f5e8c0" opacity="0.8" transform="rotate(-6 78 48)"/>
+    <ellipse cx="78" cy="47" rx="7" ry="4" fill="#f0c870" opacity="0.65" transform="rotate(-6 78 47)"/>
+    <circle cx="34" cy="61" r="2.5" fill="#a8d070" opacity="0.65"/>
+    <circle cx="52" cy="60" r="2" fill="#a8d070" opacity="0.6"/>
+  </symbol>
+
+  <!-- No.112 · 鰻魚壽司蛋糕 -->
+  <symbol id="i112" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="52" r="28" fill="#f5f0e8" opacity="0.88" stroke="#8a8070" stroke-width="0.9"/>
+    <circle cx="60" cy="52" r="22" fill="#f8f0c0" opacity="0.5" stroke="#8a8070" stroke-width="0.5"/>
+    <circle cx="60" cy="52" r="16" fill="#f5e8a0" opacity="0.45"/>
+    <circle cx="60" cy="52" r="10" fill="#f0c840" opacity="0.4"/>
+    <circle cx="60" cy="52" r="5" fill="#8a8070" opacity="0.5"/>
+    <circle cx="60" cy="52" r="2.5" fill="#f5e8a0" opacity="0.6"/>
+    <path d="M38 36 Q50 28 64 32" fill="none" stroke="#e87848" stroke-width="1.2" opacity="0.5"/>
+    <path d="M80 36 Q88 44 86 56" fill="none" stroke="#a8d070" stroke-width="1" opacity="0.45"/>
+    <circle cx="42" cy="66" r="3" fill="#e87848" opacity="0.5"/>
+    <circle cx="78" cy="66" r="3" fill="#a8d070" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.113 · 勃艮第紅酒燉牛肉 -->
+  <symbol id="i113" viewBox="0 0 120 90" fill="none">
+    <path d="M16 68 Q60 73 104 68 L104 60 Q60 55 16 60 Z" fill="#e8dcc8" opacity="0.85"/>
+    <path d="M16 68 Q60 73 104 68" fill="none" stroke="#b89860" stroke-width="0.8" opacity="0.5"/>
+    <path d="M18 60 Q60 56 102 60 L102 52 Q60 48 18 52 Z" fill="#d4c8b0" opacity="0.9" stroke="#8a8070" stroke-width="0.7"/>
+    <path d="M22 52 Q60 46 98 52" fill="#8a8070" opacity="0.12" stroke="none"/>
+    <ellipse cx="60" cy="52" rx="36" ry="7" fill="none" stroke="#8a8070" stroke-width="0.6" opacity="0.4"/>
+    <path d="M44 44 Q60 38 76 44 Q72 35 60 33 Q48 35 44 44Z" fill="#8a8070" opacity="0.25" stroke="#8a8070" stroke-width="0.7"/>
+    <ellipse cx="60" cy="33" rx="5" ry="3" fill="#8a8070" opacity="0.4"/>
+  </symbol>
+
+  <!-- No.114 · Atom Space -->
+  <symbol id="i114" viewBox="0 0 120 90" fill="none">
+    <rect x="6" y="16" width="24" height="36" rx="2" fill="#888888" opacity="0.35" stroke="#888888" stroke-width="0.6"/>
+    <rect x="9" y="20" width="5" height="4" rx="1" fill="#f5c840" opacity="0.6"/>
+    <rect x="16" y="22" width="5" height="4" rx="1" fill="#f5c840" opacity="0.5"/>
+    <rect x="9" y="28" width="5" height="4" rx="1" fill="#f5e890" opacity="0.55"/>
+    <rect x="32" y="24" width="18" height="28" rx="2" fill="#888888" opacity="0.3" stroke="#888888" stroke-width="0.5"/>
+    <rect x="35" y="28" width="4" height="3" rx="1" fill="#f5c840" opacity="0.55"/>
+    <rect x="42" y="26" width="4" height="3" rx="1" fill="#f5c840" opacity="0.5"/>
+    <rect x="54" y="14" width="26" height="38" rx="2" fill="#888888" opacity="0.38" stroke="#888888" stroke-width="0.6"/>
+    <rect x="58" y="18" width="5" height="4" rx="1" fill="#f5c840" opacity="0.6"/>
+    <rect x="65" y="20" width="5" height="4" rx="1" fill="#f5e890" opacity="0.55"/>
+    <rect x="58" y="28" width="5" height="4" rx="1" fill="#f5c840" opacity="0.5"/>
+    <rect x="65" y="30" width="5" height="4" rx="1" fill="#f5c840" opacity="0.48"/>
+    <rect x="84" y="20" width="22" height="32" rx="2" fill="#888888" opacity="0.32" stroke="#888888" stroke-width="0.5"/>
+    <rect x="87" y="24" width="4" height="3" rx="1" fill="#f5c840" opacity="0.55"/>
+    <rect x="94" y="26" width="4" height="3" rx="1" fill="#f5e890" opacity="0.5"/>
+    <path d="M0 62 L120 62" stroke="#888888" stroke-width="0.8" opacity="0.35"/>
+    <circle cx="18" cy="66" r="6" fill="#888888" opacity="0.2"/>
+    <circle cx="42" cy="66" r="5" fill="#888888" opacity="0.18"/>
+    <circle cx="68" cy="66" r="8" fill="#888888" opacity="0.22"/>
+    <circle cx="96" cy="66" r="5" fill="#888888" opacity="0.18"/>
+  </symbol>
+
+  <!-- No.115 · Bistronomy -->
+  <symbol id="i115" viewBox="0 0 120 90" fill="none">
+    <circle cx="30" cy="50" r="20" fill="#f0ece4" opacity="0.65" stroke="#8a8078" stroke-width="0.6"/>
+    <ellipse cx="24" cy="46" rx="7" ry="5" fill="#e87848" opacity="0.55"/>
+    <ellipse cx="36" cy="54" rx="8" ry="5" fill="#f5c840" opacity="0.5"/>
+    <circle cx="30" cy="50" r="2.5" fill="#8a8078" opacity="0.4"/>
+    <circle cx="78" cy="44" r="18" fill="#f0ece4" opacity="0.6" stroke="#8a8078" stroke-width="0.6"/>
+    <ellipse cx="74" cy="40" rx="6" ry="4" fill="#a8d070" opacity="0.6"/>
+    <ellipse cx="83" cy="48" rx="5" ry="4" fill="#8a8078" opacity="0.45"/>
+    <circle cx="82" cy="66" r="15" fill="#f0ece4" opacity="0.62" stroke="#8a8078" stroke-width="0.55"/>
+    <ellipse cx="80" cy="64" rx="6" ry="4" fill="#e07850" opacity="0.55"/>
+    <circle cx="84" cy="68" r="2.5" fill="#f5c840" opacity="0.5"/>
+  </symbol>
+
+  <!-- No.116 · Fusion：無國界風格 -->
+  <symbol id="i116" viewBox="0 0 120 90" fill="none">
+    <circle cx="60" cy="52" r="36" fill="#f0ece4" opacity="0.7" stroke="#8a8078" stroke-width="0.7"/>
+    <circle cx="60" cy="52" r="30" fill="none" stroke="#8a8078" stroke-width="0.4" opacity="0.2"/>
+    <ellipse cx="44" cy="42" rx="12" ry="8" fill="#e87848" opacity="0.45" transform="rotate(-15 44 42)"/>
+    <ellipse cx="44" cy="42" rx="7" ry="4.5" fill="#f0a070" opacity="0.4" transform="rotate(-15 44 42)"/>
+    <ellipse cx="76" cy="42" rx="11" ry="8" fill="#a8d070" opacity="0.55" transform="rotate(10 76 42)"/>
+    <ellipse cx="46" cy="62" rx="10" ry="7" fill="#f5c840" opacity="0.5" transform="rotate(5 46 62)"/>
+    <ellipse cx="74" cy="62" rx="11" ry="7" fill="#8a8078" opacity="0.45" transform="rotate(-8 74 62)"/>
+    <circle cx="60" cy="52" r="5" fill="#f0e8d0" opacity="0.7"/>
+    <circle cx="60" cy="52" r="2.5" fill="#8a8078" opacity="0.4"/>
+  </symbol>
+
+</svg>
