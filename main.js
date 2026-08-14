@@ -170,16 +170,27 @@ function buildSolarBar() {
     el.dataset.term = t.name;
 
     // tooltip
+    const positionTooltip = (e) => {
+      const margin = 8;
+      const tw = tooltip.offsetWidth;
+      const th = tooltip.offsetHeight;
+      let left = e.clientX + 12;
+      let top  = e.clientY - 58;
+      if (left + tw > window.innerWidth - margin) left = e.clientX - tw - 12;
+      if (left < margin) left = margin;
+      if (top < margin) top = margin;
+      if (top + th > window.innerHeight - margin) top = window.innerHeight - th - margin;
+      tooltip.style.left = left + 'px';
+      tooltip.style.top  = top + 'px';
+    };
     el.addEventListener('mouseenter', (e) => {
       tooltip.querySelector('.tt-name').textContent = `${t.name} · ${t.en}`;
       tooltip.querySelector('.tt-desc').textContent = t.desc;
       tooltip.querySelector('.tt-count').textContent = count ? `${count} 道料理` : '尚無料理';
       tooltip.classList.add('visible');
+      positionTooltip(e);
     });
-    el.addEventListener('mousemove', (e) => {
-      tooltip.style.left = (e.clientX + 12) + 'px';
-      tooltip.style.top  = (e.clientY - 58) + 'px';
-    });
+    el.addEventListener('mousemove', positionTooltip);
     el.addEventListener('mouseleave', () => tooltip.classList.remove('visible'));
 
     // 點擊 → 節氣 sorting（切換）

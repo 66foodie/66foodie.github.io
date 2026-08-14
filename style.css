@@ -31,8 +31,8 @@
   --fs-lg:   1.09rem;   /* was 1.10 — 卡片描述、No.、宣言英文 */
   --fs-xl:   1.13rem;   /* was 1.14 — 卡片英文標題 */
   --fs-2xl:  1.19rem;   /* was 1.21 — 日期主體、header 副標 */
-  --fs-3xl:  1.26rem;   /* was 1.29 — 空狀態、星球誌標題 */
-  --fs-title:1.30rem;   /* was 1.35 — 料理標題（本次一併等比放大） */
+  --fs-3xl:  1.20rem;   /* was 1.29 — 空狀態、星球誌標題 */
+  --fs-title:1.25rem;   /* was 1.35 — 料理標題（本次一併等比放大） */
 
   /* ══════════════════════════════════════════════
      PLANET PALETTE · 星球色板（v6.1 新增）
@@ -285,7 +285,7 @@ body{background:var(--white);color:var(--ink);font-family:var(--sans);font-weigh
 .page-num.active{background:var(--ink);color:var(--white)}
 
 /* 插圖 */
-.card-visual{aspect-ratio:4/3;position:relative;overflow:hidden;border-radius:12px 10px 0 0}
+.card-visual{aspect-ratio:3/2;position:relative;overflow:hidden;border-radius:12px 10px 0 0}
 .food-illus{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
 .food-illus svg{width:66%;height:66%}
 
