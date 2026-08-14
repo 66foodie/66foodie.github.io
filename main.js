@@ -28,6 +28,7 @@ document.querySelectorAll('.filter-btn[data-type="planet"]').forEach(btn => {
     document.querySelectorAll('.filter-btn[data-type="planet"]').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     currentPlanet = btn.dataset.val;
+    if (currentPlanet === 'all') sortCards('no');
     applyFilters();
   });
 });
@@ -37,9 +38,11 @@ document.querySelectorAll('.filter-btn[data-type="planet"]').forEach(btn => {
 ══════════════════════════════════════════════ */
 function sortCards(by) {
   document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('sort-' + by).classList.add('active');
+  const sortBtn = document.getElementById('sort-' + by);
+  if (sortBtn) sortBtn.classList.add('active');
 
   const sorted = [...cards].sort((a, b) => {
+    if (by === 'no') return parseInt(a.dataset.no) - parseInt(b.dataset.no);
     if (by === 'rating') {
       const diff = parseInt(b.dataset.stars) - parseInt(a.dataset.stars);
       if (diff !== 0) return diff;
@@ -221,26 +224,24 @@ function buildSolarBar() {
 buildSolarBar();
 
 /* ══════════════════════════════════════════════
-   分頁 — 只在手機（≤640px）啟用，桌機一次顯示全部
+   分頁 — 手機與桌機皆啟用（同一套分頁邏輯與呈現），
+   桌機因多欄排版每頁顯示張數較多
 ══════════════════════════════════════════════ */
-const PAGE_SIZE = 8;
+const PAGE_SIZE_MOBILE = 8;
+const PAGE_SIZE_DESKTOP = 12;
 let currentPage = 1;
 const isMobile = () => window.matchMedia('(max-width:640px)').matches;
 
 function paginate() {
   const pag = document.getElementById('pagination');
-  if (!isMobile()) {
-    document.querySelectorAll('.recipe-card.page-hidden').forEach(c => c.classList.remove('page-hidden'));
-    if (pag) pag.style.display = 'none';
-    return;
-  }
+  const pageSize = isMobile() ? PAGE_SIZE_MOBILE : PAGE_SIZE_DESKTOP;
   // 用即時 DOM 順序（反映 sortCards 排序後的結果），不能用外層 cards 陣列（sort 後已過期）
   const domOrder = Array.from(grid.querySelectorAll('.recipe-card'));
   const visible = domOrder.filter(c => !c.classList.contains('hidden'));
-  const totalPages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(visible.length / pageSize));
   if (currentPage > totalPages) currentPage = totalPages;
   visible.forEach((c, i) => {
-    const onPage = i >= (currentPage - 1) * PAGE_SIZE && i < currentPage * PAGE_SIZE;
+    const onPage = i >= (currentPage - 1) * pageSize && i < currentPage * pageSize;
     c.classList.toggle('page-hidden', !onPage);
   });
   if (pag) {
@@ -296,8 +297,8 @@ function resetAll() {
   currentTerm = null;
   document.querySelectorAll('.solar-term').forEach(s => s.classList.remove('active'));
 
-  // 恢復 Newest 排序（default）
-  sortCards('newest');
+  // 恢復 No.001 順序（default）
+  sortCards('no');
 
   // 套用篩選（全部顯示）
   applyFilters();

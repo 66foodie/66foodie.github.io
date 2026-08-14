@@ -417,9 +417,9 @@ body {
   display: none
 }
 
-/* 分頁列 — 只在手機（≤640px）顯示，桌機一次顯示全部卡片 */
+/* 分頁列 — 手機與桌機皆顯示（桌機每頁張數較多） */
 .pagination {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -480,9 +480,9 @@ body {
   color: var(--white)
 }
 
-/* 插圖 */
+/* 插圖 — 桌機版壓低高度，避免整頁拉太長 */
 .card-visual {
-  aspect-ratio: 3/2;
+  aspect-ratio: 2/1;
   position: relative;
   overflow: hidden;
   border-radius: 12px 10px 0 0
@@ -497,8 +497,8 @@ body {
 }
 
 .food-illus svg {
-  width: 66%;
-  height: 66%
+  width: 60%;
+  height: 60%
 }
 
 /* 星球標籤 */
@@ -968,10 +968,6 @@ body {
   .card-body {
     padding: 1rem 1rem .8rem;
     gap: .75rem
-  }
-
-  .pagination {
-    display: flex
   }
 
   .ds {
@@ -1548,8 +1544,29 @@ body {
 }
 
 /* ── lore-panel 寬版（含圖片）── */
+/* 手機：fit 手機寬度；桌機：整體放大，圖文更舒展 */
 .lore-panel--wide {
   width: min(300px, 92vw);
+}
+
+@media (min-width: 641px) {
+  .lore-panel--wide {
+    width: min(460px, 62vw);
+    padding: 1.15rem 1.35rem 1.25rem;
+  }
+
+  .lore-panel--wide .lore-text {
+    font-size: var(--fs-md);
+    line-height: 1.9;
+  }
+
+  .lore-panel--wide .lore-img-wrap {
+    margin-top: 1.1rem;
+  }
+
+  .lore-panel--wide .lore-img-caption {
+    font-size: var(--fs-xs);
+  }
 }
 
 .lore-img-wrap {
